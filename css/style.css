@@ -766,6 +766,102 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); }
 .footer-links a { font-size: 0.82rem; color: var(--text-muted); }
 .footer-links a:hover { color: var(--text-primary); }
 
+/* --- Referral More Link --- */
+.ref-more {
+  color: var(--accent-bright);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.85em;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.ref-more:hover { color: var(--text-primary); text-decoration: underline; }
+
+/* --- Referral Modal --- */
+.ref-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.ref-modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.ref-modal {
+  background: var(--bg-card);
+  border: 1px solid var(--border-accent);
+  border-radius: 20px;
+  padding: 48px;
+  max-width: 680px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  transform: translateY(20px) scale(0.97);
+  transition: transform 0.3s;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5), 0 0 60px rgba(99, 102, 241, 0.08);
+}
+
+.ref-modal-overlay.active .ref-modal {
+  transform: translateY(0) scale(1);
+}
+
+.ref-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.8rem;
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.2s;
+  padding: 4px 8px;
+}
+.ref-modal-close:hover { color: var(--text-primary); }
+
+.ref-modal-quote {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  font-style: italic;
+}
+
+.ref-modal-author {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.ref-modal-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.ref-modal-title {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .ref-modal { padding: 32px 24px; }
+}
+
 /* --- Animations --- */
 .fade-up {
   opacity: 0;
