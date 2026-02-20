@@ -493,6 +493,167 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); }
   line-height: 1.4;
 }
 
+/* --- Testimonials --- */
+.testimonials {
+  padding: var(--section-pad) 0;
+  background: var(--bg-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.testimonials::after {
+  content: '';
+  position: absolute;
+  bottom: 10%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Featured testimonial */
+.testimonial-featured {
+  margin-bottom: 48px;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-featured-quote {
+  background: linear-gradient(135deg, var(--bg-card), rgba(99, 102, 241, 0.06));
+  border: 1px solid var(--border-accent);
+  border-radius: 20px;
+  padding: 48px 56px;
+  position: relative;
+}
+
+.quote-mark {
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 800;
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  opacity: 0.3;
+}
+
+.testimonial-featured-quote p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.testimonial-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.testimonial-title {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* Testimonial grid */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px 24px;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(99, 102, 241, 0.08);
+}
+
+.testimonial-card-quote {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-style: italic;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.testimonial-card .testimonial-author {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.testimonial-card .testimonial-name { font-size: 0.88rem; }
+.testimonial-card .testimonial-title { font-size: 0.75rem; }
+
+/* --- Inline Testimonial Callouts --- */
+.inline-testimonial {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.06), rgba(168, 85, 247, 0.04));
+  border-left: 3px solid var(--accent);
+  border-radius: 0 12px 12px 0;
+  padding: 24px 28px;
+  margin: 32px 0;
+  position: relative;
+}
+
+.inline-testimonial p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.inline-testimonial .inline-testimonial-attr {
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--accent-bright);
+  margin-top: 12px;
+}
+
+.inline-testimonial .inline-testimonial-role {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-style: normal;
+}
+
 /* --- Patents --- */
 .patents {
   padding: var(--section-pad) 0;
@@ -620,6 +781,8 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); }
   .headshot { width: 180px; height: 180px; }
   .competency-grid { grid-template-columns: repeat(2, 1fr); }
   .achievements-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonial-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonial-featured-quote { padding: 36px 32px; }
 }
 
 @media (max-width: 768px) {
@@ -642,6 +805,9 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); }
 
   .competency-grid { grid-template-columns: 1fr; }
   .achievements-grid { grid-template-columns: 1fr 1fr; }
+  .testimonial-grid { grid-template-columns: 1fr; }
+  .testimonial-featured-quote { padding: 28px 24px; }
+  .quote-mark { font-size: 3rem; top: 10px; left: 20px; }
   .patents-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   .hero-quick-stats { flex-wrap: wrap; gap: 24px; }
