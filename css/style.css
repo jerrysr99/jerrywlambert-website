@@ -833,29 +833,36 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); }
 }
 .ref-modal-close:hover { color: var(--text-primary); }
 
-.ref-modal-quote {
-  font-size: 1.05rem;
-  color: var(--text-secondary);
-  line-height: 1.85;
-  font-style: italic;
-}
-
-.ref-modal-author {
-  margin-top: 28px;
-  padding-top: 20px;
-  border-top: 1px solid var(--border);
+.ref-modal-header {
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
 }
 
 .ref-modal-name {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--text-primary);
 }
 
 .ref-modal-title {
-  font-size: 0.85rem;
-  color: var(--text-muted);
+  font-size: 0.9rem;
+  color: var(--accent-bright);
   margin-top: 4px;
+  line-height: 1.5;
+}
+
+.ref-modal-meta {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+.ref-modal-quote {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  font-style: italic;
 }
 
 @media (max-width: 768px) {
