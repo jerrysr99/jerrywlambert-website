@@ -654,6 +654,51 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); }
   font-style: normal;
 }
 
+/* --- Education --- */
+.education {
+  padding: var(--section-pad) 0;
+  background: var(--bg-secondary);
+}
+
+.education-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 36px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.education-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.education-card h3 {
+  margin-bottom: 4px;
+}
+
+.education-field {
+  font-size: 0.95rem;
+  color: var(--accent-bright);
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.education-school {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.education-years {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
 /* --- Patents --- */
 .patents {
   padding: var(--section-pad) 0;
