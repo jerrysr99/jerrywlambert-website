@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   document.querySelectorAll('a[href^="#"]').forEach(a => {
+    if (a.classList.contains('ref-more')) return;
     a.addEventListener('click', e => {
       const t = document.querySelector(a.getAttribute('href'));
       if (t) { e.preventDefault(); window.scrollTo({ top: t.offsetTop - nav.offsetHeight - 16, behavior: 'smooth' }); }
