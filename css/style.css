@@ -311,7 +311,7 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); }
 /* --- Career Timeline --- */
 .timeline {
   padding: var(--section-pad) 0;
-  background: var(--bg-secondary);
+  background: var(--bg-primary);
 }
 
 .timeline-list {
@@ -346,7 +346,7 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); }
   height: 12px;
   background: var(--accent);
   border-radius: 50%;
-  border: 3px solid var(--bg-secondary);
+  border: 3px solid var(--bg-primary);
   z-index: 1;
 }
 
@@ -407,7 +407,7 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); }
 /* --- Competencies --- */
 .competencies {
   padding: var(--section-pad) 0;
-  background: var(--bg-primary);
+  background: var(--bg-secondary);
 }
 
 .competency-grid {
@@ -453,7 +453,7 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); }
 /* --- AI Toolkit --- */
 .ai-toolkit {
   padding: var(--section-pad) 0;
-  background: var(--bg-secondary);
+  background: var(--bg-primary);
 }
 
 .toolkit-grid {
@@ -532,7 +532,7 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); }
 /* --- Achievements --- */
 .achievements {
   padding: var(--section-pad) 0;
-  background: var(--bg-primary);
+  background: var(--bg-secondary);
 }
 
 .achievements-grid {
