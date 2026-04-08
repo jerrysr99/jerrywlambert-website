@@ -927,6 +927,44 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); }
 .footer-links a { font-size: 0.82rem; color: var(--text-muted); }
 .footer-links a:hover { color: var(--text-primary); }
 
+/* --- Posts Listing --- */
+.posts-listing {
+  padding: calc(var(--section-pad) + 60px) 0 var(--section-pad);
+  background: var(--bg-primary);
+  min-height: 70vh;
+}
+.post-list { list-style: none; display: flex; flex-direction: column; gap: 16px; max-width: 760px; margin: 0 auto; }
+.post-list-item { background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; transition: all 0.3s; }
+.post-list-item:hover { border-color: var(--border-accent); transform: translateY(-2px); box-shadow: var(--shadow-card); }
+.post-list-link { display: block; padding: 28px 32px; color: inherit; }
+.post-list-link:hover { color: inherit; }
+.post-list-meta { font-size: 0.78rem; font-weight: 600; color: var(--accent-bright); letter-spacing: 0.02em; margin-bottom: 6px; }
+.post-list-title { font-size: 1.2rem; color: var(--text-primary); margin-bottom: 8px; }
+.post-list-excerpt { font-size: 0.92rem; color: var(--text-secondary); line-height: 1.65; }
+.post-list-empty { text-align: center; color: var(--text-muted); padding: 60px 0; }
+
+/* --- Post Article --- */
+.post-article {
+  padding: calc(var(--section-pad) + 60px) 0 var(--section-pad);
+  background: var(--bg-primary);
+}
+.post-article .container { max-width: 760px; }
+.post-back { display: inline-block; font-size: 0.85rem; font-weight: 600; color: var(--accent-bright); margin-bottom: 32px; }
+.post-back:hover { color: var(--accent); }
+.post-header { margin-bottom: 40px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+.post-header h1 { margin-bottom: 12px; }
+.post-meta { font-size: 0.88rem; color: var(--text-muted); font-weight: 500; }
+.post-body { font-size: 1rem; color: var(--text-secondary); line-height: 1.85; }
+.post-body h2 { font-size: 1.5rem; color: var(--text-primary); margin: 36px 0 16px; }
+.post-body h3 { font-size: 1.2rem; color: var(--text-primary); margin: 28px 0 12px; }
+.post-body p { margin-bottom: 18px; }
+.post-body ul, .post-body ol { margin: 0 0 18px 24px; }
+.post-body li { margin-bottom: 8px; }
+.post-body a { color: var(--accent-bright); text-decoration: underline; }
+.post-body a:hover { color: var(--accent); }
+.post-body code { font-family: ui-monospace, monospace; font-size: 0.9em; background: var(--bg-card-hover); padding: 2px 6px; border-radius: 4px; color: var(--text-primary); }
+.post-body blockquote { border-left: 3px solid var(--accent); padding-left: 20px; margin: 24px 0; color: var(--text-secondary); font-style: italic; }
+
 /* --- Referral More Link --- */
 .ref-more {
   color: var(--accent-bright);

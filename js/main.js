@@ -146,33 +146,35 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const modal = document.getElementById('refModal');
-  const modalQuote = document.getElementById('refModalQuote');
-  const modalName = document.getElementById('refModalName');
-  const modalTitle = document.getElementById('refModalTitle');
-  const modalMeta = document.getElementById('refModalMeta');
-  const modalClose = modal.querySelector('.ref-modal-close');
+  if (modal) {
+    const modalQuote = document.getElementById('refModalQuote');
+    const modalName = document.getElementById('refModalName');
+    const modalTitle = document.getElementById('refModalTitle');
+    const modalMeta = document.getElementById('refModalMeta');
+    const modalClose = modal.querySelector('.ref-modal-close');
 
-  document.querySelectorAll('.ref-more').forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault();
-      const id = link.dataset.ref;
-      const ref = refs[id];
-      if (!ref) return;
-      modalName.textContent = ref.name;
-      modalTitle.textContent = ref.title;
-      modalMeta.textContent = ref.relationship;
-      modalQuote.innerHTML = '<p>\u201C' + ref.quote.replace(/\n\n/g, '</p><p style="margin-top:16px">') + '\u201D</p>';
-      modal.classList.add('active');
-      document.body.style.overflow = 'hidden';
+    document.querySelectorAll('.ref-more').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const id = link.dataset.ref;
+        const ref = refs[id];
+        if (!ref) return;
+        modalName.textContent = ref.name;
+        modalTitle.textContent = ref.title;
+        modalMeta.textContent = ref.relationship;
+        modalQuote.innerHTML = '<p>\u201C' + ref.quote.replace(/\n\n/g, '</p><p style="margin-top:16px">') + '\u201D</p>';
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
     });
-  });
 
-  function closeModal() {
-    modal.classList.remove('active');
-    document.body.style.overflow = '';
+    function closeModal() {
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    modalClose.addEventListener('click', closeModal);
+    modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('active')) closeModal(); });
   }
-
-  modalClose.addEventListener('click', closeModal);
-  modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('active')) closeModal(); });
 });
