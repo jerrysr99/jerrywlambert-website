@@ -1,2 +1,5 @@
 .ghconfig/
 .DS_Store
+
+# Agent context — never publish to this PUBLIC repo
+CLAUDE.md
