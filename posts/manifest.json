@@ -1,8 +1,74 @@
 [
   {
+    "slug": "on-prem-ai-is-now-required",
+    "title": "On-Prem AI Is Now Required",
+    "date": "2026-05-12T12:00:00-05:00",
+    "excerpt": "The cloud was the default for AI. That default is shifting. 85% of enterprises plan to move AI workloads on-premises within two years. The reasons are mathematical, legal, and operational."
+  },
+  {
+    "slug": "the-cost-of-ai-politeness",
+    "title": "The Cost of AI Politeness",
+    "date": "2026-05-12T08:00:00-05:00",
+    "excerpt": "\"Thank you.\" Two tokens. Zero value. And your company just paid for it. Every token you send is a billing event, and every billing event reprocesses the full conversation."
+  },
+  {
+    "slug": "the-cuda-moat-cracked",
+    "title": "The CUDA Moat Cracked",
+    "date": "2026-04-28T08:00:00-05:00",
+    "excerpt": "Jensen Huang warned on April 15 that DeepSeek on Huawei chips would be horrible. Eight days later, DeepSeek shipped V4 on Huawei Ascend — trained entirely outside NVIDIA's ecosystem."
+  },
+  {
+    "slug": "the-frontier-pileup",
+    "title": "The Frontier Pileup",
+    "date": "2026-04-24T08:00:00-05:00",
+    "excerpt": "GPT-5.5. DeepSeek V4. Tencent Hy3. Three frontier models in 48 hours, separated by single-digit percentage points. The capability gap closed. The trust gap did not. The price gap widened."
+  },
+  {
+    "slug": "the-agent-layer-goes-live",
+    "title": "The Agent Layer Goes Live",
+    "date": "2026-04-16T08:00:00-05:00",
+    "excerpt": "Four companies shipped production-grade agent platforms in one week: Anthropic, Microsoft, OpenAI, and xAI. An agent is not a feature inside your software. An agent is the employee that uses the software."
+  },
+  {
+    "slug": "what-is-apache-2-and-why-it-matters",
+    "title": "What Is Apache 2.0 and Why It Matters",
+    "date": "2026-04-10T12:00:00-05:00",
+    "excerpt": "Apache 2.0 is the gold standard of open source licensing. Google just released Gemma 4 under it — the most permissive license a frontier-class model family has ever shipped under."
+  },
+  {
+    "slug": "the-managed-llm-era",
+    "title": "The Managed LLM Era",
+    "date": "2026-04-10T08:00:00-05:00",
+    "excerpt": "For every company that spent two years saying \"we cannot use AI because our data cannot leave the building\" — that constraint just met its answer. Gemma 4 runs locally, under Apache 2.0."
+  },
+  {
+    "slug": "cybersecurity-changed-this-week",
+    "title": "Cybersecurity Changed This Week",
+    "date": "2026-04-09T08:00:00-05:00",
+    "excerpt": "Anthropic built Claude Mythos Preview. It found a 27-year-old vulnerability in OpenBSD that every human researcher and every automated tool missed. Then Anthropic did something unprecedented: they refused to release it."
+  },
+  {
+    "slug": "open-source-ai-just-became-enterprise-ready",
+    "title": "Open Source AI Just Became Enterprise-Ready",
+    "date": "2026-04-08T12:00:00-05:00",
+    "excerpt": "Google released Gemma 4 — Apache 2.0, one architecture from phone to data center, native multimodality. The story is not the benchmarks. It is what landed in a single release."
+  },
+  {
     "slug": "welcome",
-    "title": "Welcome — Why I'm Writing Publicly",
+    "title": "Welcome — Why I’m Writing Publicly",
     "date": "2026-04-08T10:30:00-05:00",
     "excerpt": "A short note on what to expect from this space: AI transformation field notes, executive perspective on the rate of change, and lessons from running production AI workloads."
+  },
+  {
+    "slug": "ai-is-the-new-cloud",
+    "title": "AI Is the New Cloud",
+    "date": "2026-04-08T08:00:00-05:00",
+    "excerpt": "\"AI\" is the new \"cloud\" — a useful category but almost useless as a plan. Under the umbrella are at least a dozen distinct technologies, each with its own cost curve and failure modes."
+  },
+  {
+    "slug": "your-product-roadmap-is-already-wrong",
+    "title": "Your Product Roadmap Is Already Wrong",
+    "date": "2026-04-07T08:00:00-05:00",
+    "excerpt": "AI has changed all of the timelines, budgets and features — most executives just don't know it yet. The transition is not in front of you. It is behind you."
   }
 ]

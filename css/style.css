@@ -106,8 +106,8 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); }
   letter-spacing: -0.02em;
 }
 
-.nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
-.nav-links a { font-size: 0.85rem; font-weight: 500; color: var(--text-secondary); }
+.nav-links { display: flex; align-items: center; gap: 20px; list-style: none; white-space: nowrap; }
+.nav-links a { font-size: 0.8rem; font-weight: 500; color: var(--text-secondary); }
 .nav-links a:hover { color: var(--text-primary); }
 
 .nav-cta {
