@@ -28,6 +28,7 @@
       <ul class="nav-links">
         <li><a href="#experience">Experience</a></li>
         <li><a href="#competencies">Competencies</a></li>
+        <li><a href="#ai-systems">AI Systems</a></li>
         <li><a href="#achievements">Achievements</a></li>
         <li><a href="#perspective">Perspective</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
@@ -463,15 +464,17 @@
         <div class="toolkit-card fade-up">
           <h3>Foundation Models</h3>
           <ul class="toolkit-list">
-            <li><strong>OpenAI</strong> &mdash; GPT-5.x, GPT-4.1, Codex</li>
-            <li><strong>Anthropic</strong> &mdash; Claude Opus 4.x, Sonnet 4.x</li>
-            <li><strong>Google DeepMind</strong> &mdash; Gemini 3 Pro, Gemini 3 Flash</li>
-            <li><strong>xAI</strong> &mdash; Grok-3, Grok-3 Mini</li>
-            <li><strong>Meta</strong> &mdash; Llama 4 Maverick, Llama 4 Behemoth</li>
-            <li><strong>Alibaba</strong> &mdash; Qwen3-Max, Qwen3-Omni</li>
-            <li><strong>DeepSeek</strong> &mdash; DeepSeek-V3.x</li>
-            <li><strong>Mistral</strong> &mdash; Mistral 3.x</li>
-            <li><strong>Cohere</strong> &mdash; Command R+</li>
+            <li><strong>Anthropic</strong> &mdash; Opus 4.8, Opus 4.7, Sonnet 4.6, Haiku 4.5</li>
+            <li><strong>OpenAI</strong> &mdash; GPT-5.5, GPT-5.4, o3 Pro, o4-mini, GPT-4.1</li>
+            <li><strong>Google</strong> &mdash; Gemini 3.5 Flash, 3.1 Pro, 2.5 Pro, Gemma 4</li>
+            <li><strong>xAI</strong> &mdash; Grok 4.3, Grok 4.20, Grok Build</li>
+            <li><strong>Meta</strong> &mdash; Llama 4 Scout, Llama 4 Maverick</li>
+            <li><strong>DeepSeek</strong> &mdash; V4 Flash, V4 Pro</li>
+            <li><strong>Mistral</strong> &mdash; Medium 3.5, Large 3, Small 4</li>
+            <li><strong>Perplexity</strong> &mdash; Sonar Reasoning Pro, Sonar Pro</li>
+            <li><strong>Cohere</strong> &mdash; Command A+, Command R+</li>
+            <li><strong>Amazon</strong> &mdash; Nova Premier, Nova 2 Lite</li>
+            <li><strong>Alibaba</strong> &mdash; Qwen 3.7 Max, Qwen 3 235B</li>
           </ul>
         </div>
         <div class="toolkit-card fade-up">
@@ -502,6 +505,63 @@
             </ul>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI SYSTEMS -->
+  <section class="ai-systems" id="ai-systems">
+    <div class="container">
+      <div class="section-header center fade-up">
+        <span class="section-label">Built &amp; Running</span>
+        <h2>AI Systems in <span class="gradient-text">Production</span></h2>
+        <p class="ai-systems-subtitle">Not demos or proofs of concept — these are live systems processing real data, managing real money, and routing real API traffic every day.</p>
+      </div>
+
+      <div class="ai-systems-grid">
+
+        <div class="ai-system-card fade-up">
+          <h3>AI Model Router &amp; Advisory Platform</h3>
+          <p class="ai-system-tagline">Multi-provider LLM routing with cost optimization</p>
+          <p class="ai-system-body">Centralized API that catalogs 50 models across 11 providers (Anthropic, OpenAI, Google, xAI, Meta, DeepSeek, Mistral, Perplexity, Cohere, Amazon, Alibaba), routes requests via least-cost scoring, and tracks per-model spend. Built-in cost-management layer enforces budget caps, surfaces cost-per-token analytics, and auto-selects the cheapest capable model for each task — cutting LLM spend without sacrificing output quality.</p>
+          <div class="ai-system-metrics">
+            <div class="ai-system-metric"><strong>50</strong><span>Models</span></div>
+            <div class="ai-system-metric"><strong>11</strong><span>Providers</span></div>
+            <div class="ai-system-metric"><strong>Auto</strong><span>Cost Routing</span></div>
+          </div>
+          <ul class="competency-tags ai-system-tags">
+            <li>Python</li><li>FastAPI</li><li>REST API</li><li>Multi-provider LLM</li><li>Cost Optimization</li>
+          </ul>
+        </div>
+
+        <div class="ai-system-card fade-up">
+          <h3>AI Proxy — Async LLM Gateway</h3>
+          <p class="ai-system-tagline">Policy-enforced async gateway for centralized AI access</p>
+          <p class="ai-system-body">SQS-based async service on AWS that receives AI prompts from any client, selects the optimal model via the router, and returns results. Enforces per-provider rate limits, request-level authentication, and usage policies centrally — no individual service touches a provider API directly. Includes retry logic, dead-letter queues for failed requests, FIFO ordering guarantees, and full audit logging for cost and security compliance.</p>
+          <div class="ai-system-metrics">
+            <div class="ai-system-metric"><strong>&lt;5s</strong><span>Response</span></div>
+            <div class="ai-system-metric"><strong>FIFO</strong><span>Guarantee</span></div>
+            <div class="ai-system-metric"><strong>Per-Provider</strong><span>Rate Limits</span></div>
+          </div>
+          <ul class="competency-tags ai-system-tags">
+            <li>Python</li><li>AWS SQS</li><li>EC2</li><li>Async</li><li>FIFO Queues</li><li>systemd</li>
+          </ul>
+        </div>
+
+        <div class="ai-system-card fade-up">
+          <h3>Autonomous Trading System</h3>
+          <p class="ai-system-tagline">Multi-strategy portfolio automation with LLM-powered analysis</p>
+          <p class="ai-system-body">End-to-end trading platform managing a live brokerage account through 10+ strategy plugins. A 4-agent LLM swarm (technical, fundamental, sentiment, macro) analyzes 80 tickers nightly, synthesizes buy/sell signals, and feeds a conviction-weighted portfolio engine. All state in PostgreSQL + TimescaleDB with real-time dashboard.</p>
+          <div class="ai-system-metrics">
+            <div class="ai-system-metric"><strong>80</strong><span>Tickers Nightly</span></div>
+            <div class="ai-system-metric"><strong>10+</strong><span>Strategies</span></div>
+            <div class="ai-system-metric"><strong>Live</strong><span>Account</span></div>
+          </div>
+          <ul class="competency-tags ai-system-tags">
+            <li>Python</li><li>PostgreSQL</li><li>TimescaleDB</li><li>Alpaca API</li><li>LLM Agents</li><li>FastAPI</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </section>
