@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "enterprise-ai-accountability-framework",
+    "title": "The Enterprise AI Accountability Framework",
+    "subtitle": "A telecom-derived lexicon for the AI transaction economy",
+    "date": "2026-06-21T09:00:00-05:00",
+    "type": "White Paper",
+    "status": "Published",
+    "excerpt": "AI is becoming a transaction economy. This paper coins four accountability primitives \u2014 the Token Detail Record, the Proxy of Record, the Model Routing Engine, and the Model Decision Record \u2014 each minted from a proven telecom ancestor, and argues they arrive in a forced order: record, centralize, govern, justify.",
+    "pdf": "pdf/Enterprise_AI_Accountability_Framework.pdf"
+  },
+  {
+    "slug": "ai-trillion-dollar-accounting-problem",
+    "title": "AI Has a Trillion-Dollar Accounting Problem. Telecom Has Solved It for Forty Years.",
+    "subtitle": "Contributed article",
+    "date": "2026-06-21T08:00:00-05:00",
+    "type": "Contributed Article",
+    "status": "Forthcoming",
+    "excerpt": "Every prompt, retrieval, and agent step is a priced economic event \u2014 a transaction economy most enterprises cannot independently audit. Telecom solved this decades ago with the Call Detail Record and still runs that discipline every day. AI can inherit it.",
+    "pdf": null
+  }
+]
