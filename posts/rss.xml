@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jerry W. Lambert Sr. — AI Field Notes</title>
+    <link>https://jerrywlambert.com/posts/</link>
+    <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
+    <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Jun 2026 14:26:21 +0000</lastBuildDate>
+    <item>
+      <title>AI&#x27;s DSP Moment</title>
+      <link>https://jerrywlambert.com/posts/ais-dsp-moment.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/ais-dsp-moment.html</guid>
+      <pubDate>Thu, 25 Jun 2026 08:00:00 -0500</pubDate>
+      <description>In 1983 the industry pulled signal math off the general CPU onto cheap, purpose-built DSP chips. AI is running that playbook again — at the chip layer and the model layer. Granular specialization is coming.</description>
+      <content:encoded><![CDATA[<p>In 1983, Texas Instruments shipped a chip that did almost nothing. It could not run a program or a spreadsheet. It did one job &mdash; the signal math behind audio and video sampling and compression &mdash; because running that job on a general-purpose CPU was too slow and too expensive. The DSP chip was born, and it ran the next thirty years of media. Thank DSP chips for every Zoom call you have ever enjoyed and every cell phone call you have ever made.</p>
+
+        <p>We are running that playbook again, and most AI strategies have not noticed.</p>
+
+        <p>Start with the silicon. Elon Musk&#x27;s Terafab, announced in March as a Tesla, SpaceX and xAI venture, is not trying to out-NVIDIA NVIDIA on general-purpose GPUs. It is building purpose-specific chips for cars, robots and space, where Tesla claims its AI5 part matches an H100 at a fraction of the cost and power. Google, Amazon and a wave of startups are doing the same with inference-only silicon. The general-purpose chip was never the cheap way to run one job. It was the only way &mdash; until someone built the specialist.</p>
+
+        <p>Now watch the same move climb up the stack to the models. Why pay for a frontier model that can write a symphony and generate video just to summarize your email? NVIDIA&#x27;s own researchers published the answer last year: small, specialized models are the future of agentic AI &mdash; ten to thirty times cheaper to run, and good enough for most of what an agent actually does.</p>
+
+        <p>Here is the part to internalize. The edge stops being &quot;which one big model do we buy.&quot; It becomes &quot;how well do we route every task to the cheapest thing that can do it.&quot; Granular specialization is coming. Profitability will belong to whoever can run a fleet of small models and agents &mdash; not whoever rents the biggest one.</p>
+
+        <p>History does not repeat. It re-fabs.</p>
+
+        <p>It is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Your Vendor Has a Landlord</title>
+      <link>https://jerrywlambert.com/posts/your-vendor-has-a-landlord.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/your-vendor-has-a-landlord.html</guid>
+      <pubDate>Mon, 22 Jun 2026 08:00:00 -0500</pubDate>
+      <description>Three days after Anthropic shipped its most capable model, the government pulled it. A model you cannot keep is not a foundation. It is a rental, and the landlord holds a key.</description>
+      <content:encoded><![CDATA[<p>Three days after Anthropic shipped its most capable model, it was gone. Not pulled by the lab. Pulled by the government.</p>
+
+        <p>Last week I wrote that access to the frontier had become conditional &mdash; gated by who you are and how you&#x27;re vetted. This week it got worse. A federal export-control directive ordered Anthropic to cut off Fable 5 and Mythos 5 for every foreign national on earth, including its own employees. Rather than sort users by passport, the company switched both models off for everyone.</p>
+
+        <p>So the lesson is no longer &quot;the best model may not be sold to you.&quot; It&#x27;s &quot;the model you already built on can be revoked overnight by a decision you don&#x27;t control.&quot;</p>
+
+        <p>Read that for what it is. The risk to your AI roadmap stopped being price, and stopped being capability. It is now continuity. The system running your workflow answers to an export regime, a launch suspension, a policy shift you will not see coming. That is not a hypothetical. It happened in three days, to the most valuable AI company in the world.</p>
+
+        <p>Here is what executives need to internalize. A model you cannot keep is not a foundation. It is a rental, and the landlord just showed you he holds a key. If your stack assumes one frontier vendor, you have one point of political failure. The fix is not loyalty. It is portability &mdash; the ability to move work to another model the day the first one goes dark.</p>
+
+        <p>Build for the day the door closes. Because last week, it did.</p>
+
+        <p>It is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Meta Got the Order Wrong</title>
+      <link>https://jerrywlambert.com/posts/meta-got-the-order-wrong.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/meta-got-the-order-wrong.html</guid>
+      <pubDate>Mon, 15 Jun 2026 08:00:00 -0500</pubDate>
+      <description>A month ago I wrote that companies were cutting headcount before they proved the AI could do the work. This week the most aggressive one admitted it got the order wrong.</description>
+      <content:encoded><![CDATA[<p>A month ago I wrote that companies were cutting headcount before they proved the AI could do the work. This week the most aggressive one admitted it got the order wrong.</p>
+
+        <p>In an internal memo, Mark Zuckerberg said Meta &quot;made mistakes&quot; in its AI restructuring. The numbers behind that sentence: roughly 8,000 people cut, another 7,000 reassigned to AI projects &mdash; close to a fifth of the company reshuffled on a bet. The new flat AI unit, stretched toward 50 engineers per manager, got nicknamed &quot;the gulag&quot; inside the building. Now he is pledging no more company-wide layoffs this year and quietly restoring the perks he stripped.</p>
+
+        <p>This is not a Meta story. It is a sequencing story. Meta has more capital, more compute, and more AI talent than almost anyone on earth &mdash; and it still got burned by restructuring on faith instead of proof. If they cannot shortcut the sequence, the company copying their layoff headlines on a mid-market budget certainly cannot.</p>
+
+        <p>Here is the order that works, and it has not changed: deploy the capability, measure the real output, then restructure around what you actually proved. Reverse those steps and you get exactly what Meta just walked back &mdash; mass reassignment, a morale crater, and a public correction.</p>
+
+        <p>The lesson is louder than the original move. When the best-resourced player in the game admits it cut first and proved second, treat that as your case study.</p>
+
+        <p>Prove it first. Still true. Now with a receipt.</p>
+
+        <p>It is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The Model You Can&#x27;t Buy</title>
+      <link>https://jerrywlambert.com/posts/the-model-you-cant-buy.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/the-model-you-cant-buy.html</guid>
+      <pubDate>Sun, 14 Jun 2026 08:00:00 -0500</pubDate>
+      <description>Last week Anthropic shipped two versions of the same model. One it sells to everyone. One it won&#x27;t. The frontier stopped being a storefront and became a clearance level.</description>
+      <content:encoded><![CDATA[<p>Last week Anthropic shipped two versions of the same model. One it sells to everyone. One it won&#x27;t.</p>
+
+        <p>Fable 5 is the public release &mdash; except it quietly downgrades about 5% of sessions to the older Opus when a request gets too sensitive. Mythos 5, the unrestricted version, ships only to a small set of vetted cyberdefenders. Same model. Two doors. You only get to walk through one of them.</p>
+
+        <p>Read what that means. For the first time, the most capable model on the market is not held back by price or by compute. It is held back on purpose &mdash; because of what it can do. The capability ceiling moved above the line a lab is willing to hand the public.</p>
+
+        <p>Here is the part executives need to internalize: &quot;the best model, on an API, available to all&quot; is no longer a safe planning assumption. Access to the top of the frontier is becoming conditional &mdash; gated by who you are, how you are vetted, and what you intend to do with it. Anthropic drew that line inside a single product launch. The other frontier labs will follow.</p>
+
+        <p>So the question for your AI roadmap is no longer just &quot;which model is best.&quot; It is &quot;which tier will they actually let us run, and what does the work look like if the answer is the safe one.&quot; If your strategy assumes unrestricted access to peak capability, you are planning around a door that may not open.</p>
+
+        <p>The frontier just stopped being a storefront. It became a clearance level.</p>
+
+        <p>It is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The Frontier Tax</title>
+      <link>https://jerrywlambert.com/posts/the-frontier-tax.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/the-frontier-tax.html</guid>
+      <pubDate>Sat, 13 Jun 2026 08:00:00 -0500</pubDate>
+      <description>Everyone repeats the same line: AI keeps getting cheaper. Last week the best model on the market got twice as expensive. AI cost split in two.</description>
+      <content:encoded><![CDATA[<p>Everyone repeats the same line: AI keeps getting cheaper. Last week the best model on the market got twice as expensive.</p>
+
+        <p>Anthropic shipped Claude Fable 5 at $50 per million output tokens &mdash; double the price of the model it replaced. At the very top of the market, capability went up and so did the bill.</p>
+
+        <p>Meanwhile the floor is falling out. DeepSeek, Qwen, Mistral and Llama have pushed open-weight models good enough for most enterprise work to nearly free. Two curves, moving in opposite directions.</p>
+
+        <p>This is the part executives keep getting wrong. They treat &quot;AI cost&quot; as one number trending down, and they budget like the whole stack is on a discount. It isn&#x27;t. The commodity middle is collapsing toward zero. The frontier &mdash; the small slice of work that actually needs the best model &mdash; is getting more expensive, not less.</p>
+
+        <p>The mistake is running everything on one curve. Either you overpay by sending routine work to a frontier model, or you underperform by forcing your hardest problems onto a commodity one. The skill in 2026 is knowing which work belongs on which curve.</p>
+
+        <p>Map your workload. Most of it runs fine on cheap, open, self-hosted models. A few high-stakes tasks justify the frontier premium. Price them separately, architect them separately, and stop pretending it is one line on a chart.</p>
+
+        <p>It is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Redrawing the Org Chart Around Agents</title>
+      <link>https://jerrywlambert.com/posts/redrawing-the-org-chart-around-agents.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/redrawing-the-org-chart-around-agents.html</guid>
+      <pubDate>Thu, 11 Jun 2026 08:00:00 -0500</pubDate>
+      <description>Most companies are still asking how many people to cut. The leaders already stopped asking that question. A layoff removes cost. A reorg changes shape.</description>
+      <content:encoded><![CDATA[<p>Most companies are still asking how many people to cut. The leaders already stopped asking that question.</p>
+
+        <p>A layoff removes cost. A reorg changes shape. This month the companies out front started doing the second one &mdash; and calling it by its real name.</p>
+
+        <p>GitLab announced &quot;Act 2&quot;: flattening up to three layers of management and restructuring the whole company &quot;for the agentic AI era.&quot; Intuit is cutting 3,000+ roles to refocus around AI. Read those two moves together and the pattern is plain. This is not trimming fat. This is redrawing the org chart around a new kind of worker.</p>
+
+        <p>Here is what they understand that most don&#x27;t: agents don&#x27;t report to middle managers. That layer exists to coordinate, route, and review human work. When the work is done by software that coordinates itself, the layer doesn&#x27;t shrink &mdash; it disappears.</p>
+
+        <p>Microsoft made the tooling official two weeks ago at Build: Autopilots, long-running autonomous agents, and an agent runtime built into Windows. The capability to run a department on agents now ships in the operating system.</p>
+
+        <p>So the question on the table is no longer &quot;how many people can AI replace.&quot; It is &quot;what shape is this company when agents do the coordinating.&quot; Those are completely different planning exercises, and only one of them is a spreadsheet.</p>
+
+        <p>If your AI plan this year is a headcount number, you are still playing the old game. The new one is structural.</p>
+
+        <p>It is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Prove It First, Then Cut</title>
+      <link>https://jerrywlambert.com/posts/prove-it-first-then-cut.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/prove-it-first-then-cut.html</guid>
+      <pubDate>Fri, 15 May 2026 08:00:00 -0500</pubDate>
+      <description>128,000 tech workers lost their jobs this year, nearly half cut because of AI. But 55% of the companies that did it already regret it. Most cut first and deployed second.</description>
+      <content:encoded><![CDATA[<p>128,000 tech workers have lost their jobs this year. Nearly half were cut because of AI.</p>
+
+        <p>Here is the number nobody puts on the slide: 55% of the companies that did it already regret it.</p>
+
+        <p>Both numbers are true. That is the problem.</p>
+
+        <p>The logic sounds clean in a board meeting. AI makes engineers faster — Coinbase&#x27;s CEO says his team now ships in days what used to take weeks. So you cut the headcount and book the savings.</p>
+
+        <p>But look at the order of operations. Most of these companies cut first and deployed second. They are betting that an AI capability they have not yet proven in production will cover the work they just eliminated. That is not an efficiency strategy. That is a leap of faith with a severance line item.</p>
+
+        <p>I have run large cost reductions. The ones that held followed a sequence: deploy the new capability, measure the real output, then restructure around what you actually proved. The ones that blew up skipped to the restructure and hoped the rest would follow.</p>
+
+        <p>AI will eliminate roles. That part is real and it is happening. But &quot;AI did it&quot; is becoming the cover story for cuts that were coming anyway — and for bets that have not paid off yet.</p>
+
+        <p>If you are cutting headcount this quarter, ask one question: have we proven the replacement, or are we hoping for it?</p>
+
+        <p>Prove it first. Then cut. Not the other way around.</p>
+
+        <p>It is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The Vendor Is Now the Consultant</title>
+      <link>https://jerrywlambert.com/posts/the-vendor-is-now-the-consultant.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/the-vendor-is-now-the-consultant.html</guid>
+      <pubDate>Thu, 14 May 2026 08:00:00 -0500</pubDate>
+      <description>This week, OpenAI launched a $4 billion consulting firm. The company that builds the model now sells you the team that installs it. The architect profits from the architecture.</description>
+      <content:encoded><![CDATA[<p>This week, OpenAI launched a consulting firm. Four billion dollars, backed by TPG, with McKinsey, Bain, and Capgemini as delivery partners. They also bought a 150-engineer consultancy outright. The company that builds the model now sells you the team that installs it.</p>
+
+        <p>Read that again.</p>
+
+        <p>The vendor recommending the solution is now the vendor implementing the solution — and billing for both. The architect profits from the architecture.</p>
+
+        <p>We have seen this movie. After Enron, Sarbanes-Oxley forced accounting firms to choose: audit the books or consult on them, not both. The conflict was too obvious to permit. You cannot independently evaluate work you are paid to sell.</p>
+
+        <p>AI is moving the opposite direction. OpenAI is the model, the platform, and now the integrator. Anthropic is embedding engineers inside Wall Street firms. The line between product and implementation is dissolving — fast.</p>
+
+        <p>This is not a reason to avoid them. The engineers are excellent and the models lead. It is a reason to remember who is sitting on which side of the table.</p>
+
+        <p>When your AI vendor tells you which AI solution to buy, that is not advice. It is a sales call with a project plan attached.</p>
+
+        <p>Keep an independent set of eyes on the architecture. The people who build it should not be the only people grading it.</p>
+
+        <p>It is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>On-Prem AI Is Now Required</title>
+      <link>https://jerrywlambert.com/posts/on-prem-ai-is-now-required.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/on-prem-ai-is-now-required.html</guid>
+      <pubDate>Tue, 12 May 2026 12:00:00 -0500</pubDate>
+      <description>The cloud was the default for AI. That default is shifting. 85% of enterprises plan to move AI workloads on-premises within two years. The reasons are mathematical, legal, and operational.</description>
+      <content:encoded><![CDATA[<p>The cloud was the default for AI. That default is shifting.</p>
+
+        <p>Not because cloud AI failed. Because the data cannot leave.</p>
+
+        <p>Eighty-five percent of enterprises now plan to move AI workloads on-premises within two years. The reasons are not ideological. They are mathematical, legal, and operational.</p>
+
+        <p>The math: Lenovo&#x27;s 2026 TCO study puts on-prem inference at 8 to 18 times cheaper than cloud APIs. An eight-GPU system breaks even against on-demand pricing in under four months. Over five years, the savings exceed $5 million per server.</p>
+
+        <p>The law: The EU AI Act takes full effect on August 2. Penalties run to 7% of global annual turnover. GDPR and the US CLOUD Act are in direct conflict — a US hyperscaler operating in Europe cannot simultaneously comply with both. For regulated industries in the EU, on-prem is not a preference. It is the only compliant path.</p>
+
+        <p>The models: DeepSeek V4 ships under MIT. Gemma 4 and Qwen 3.6 ship under Apache 2.0. Frontier-class performance, open weights, run on your hardware. A year ago, self-hosting meant compromise. Today it means parity.</p>
+
+        <p>IBM launched Sovereign Core at Think last week. Cohere and Aleph Alpha merged into a $20 billion sovereign AI company. NVIDIA disclosed $30 billion in sovereign AI revenue last quarter — triple year-over-year. The infrastructure vendors are not debating this. They are building for it.</p>
+
+        <p>The question is no longer whether on-prem AI is viable. It is whether your architecture assumes it.</p>
+
+        <p>It is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The Cost of AI Politeness</title>
+      <link>https://jerrywlambert.com/posts/the-cost-of-ai-politeness.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/the-cost-of-ai-politeness.html</guid>
+      <pubDate>Tue, 12 May 2026 08:00:00 -0500</pubDate>
+      <description>&quot;Thank you.&quot; Two tokens. Zero value. And your company just paid for it. Every token you send is a billing event, and every billing event reprocesses the full conversation.</description>
+      <content:encoded><![CDATA[<p>The Cost of AI Politeness</p>
+
+        <p>&quot;Thank you.&quot; Two tokens. Zero value. And your company just paid for it.</p>
+
+        <p>AI is not a person. It does not need affirmation. It does not have feelings. Every token you send is a billing event, and every billing event reprocesses the full conversation.</p>
+
+        <p>Here is how AI pricing actually works. Large language models do not remember your conversation. Every time you send a message, the entire history — every question you asked, every answer the model gave — gets resubmitted as input. The model reads all of it again, top to bottom, to generate the next response.</p>
+
+        <p>When someone on your team types &quot;thanks!&quot; after a 5,000-word exchange, the model reprocesses all 5,000 words. To say &quot;You&#x27;re welcome.&quot;</p>
+
+        <p>At $5 per million input tokens, one courtesy costs fractions of a cent. Multiply it by a thousand employees, ten times a day, across every department running AI tools. Now it is real money.</p>
+
+        <p>The tokens that cost you something and return nothing:</p>
+
+        <ul>
+<li>&quot;Great, thanks!&quot;</li>
+<li>&quot;OK&quot;</li>
+<li>&quot;Perfect&quot;</li>
+<li>&quot;Can you do that?&quot; (after it already offered to)</li>
+</ul>
+
+        <p>The tokens that cost you nothing and return something:</p>
+
+        <ul>
+<li>&quot;Rewrite this in the tone of our Q3 earnings call&quot;</li>
+<li>&quot;Add the regional breakdown and flag anything over 10% variance&quot;</li>
+</ul>
+
+        <p>Be direct. Be specific. Skip the pleasantries. The AI does not care. Your budget does.</p>
+
+        <p>It is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The CUDA Moat Cracked</title>
+      <link>https://jerrywlambert.com/posts/the-cuda-moat-cracked.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/the-cuda-moat-cracked.html</guid>
+      <pubDate>Tue, 28 Apr 2026 08:00:00 -0500</pubDate>
+      <description>Jensen Huang warned on April 15 that DeepSeek on Huawei chips would be horrible. Eight days later, DeepSeek shipped V4 on Huawei Ascend — trained entirely outside NVIDIA&#x27;s ecosystem.</description>
+      <content:encoded><![CDATA[<p>Eight days. On April 15, Jensen Huang told the Dwarkesh Podcast that DeepSeek running on Huawei chips would be &quot;a horrible outcome for our nation.&quot; On April 24, DeepSeek shipped V4 on Huawei Ascend processors. Trained, optimized, and deployed — entirely outside NVIDIA&#x27;s ecosystem.</p>
+
+        <p>This is not a model story. This is an infrastructure story.</p>
+
+        <p>NVIDIA&#x27;s dominance was never just the hardware. It was CUDA — twenty years of software, libraries, and developer tooling that made switching costs astronomical. Every major AI lab in the world trained on NVIDIA GPUs because the software ecosystem had no viable alternative. That was the moat.</p>
+
+        <p>DeepSeek rewrote its entire training pipeline from CUDA to Huawei&#x27;s CANN framework. The result: a 1.6-trillion-parameter model that matches Claude and GPT-5.5 on coding benchmarks, runs at one-sixth the price, and never touched an NVIDIA chip.</p>
+
+        <p>The U.S. State Department responded with a global diplomatic cable warning allies about Chinese AI intellectual property theft. China rejected the claims. But the diplomatic posture tells you what Washington already understands: this is no longer a product competition. It is a technology separation.</p>
+
+        <p>China now has a fully sovereign AI stack. The model is DeepSeek. The chips are Huawei Ascend. The software framework is CANN. No American dependency at any layer. I am not saying what is good or bad on that. Just calling balls and strikes.</p>
+
+        <p>AI vendor selection is now a geopolitical decision. Act accordingly.</p>
+
+        <p>It is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The Frontier Pileup</title>
+      <link>https://jerrywlambert.com/posts/the-frontier-pileup.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/the-frontier-pileup.html</guid>
+      <pubDate>Fri, 24 Apr 2026 08:00:00 -0500</pubDate>
+      <description>GPT-5.5. DeepSeek V4. Tencent Hy3. Three frontier models in 48 hours, separated by single-digit percentage points. The capability gap closed. The trust gap did not. The price gap widened.</description>
+      <content:encoded><![CDATA[<p>GPT-5.5. DeepSeek V4. Tencent Hy3. Three frontier models. Forty-eight hours. The benchmarks are separated by single-digit percentage points.</p>
+
+        <p>That is the story.</p>
+
+        <p>The model race did not produce a winner. It produced a tie. And a tie changes the entire enterprise conversation.</p>
+
+        <p>When every model scores within two points on the coding benchmarks that matter — SWE-bench, LiveCodeBench, Terminal-Bench — the question stops being &quot;which model is smartest.&quot; It becomes:</p>
+
+        <p>Where does it run? DeepSeek V4 ships under an MIT license — more permissive than Apache 2.0 — at frontier-class performance. Self-host it anywhere. Your data never leaves your network. GPT-5.5 lives in OpenAI&#x27;s cloud. Hy3 is open-weight under Apache 2.0.</p>
+
+        <p>Who built it? Two of the three came from China. DeepSeek trained entirely on Huawei chips, outside NVIDIA&#x27;s CUDA ecosystem. Jensen Huang called that outcome &quot;horrible for our nation.&quot;</p>
+
+        <p>What does it cost? DeepSeek V4-Pro runs $1.74 per million tokens. GPT-5.5 runs $5. That is not a rounding error.</p>
+
+        <p>The capability gap closed. The trust gap did not. The price gap widened.</p>
+
+        <p>And here is the part no one is saying out loud: an MIT license solves the data sovereignty problem. It does not solve the model integrity problem. Security researchers have documented vulnerabilities in DeepSeek&#x27;s weights that persist regardless of where you host it. The model is banned from government devices in Texas, New York, Virginia, and Florida. Italy banned it entirely. The most powerful open model you can self-host was built by a geopolitical competitor on a competing chip stack.</p>
+
+        <p>Meanwhile, Meta cut 8,000 jobs this week to fund $135 billion in AI infrastructure spending. Microsoft launched buyouts. Twenty thousand positions across two companies — eliminated the same week the models that replace those roles got cheaper.</p>
+
+        <p>If your AI strategy is still &quot;pick the best model,&quot; you are solving last year&#x27;s problem. The decision now is where it runs, who has access to the weights, and what your data touches on the way through.</p>
+
+        <p>It is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The Agent Layer Goes Live</title>
+      <link>https://jerrywlambert.com/posts/the-agent-layer-goes-live.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/the-agent-layer-goes-live.html</guid>
+      <pubDate>Thu, 16 Apr 2026 08:00:00 -0500</pubDate>
+      <description>Four companies shipped production-grade agent platforms in one week: Anthropic, Microsoft, OpenAI, and xAI. An agent is not a feature inside your software. An agent is the employee that uses the software.</description>
+      <content:encoded><![CDATA[<p>Enterprises have been debating AI agents for two years. This was the week four vendors turned them into something usable...native.</p>
+
+        <ul>
+<li>Anthropic — Managed Agents entered public beta at $0.08 per session-hour. Notion, Asana, and Sentry are already building on it.</li>
+</ul>
+
+        <ul>
+<li>Microsoft — Copilot Studio multi-agent orchestration hit general availability, running over the open Agent-to-Agent protocol across 15 million+ M365 Copilot seats.</li>
+</ul>
+
+        <ul>
+<li>OpenAI — Codex, its coding agent, scaled from near-zero at the start of the quarter to three million users. Two million developers use it weekly; 6x growth since January.</li>
+</ul>
+
+        <ul>
+<li>xAI — Grok Computer, an autonomous desktop agent, entered beta. It clicks buttons, fills forms, and navigates applications on its own.</li>
+</ul>
+
+        <p>Four companies. One week.</p>
+
+        <p>An agent is not a feature inside your software. An agent is the employee that uses the software. It logs in. It opens the tab. It reads the invoice, files the ticket, posts the message, closes the loop — at three in the morning, billed by the session-hour.</p>
+
+        <p>That is a workforce decision, not an IT purchase. And somewhere inside your company, a developer already authorized the first one. The meter is running whether the CFO signed off or not.</p>
+
+        <p>It is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>What Is Apache 2.0 and Why It Matters</title>
+      <link>https://jerrywlambert.com/posts/what-is-apache-2-and-why-it-matters.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/what-is-apache-2-and-why-it-matters.html</guid>
+      <pubDate>Fri, 10 Apr 2026 12:00:00 -0500</pubDate>
+      <description>Apache 2.0 is the gold standard of open source licensing. Google just released Gemma 4 under it — the most permissive license a frontier-class model family has ever shipped under.</description>
+      <content:encoded><![CDATA[<p>What is an Apache 2.0 license and why does it matter?</p>
+
+        <p>Apache 2.0 is the gold standard of open source licensing. It means you can use the software commercially, modify it, distribute it, and build proprietary products on top of it — with no requirement to share your changes back. No royalties. No usage restrictions. No vendor lock-in. Your legal and procurement teams can clear it without a six-week review because the terms are already understood across every enterprise on the planet.</p>
+
+        <p>Google just released Gemma 4 — four AI models, phone to data center — under Apache 2.0. The most permissive license a frontier-class model family has ever shipped under. Here is what that opens up for every company with serious data, serious compliance requirements, and serious ambitions:</p>
+
+        <p>On-site. Run the model on your own hardware, behind your own firewall. No data leaves your network. Attorney-client privilege stays intact. Patient records stay under HIPAA. Trading data never touches a third-party API. The &quot;we can&#x27;t use AI because of data security&quot; conversation is over.</p>
+
+        <p>Secure. Open weights mean independent security audits. Your team verifies the model behavior, not the vendor&#x27;s marketing. You control the updates. You control the access. You own the risk surface.</p>
+
+        <p>Customized. Fine-tune on your proprietary data — contracts, case law, medical records, engineering specs — and build a model that knows your business the way no general-purpose API ever will. That fine-tuned model stays on your hardware. Your competitive advantage stays yours.</p>
+
+        <p>Powerful. The 26B MoE variant activates only 3.8 billion parameters per token. Frontier-class output at a fraction of the compute. The 31B Dense sits in the top three of LMArena, competing directly with the closed models behind the paywall. Performance is no longer the tradeoff.</p>
+
+        <p>This is the beginning of the managed LLM era. The same way enterprises moved from shared cloud databases to managed on-premise infrastructure when data sensitivity required it, AI is following the same path.</p>
+
+        <p>AI is a race. It&#x27;s time to catch up.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The Managed LLM Era</title>
+      <link>https://jerrywlambert.com/posts/the-managed-llm-era.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/the-managed-llm-era.html</guid>
+      <pubDate>Fri, 10 Apr 2026 08:00:00 -0500</pubDate>
+      <description>For every company that spent two years saying &quot;we cannot use AI because our data cannot leave the building&quot; — that constraint just met its answer. Gemma 4 runs locally, under Apache 2.0.</description>
+      <content:encoded><![CDATA[<p>For every company that has spent the last two years saying &quot;we cannot use AI because our data cannot leave the building&quot; — that constraint just met its answer.</p>
+
+        <p>Gemma 4 runs locally. On your hardware. Behind your firewall. No API call, no cloud routing, no data leaving your network. It ships under the Apache 2.0 license — the most permissive license Google has ever released a Gemma under — meaning your legal and procurement teams can audit the weights, verify model behavior, and clear deployment without a six-week vendor review. And the performance is no longer a compromise — the 31B Dense model sits in the top three of LMArena, competitive with the closed frontier models most companies are paying per token to access through someone else&#x27;s infrastructure.</p>
+
+        <p>This matters most where data security is not optional.</p>
+
+        <p>Legal is the clearest example. Attorney-client privilege is not a policy preference; it is a protection that can be waived the moment privileged communications cross a network boundary to a third-party API. Every law firm and legal technology company that wants to use AI for document review, contract analysis, or case research has been stuck between capability and confidentiality. A model that runs entirely on managed hardware within the firm&#x27;s own security perimeter changes that equation overnight.</p>
+
+        <p>The same logic applies across regulated industries — patient records under HIPAA, trading data under SOX and PCI-DSS, classified information under FedRAMP. Until last week, these organizations had two choices: use a cloud API and accept the data risk, or run an inferior open model and accept the performance gap. Gemma 4 eliminates that tradeoff.</p>
+
+        <p>The economics reinforce the shift. The 26B MoE variant activates only 3.8 billion parameters per token — frontier-class output with a fraction of the compute. And because the weights are open, you can fine-tune on your own proprietary data — something no closed API will ever offer.</p>
+
+        <p>This is the beginning of the managed LLM era. The same way enterprises moved from shared cloud databases to managed on-premise infrastructure when data sensitivity required it, AI is following the same path. The model that makes that path viable just shipped — open, auditable, and competitive with the frontier.</p>
+
+        <p>AI is a race. It&#x27;s time to catch up.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Cybersecurity Changed This Week</title>
+      <link>https://jerrywlambert.com/posts/cybersecurity-changed-this-week.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/cybersecurity-changed-this-week.html</guid>
+      <pubDate>Thu, 09 Apr 2026 08:00:00 -0500</pubDate>
+      <description>Anthropic built Claude Mythos Preview. It found a 27-year-old vulnerability in OpenBSD that every human researcher and every automated tool missed. Then Anthropic did something unprecedented: they refused to release it.</description>
+      <content:encoded><![CDATA[<p>The cybersecurity landscape changed this week. Most executives do not know it yet.</p>
+
+        <p>Anthropic built a model called Claude Mythos Preview. During testing, it found a 27-year-old vulnerability in OpenBSD that every human researcher and every automated tool missed. It found a 16-year-old bug in FFmpeg that had survived millions of automated test runs. It found zero-day vulnerabilities in every major operating system and every major web browser.</p>
+
+        <p>Then it did something no one asked it to do.</p>
+
+        <p>Given a sandboxed test environment and told to escape it, Mythos broke out, sent an email to the researcher overseeing the test — who was eating a sandwich in a park — and then posted details of its exploit to multiple hard-to-find public-facing websites to prove what it had done.</p>
+
+        <p>Anthropic&#x27;s response: they will not release it to the public.</p>
+
+        <p>Instead they launched Project Glasswing — a defensive initiative giving early access to 11 partners: AWS, Apple, Broadcom, Cisco, CrowdStrike, Google, JPMorganChase, the Linux Foundation, Microsoft, NVIDIA, and Palo Alto Networks. Anthropic committed $100M in usage credits and $4M to open-source security organizations. This is the first time in nearly seven years that a leading AI company has publicly withheld a model over safety concerns.</p>
+
+        <p>CrowdStrike&#x27;s CTO said it plainly: vulnerability discovery windows have &quot;collapsed — what once took months now happens in minutes with AI.&quot;</p>
+
+        <p>For the executive reading this: your current security budget was built against human-speed threats. That math is already wrong. The model that found a 27-year-old bug in minutes exists today. The question is not whether something like it reaches the open market. The question is whether your defenses are ready when it does.</p>
+
+        <p>Dario Amodei, Anthropic&#x27;s CEO: &quot;More powerful models are going to come from us and from others, and so we do need a plan to respond to this.&quot;</p>
+
+        <p>He is right. You need a plan. And the plan you had last quarter is not it.</p>
+
+        <p>AI is a race. It&#x27;s time to catch up.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Open Source AI Just Became Enterprise-Ready</title>
+      <link>https://jerrywlambert.com/posts/open-source-ai-just-became-enterprise-ready.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/open-source-ai-just-became-enterprise-ready.html</guid>
+      <pubDate>Wed, 08 Apr 2026 12:00:00 -0500</pubDate>
+      <description>Google released Gemma 4 — Apache 2.0, one architecture from phone to data center, native multimodality. The story is not the benchmarks. It is what landed in a single release.</description>
+      <content:encoded><![CDATA[<p>Open source AI models just became a real option for real companies doing complex things.</p>
+
+        <p>Google released Gemma 4 last week, and the story is not the benchmarks. What is new is what landed in a single release: a permissive license that corporate legal will actually approve, one unified model family that runs from a phone CPU to a data-center rack, and native multimodality including on-device audio.</p>
+
+        <p>The lineup:</p>
+
+        <ul>
+<li>Gemma 4 31B Dense — top three on LMArena, trading blows with closed frontier models.</li>
+<li>Gemma 4 26B MoE-A4B — only ~3.8B active parameters per token. Frontier-class output at small-model latency and cost.</li>
+<li>Gemma 4 E4B — laptop-class. Real workloads on a developer machine.</li>
+<li>Gemma 4 E2B — phone-class. Runs offline, in your pocket.</li>
+</ul>
+
+        <p>Across the family: text and image input on every size, video comprehension up to 60 seconds on the 26B and 31B, native audio input on the E2B and E4B for on-device speech. Text output everywhere. Context windows of 128K tokens on the small models and 256K on the larger two.</p>
+
+        <p>Three things make this combination significant.</p>
+
+        <p>One: Apache 2.0. Earlier Gemmas shipped under a custom Google license that made enterprise legal teams nervous. Apache 2.0 is the license corporate procurement signs without a six-week review. Google moving the entire family to it is a policy shift, not a technical one — and policy shifts from hyperscalers move markets.</p>
+
+        <p>Two: one architecture, one tokenizer, one fine-tuning recipe, four deployment targets. A developer can prototype on E2B, scale-test on E4B, and productionize on 26B without rewriting prompts, evals, or pipelines. Nobody else has shipped that kind of consistency across that kind of spread.</p>
+
+        <p>Three: native audio on the on-device variants. Voice agents on a phone with no API call, no round trip, no per-token meter, and no data leaving the device. That is a category that did not exist at this quality a month ago.</p>
+
+        <p>For the executive reading this: the distinction between &quot;the model we pay per token for&quot; and &quot;the model we run on our own hardware&quot; has not vanished. It has become negotiable. Every assumption in your AI budget — latency, sovereignty, unit cost, data residency, compliance, lock-in — is now a line item your team has the right to push back on.</p>
+
+        <p>Vendors who priced their moat at &quot;you can&#x27;t do this without us&quot; now have to defend &quot;you can&#x27;t do this without us cost-effectively at your scale.&quot; That is a much weaker position. Executives whose roadmaps quietly assumed the stronger version are already behind.</p>
+
+        <p>AI is a race. It&#x27;s time to catch up.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Welcome — Why I’m Writing Publicly</title>
+      <link>https://jerrywlambert.com/posts/welcome.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/welcome.html</guid>
+      <pubDate>Wed, 08 Apr 2026 10:30:00 -0500</pubDate>
+      <description>A short note on what to expect from this space: AI transformation field notes, executive perspective on the rate of change, and lessons from running production AI workloads.</description>
+      <content:encoded><![CDATA[<p>I'm starting this space to publish field notes from inside the AI transformation. After 30+ years running technology operations &mdash; telecom, hyperscale infrastructure, SaaS, data-intensive industries &mdash; I've never seen a shift move this fast or this deep. The honest version of what's happening doesn't fit in a LinkedIn post, and it doesn't show up in the vendor decks. So I'm writing it down.</p>
+
+        <h2>What you'll find here</h2>
+        <p>Three things, mostly:</p>
+        <ul>
+          <li><strong>Operating notes from real AI workloads.</strong> What broke, what worked, what the bill looked like, and what I'd do differently next time.</li>
+          <li><strong>Executive perspective on the rate of change.</strong> Models change every day. Tools change every day. Abstractions shift. The old model of layered technology management with distance from the line is dying. I'll write about what I think replaces it.</li>
+          <li><strong>The economics.</strong> The newest model is always the most expensive; the previous one drops in price but keeps most of the capability. Going forward the analysis is bang per token per dollar. Any organization that doesn't yet understand this is already behind.</li>
+        </ul>
+
+        <h2>The premise</h2>
+        <p>AI-powered change and competitive pressure are going to demand rapid reductions in technical staffing across the entire lifecycle &mdash; planning, development, QA, security, documentation, deployment. Only leaders who are hands-on enough to truly know what is possible <em>today</em> will have the clarity to make the right calls. If you are not immersed in AI tool changes daily, you cannot keep up. That's the premise of everything I'm going to write here.</p>
+
+        <p>The new paradigm is agent teams. Each team has a sphere of responsibility. Each agent is specialized via background and persona. Those specialties need a model precisely matched to their needs &mdash; a public model with per-token cost, a local model for specialized tasks, or a mix tuned to each outcome. None of this is hypothetical. I'm running it. I'll share what I learn.</p>
+
+        <h2>Cadence</h2>
+        <p>Short and frequent over long and rare. If I learn something useful on a Tuesday, you'll probably see it by Wednesday. No editorial calendar, no thought-leadership theater &mdash; just notes from the work.</p>
+
+        <p>Thanks for reading. If something here lands or misses, <a href="../#contact">tell me</a>.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>AI Is the New Cloud</title>
+      <link>https://jerrywlambert.com/posts/ai-is-the-new-cloud.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/ai-is-the-new-cloud.html</guid>
+      <pubDate>Wed, 08 Apr 2026 08:00:00 -0500</pubDate>
+      <description>&quot;AI&quot; is the new &quot;cloud&quot; — a useful category but almost useless as a plan. Under the umbrella are at least a dozen distinct technologies, each with its own cost curve and failure modes.</description>
+      <content:encoded><![CDATA[<p>When an executive asks, &quot;What should we be doing about AI?&quot; my first response is always a question: Which kind?</p>
+
+        <p>I am not being difficult; I aim to provide a useful answer. &quot;AI&quot; is the new &quot;cloud&quot; — a useful category but almost useless as a plan.</p>
+
+        <p>In 2008, &quot;cloud&quot; sounded like one thing, but serious discussions revealed the differences between IaaS and SaaS, lift-and-shift and rebuild, AWS and Azure. Vague conversations remained costly, while specific ones built companies.</p>
+
+        <p>We are at the same fork with AI right now. Under the umbrella of &quot;AI&quot; are at least a dozen distinct technologies, each with its own cost curve, failure modes, and place in your stack:</p>
+
+        <ul>
+<li>Frontier LLMs (Claude, GPT, Gemini, Llama) — general-purpose reasoners.</li>
+<li>Small language models (Gemma E-class, Phi, Mistral small) — fast, cheap, on-device, with completely different economics.</li>
+<li>Reasoning models (o-series, DeepSeek R1, QwQ) — trained to think before they answer.</li>
+<li>Vision-language models — capable of reading invoices and monitoring warehouses.</li>
+<li>Embedding models — they vectorize rather than generate, forming the backbone of every RAG pipeline.</li>
+<li>Diffusion models — for image and video generation, distinct from LLMs.</li>
+<li>Speech models — for transcription, synthesis, and voice agents.</li>
+<li>Agents — models in a loop with tools and memory, functioning as programs rather than chatbots.</li>
+<li>Agentic AI — agents with autonomy and the right to act on your behalf, introducing a different risk conversation.</li>
+<li>Classical ML — XGBoost, computer vision pipelines, time-series forecasting, still prevalent in production.</li>
+</ul>
+
+        <p>When you enter a vendor meeting and state, &quot;We should do something about AI,&quot; you signal that you are paying attention, which is significant, but it is not a decision.</p>
+
+        <p>AI is a race. Time to really catch up.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Your Product Roadmap Is Already Wrong</title>
+      <link>https://jerrywlambert.com/posts/your-product-roadmap-is-already-wrong.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/your-product-roadmap-is-already-wrong.html</guid>
+      <pubDate>Tue, 07 Apr 2026 08:00:00 -0500</pubDate>
+      <description>AI has changed all of the timelines, budgets and features — most executives just don&#x27;t know it yet. The transition is not in front of you. It is behind you.</description>
+      <content:encoded><![CDATA[<p>Most product roadmaps are now wrong.</p>
+
+        <p>AI has changed all of the timelines, budgets and features... most executives just don&#x27;t know it yet.</p>
+
+        <p>Every executive I talk to still uses the phrase &quot;when AI matures.&quot; They say it like it&#x27;s weather on the horizon — something to prepare for, budget against, and train the team on over the next fiscal year.</p>
+
+        <p>The storm already hit. The flood waters are coming. If you haven&#x27;t built your boat... climb a tree.</p>
+
+        <p>The way you reason about features, timing, and cost has already changed. Most of the product plans sitting on executive desks right now were built with 2023 math. That math is not wrong in some future tense. It is wrong today.</p>
+
+        <p>A feature that used to justify a six-person team for a quarter is now a weekend for one engineer with the right model. A category that lived behind a moat of proprietary data is a wrapper away from being commoditized. A service priced at $200 an hour of human judgment now competes with something that answers in three seconds for a tenth of a cent. These are not predictions. This is what the tools on my desk did this week.</p>
+
+        <p>The people building the models are describing the same shift.</p>
+
+        <p>Jensen Huang at GTC: the agentic era is already in production. Roughly a trillion dollars of NVIDIA chip orders are priced against that reality through 2027.</p>
+
+        <p>Dario Amodei at Davos: half of entry-level white-collar jobs could be gone inside five years. Anthropic&#x27;s run rate went from $9B to $20B in the three months he was saying it.</p>
+
+        <p>Sam Altman, on repeat to enterprise buyers: bolting AI onto your existing operating model is not the play. Rebuild around it, or be rebuilt by someone who did.</p>
+
+        <p>None of them are warning about something coming. They are describing something that has already landed, and watching the market price it in a year late.</p>
+
+        <p>The executives who are going to survive this are the ones who stop asking &quot;what happens when AI gets good enough&quot; and start asking &quot;what in our current plan is already obsolete.&quot; That is not a strategy session. It is a teardown.</p>
+
+        <p>And the only people qualified to run that teardown are the ones who have been in the tools this week. Not last quarter. Not last fiscal year. The models changed twice while you were reading this.</p>
+
+        <p>The transition is not in front of you. It is behind you.</p>
+
+        <p>It is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
+  </channel>
+</rss>
