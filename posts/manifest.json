@@ -1,5 +1,11 @@
 [
   {
+    "slug": "ais-dsp-moment",
+    "title": "AI's DSP Moment",
+    "date": "2026-06-25T08:00:00-05:00",
+    "excerpt": "In 1983 the industry pulled signal math off the general CPU onto cheap, purpose-built DSP chips. AI is running that playbook again — at the chip layer and the model layer. Granular specialization is coming."
+  },
+  {
     "slug": "your-vendor-has-a-landlord",
     "title": "Your Vendor Has a Landlord",
     "date": "2026-06-22T08:00:00-05:00",
