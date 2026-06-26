@@ -6,7 +6,27 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jun 2026 14:26:21 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2026 13:52:55 +0000</lastBuildDate>
+    <item>
+      <title>AI Is the New Transaction Economy</title>
+      <link>https://jerrywlambert.com/posts/ai-is-the-new-transaction-economy.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/ai-is-the-new-transaction-economy.html</guid>
+      <pubDate>Fri, 26 Jun 2026 08:00:00 -0500</pubDate>
+      <description>For thirty years we bought software by the seat. AI is ending that. Value is now priced per action, per token, per resolution — and agents are starting to pay each other.</description>
+      <content:encoded><![CDATA[<p>Somewhere in the last hour, one AI agent paid another a fraction of a cent. No invoice. No human in the loop. No card swipe.</p>
+
+        <p>For thirty years we bought software by the seat. That era is ending. AI is not just a tool you license &mdash; it is a transaction economy you operate inside, priced by the action, the token, and the result.</p>
+
+        <p>The plumbing is being laid in public. Two weeks ago Mastercard launched Agent Pay for Machines: a protocol for agents to pay each other autonomously, in amounts smaller than a single cent, with thirty-one partners from Stripe to Coinbase. Stripe has rebuilt its own stack as &quot;the economic infrastructure for AI.&quot; And on its last earnings call, NVIDIA stopped talking about chips and started talking about tokens &mdash; inference is the revenue, and cost-per-token is the unit.</p>
+
+        <p>The pricing model is flipping with it. Salesforce is moving from charging for a seat to charging when its agent actually resolves the case. Intercom already bills ninety-nine cents per resolution. You pay for the outcome, not the login.</p>
+
+        <p>Here is what the announcements gloss over. The rails are being built faster than the demand has arrived &mdash; OpenAI quietly pulled back its in-chat checkout this spring. The transaction economy is not fully here yet. But the unit of value has already changed.</p>
+
+        <p>If you still budget AI by seats and annual licenses, you are using a subscription mental model to price a metered world. Re-architect the budget before the meter does it for you.</p>
+
+        <p>It is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
     <item>
       <title>AI&#x27;s DSP Moment</title>
       <link>https://jerrywlambert.com/posts/ais-dsp-moment.html</link>
