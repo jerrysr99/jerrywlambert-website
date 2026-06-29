@@ -6,7 +6,31 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Jun 2026 13:52:55 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 14:29:30 +0000</lastBuildDate>
+    <item>
+      <title>Every Vendor Counts Tokens Differently</title>
+      <link>https://jerrywlambert.com/posts/every-vendor-counts-tokens-differently.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/every-vendor-counts-tokens-differently.html</guid>
+      <pubDate>Mon, 29 Jun 2026 09:30:00 -0500</pubDate>
+      <description>The same prompt is a different invoice on every AI vendor. Each one tokenizes differently, so multi-model bills can&#x27;t be reconciled. AI is priced per token before anyone agreed what a token is.</description>
+      <content:encoded><![CDATA[<p>Send the exact same prompt to three AI vendors and you get back three different token counts. Three different invoices. For the same words.</p>
+
+        <p>That isn't a rounding error. It's the unit itself.</p>
+
+        <p>Every vendor tokenizes differently. OpenAI uses one scheme, Google another, Anthropic its own. The same paragraph can be 20% more tokens on one platform than another &mdash; and on two of the big three you can't even count it yourself before you send it. You learn the real number from the bill.</p>
+
+        <p>It gets worse downstream. Output costs three to six times input. Reasoning models bill you for &quot;thinking&quot; tokens you never see in the response. Caching is a different line item at every vendor. So when finance tries to tie a usage log to an invoice across vendors, the numbers don't meet &mdash; because the unit doesn't.</p>
+
+        <p>I've run large cost programs. You cannot manage what you cannot reconcile.</p>
+
+        <p>The discipline whose entire job is making bills tie out just said the same thing out loud. This month the FinOps Foundation shipped its first standard built for invoice reconciliation &mdash; and openly punted AI token tracking to a later version due in December. The same week, the Linux Foundation launched a new effort just to standardize the economics of AI. 98% of FinOps teams now manage AI spend. Two years ago it was 31%.</p>
+
+        <p>Here's the edge. We priced AI by the token before anyone agreed what a token is. If value is metered per token but the token isn't fungible across vendors, every multi-model bill is a reconciliation problem by design.</p>
+
+        <p>Don't standardize on one vendor to make the math easy. Standardize your own unit of value &mdash; cost per task, per resolution, per outcome &mdash; and make every vendor map to it.</p>
+
+        <p>AI is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
     <item>
       <title>AI Is the New Transaction Economy</title>
       <link>https://jerrywlambert.com/posts/ai-is-the-new-transaction-economy.html</link>
