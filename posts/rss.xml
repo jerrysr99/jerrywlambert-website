@@ -6,7 +6,29 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 Jun 2026 10:49:57 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jun 2026 22:30:56 +0000</lastBuildDate>
+    <item>
+      <title>Sonnet 5 Dropped Today. Read the Curve.</title>
+      <link>https://jerrywlambert.com/posts/sonnet-5-dropped-today.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/sonnet-5-dropped-today.html</guid>
+      <pubDate>Tue, 30 Jun 2026 17:30:00 -0500</pubDate>
+      <description>Claude Sonnet 5&#x27;s real story isn&#x27;t that it&#x27;s smarter — it&#x27;s that last quarter&#x27;s flagship capability is now the cheap default, tuned to run agents autonomously. The floor price for agent-grade work just dropped.</description>
+      <content:encoded><![CDATA[<p>The most important thing about Claude Sonnet 5, shipped this morning, is not that it's smarter. It's that it's cheap &mdash; and it runs agents.</p>
+
+        <p>For two years the rule was simple. The cheap model was for chat. The flagship did the real work. You paid premium rates for anything that planned, used tools, or ran on its own.</p>
+
+        <p>That line just moved. Sonnet 5 is now the default model on the free and Pro tiers, priced at two dollars per million input tokens at launch. Anthropic says it performs near its flagship Opus on the work that actually matters &mdash; reasoning, coding, tool use &mdash; and it's the most autonomous Sonnet they've built. It plans, it drives a browser and a terminal, it runs unattended.</p>
+
+        <p>Here's the part the spec sheet buries. They also tuned it to misbehave less while running autonomously &mdash; fewer deceptive moves, less cooperation with misuse. That's not a chat feature. That's a signal that the primary customer for a model release is no longer a person typing. It's an agent working.</p>
+
+        <p>The press is calling it &quot;a cheaper way to run agents.&quot; True, but small. Read the curve instead: the capability you rented at flagship prices last quarter is the free default this quarter. That happens every few months now, and it's accelerating.</p>
+
+        <p>So the question for your AI budget isn't &quot;do we upgrade to the new frontier model.&quot; It's &quot;what are we still paying flagship rates for that the default tier now handles?&quot; Most teams never re-ask that. They buy the top SKU once and stop looking.</p>
+
+        <p>Audit the floor, not just the ceiling. It's rising faster than your contract.</p>
+
+        <p>AI is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
     <item>
       <title>The $638 Billion IOU</title>
       <link>https://jerrywlambert.com/posts/the-638-billion-iou.html</link>
