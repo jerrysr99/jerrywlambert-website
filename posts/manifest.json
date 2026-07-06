@@ -1,5 +1,11 @@
 [
   {
+    "slug": "i-should-have-caught-that",
+    "title": "\"I Should Have Caught That\"",
+    "date": "2026-07-06T08:00:00-05:00",
+    "excerpt": "I run production Claude Opus 4.8 code through a different frontier model, Fable 5, for review. It finds real issues — and Opus itself concedes the miss. No model should grade its own homework. Put a rival model in the loop."
+  },
+  {
     "slug": "sonnet-5-dropped-today",
     "title": "Sonnet 5 Dropped Today. Read the Curve.",
     "date": "2026-06-30T17:30:00-05:00",

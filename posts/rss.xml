@@ -6,7 +6,31 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 Jun 2026 22:30:56 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2026 17:07:23 +0000</lastBuildDate>
+    <item>
+      <title>&quot;I Should Have Caught That&quot;</title>
+      <link>https://jerrywlambert.com/posts/i-should-have-caught-that.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/i-should-have-caught-that.html</guid>
+      <pubDate>Mon, 06 Jul 2026 08:00:00 -0500</pubDate>
+      <description>I run production Claude Opus 4.8 code through a different frontier model, Fable 5, for review. It finds real issues — and Opus itself concedes the miss. No model should grade its own homework. Put a rival model in the loop.</description>
+      <content:encoded><![CDATA[<p>For the last few weeks I've been running production code written by Claude Opus 4.8 through a different frontier model, Fable 5, for review.</p>
+
+        <p>It keeps finding real problems. Not style nits. Actual issues in shipping code.</p>
+
+        <p>Then I hand the review back to Opus. The reply is almost always the same three words. &quot;Agreed. I should have caught that.&quot; Followed by: these reviews are worth your time.</p>
+
+        <p>Sit with that. The model that wrote the code, shown a second model's critique, concedes the miss. Not once. As a pattern.</p>
+
+        <p>Here is the lesson, and it is old. No one should grade their own homework. That has been true of humans forever, and it is just as true of models. A model's blind spots are baked in by its own training. Ask it to review its own work and it brings the same blind spots to the review. Ask a model from a different lineage, and you get genuinely independent eyes. Different training, different failure modes, different things caught.</p>
+
+        <p>I have said for a while that you keep independent eyes on the architecture. This is that principle at the code line. One model builds. A rival model reviews. A human decides.</p>
+
+        <p>The research is catching up to what operators are already doing. Cross-model review is now a formal study topic. There are benchmarks for it. But you do not need a paper to run the experiment. You need two accounts and a habit.</p>
+
+        <p>So here is the cheap, immediate edge. Stop shipping single-model output straight to production. Put a second frontier model in the loop as the reviewer, and make it one from a different house. The cost is a few tokens. The catch rate is real. Your own AI will tell you so.</p>
+
+        <p>AI is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Sonnet 5 Dropped Today. Read the Curve.</title>
       <link>https://jerrywlambert.com/posts/sonnet-5-dropped-today.html</link>
