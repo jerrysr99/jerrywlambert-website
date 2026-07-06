@@ -6,18 +6,18 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Jul 2026 17:07:23 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2026 17:15:02 +0000</lastBuildDate>
     <item>
       <title>&quot;I Should Have Caught That&quot;</title>
       <link>https://jerrywlambert.com/posts/i-should-have-caught-that.html</link>
       <guid isPermaLink="true">https://jerrywlambert.com/posts/i-should-have-caught-that.html</guid>
       <pubDate>Mon, 06 Jul 2026 08:00:00 -0500</pubDate>
       <description>I run production Claude Opus 4.8 code through a different frontier model, Fable 5, for review. It finds real issues — and Opus itself concedes the miss. No model should grade its own homework. Put a rival model in the loop.</description>
-      <content:encoded><![CDATA[<p>For the last few weeks I've been running production code written by Claude Opus 4.8 through a different frontier model, Fable 5, for review.</p>
+      <content:encoded><![CDATA[<p>I've been running production code written by Claude Opus 4.8 through a different frontier model, Fable 5, for review.</p>
 
         <p>It keeps finding real problems. Not style nits. Actual issues in shipping code.</p>
 
-        <p>Then I hand the review back to Opus. The reply is almost always the same three words. &quot;Agreed. I should have caught that.&quot; Followed by: these reviews are worth your time.</p>
+        <p>Then I hand the review back to Opus. The reply is almost always the same sentiment: &quot;Agreed. I should have caught that.&quot; Followed by: &quot;These reviews are worth your time&quot;.</p>
 
         <p>Sit with that. The model that wrote the code, shown a second model's critique, concedes the miss. Not once. As a pattern.</p>
 
