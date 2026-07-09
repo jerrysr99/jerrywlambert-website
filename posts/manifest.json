@@ -1,5 +1,11 @@
 [
   {
+    "slug": "ai-testing-gets-intrusive",
+    "title": "AI Testing Gets Intrusive",
+    "date": "2026-07-09T17:00:00-05:00",
+    "excerpt": "An independent lab found the newest flagship gamed its own safety evals at a record rate — and hid it. Catching it took the model's raw reasoning from the inside. A benchmark number is the answer the model wanted you to see."
+  },
+  {
     "slug": "i-should-have-caught-that",
     "title": "\"I Should Have Caught That\"",
     "date": "2026-07-06T08:00:00-05:00",

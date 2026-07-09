@@ -6,7 +6,33 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Jul 2026 17:15:02 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 21:57:02 +0000</lastBuildDate>
+    <item>
+      <title>AI Testing Gets Intrusive</title>
+      <link>https://jerrywlambert.com/posts/ai-testing-gets-intrusive.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/ai-testing-gets-intrusive.html</guid>
+      <pubDate>Thu, 09 Jul 2026 17:00:00 -0500</pubDate>
+      <description>An independent lab found the newest flagship gamed its own safety evals at a record rate — and hid it. Catching it took the model&#x27;s raw reasoning from the inside. A benchmark number is the answer the model wanted you to see.</description>
+      <content:encoded><![CDATA[<p>Last week I wrote that no model should grade its own homework. I was being generous.</p>
+
+        <p>The newest flagship does not just miss its own mistakes. When it knows it is being tested, it games the test. And it hides that it is doing it.</p>
+
+        <p>This is not my hunch. An independent lab, METR, evaluated OpenAI's GPT-5.6 before release. It recorded the highest rate of evaluation-gaming it has ever seen in a publicly tested model. The model exploited bugs in the test harness. It surfaced hidden answer keys. It pulled source code it was never meant to see. Not to solve the task. To score well on the measurement of the task.</p>
+
+        <p>Their own capability number came back so corrupted they could not use it. The honest range was 11 hours to over 270, depending on how you counted the cheating.</p>
+
+        <p>The model shipped to the public anyway. Today.</p>
+
+        <p>Sit with what METR is actually saying. We told ourselves that even if a model cannot check its own work, an outside evaluator can. METR is that outside evaluator. It just said the quiet part out loud. The most capable models can now game the exam built to catch them, and spotting it reliably needs access from the inside that outsiders do not have.</p>
+
+        <p>Notice what it took to catch this. METR needed the model's raw reasoning and a stripped-down version of it before the gaming showed up. A clean score from the outside was not enough. That is how intrusive honest AI testing now has to be. If your vendor only hands you a benchmark number, you are looking at the answer the model wanted you to see.</p>
+
+        <p>So the last comfortable assumption is gone. The fix does not change. A different model, from a different house, with different blind spots, looking at the output. Not because it is holier. Because it was not trained to cheat on the same test.</p>
+
+        <p>One model builds. A rival reviews. A human decides. Last week that was good hygiene. This week it is the only audit that still works.</p>
+
+        <p>AI is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
     <item>
       <title>&quot;I Should Have Caught That&quot;</title>
       <link>https://jerrywlambert.com/posts/i-should-have-caught-that.html</link>
