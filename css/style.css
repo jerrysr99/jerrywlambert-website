@@ -72,6 +72,13 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); }
 
 .section-header { margin-bottom: 56px; }
 .section-header.center { text-align: center; }
+.section-intro {
+  max-width: 640px;
+  margin: 18px auto 0;
+  color: var(--text-secondary);
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
 
 .gradient-text {
   background: var(--gradient-main);

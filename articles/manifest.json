@@ -1,0 +1,14 @@
+[
+  {
+    "file": "Enterprise_AI_Accountability_Framework.pdf",
+    "title": "The Enterprise AI Accountability Framework",
+    "date": "2026-07-15T15:15:00-05:00",
+    "excerpt": "The accounting plane for enterprise AI. Introduces the Token Detail Record (TDR), the heir to telecom's Call Detail Record, and the Proxy of Record (POR): an independent, per-event, rated ledger of AI consumption you can reconcile against the vendor invoice, govern, and prove."
+  },
+  {
+    "file": "The_Agent_Control_Plane.pdf",
+    "title": "The Agent Control Plane",
+    "date": "2026-07-15T15:16:00-05:00",
+    "excerpt": "The signaling plane for enterprise AI. Treats dispersed specialized agents as a network, not a function call, and adapts telecom's control and data plane split (ASP, ALS, ABC, Agent Bearer, SigMod) to establish, route, negotiate, and govern agent sessions."
+  }
+]
