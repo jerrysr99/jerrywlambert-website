@@ -6,7 +6,27 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jul 2026 17:18:24 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2026 19:43:00 +0000</lastBuildDate>
+    <item>
+      <title>The Differences That Don&#x27;t Show</title>
+      <link>https://jerrywlambert.com/posts/the-differences-that-dont-show.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/the-differences-that-dont-show.html</guid>
+      <pubDate>Wed, 15 Jul 2026 08:00:00 -0500</pubDate>
+      <description>Two AI models can share a price and a benchmark score and still cost very differently to run. The differences that decide cost and reliability moved off the spec sheet. Are you still choosing by it?</description>
+      <content:encoded><![CDATA[<p>Two AI models can carry the same price, post nearly the same benchmark score, and still cost you very differently to run. Most executives never see the gap. They are comparing the two things that no longer decide it.</p>
+
+        <p>We used to pick models the way we pick laptops. Look at the spec, check the benchmark, take the leader. That worked while models were a straight capability race and everyone was climbing the same ladder.</p>
+
+        <p>The ladder flattened. The frontier models are now close enough on raw capability that the differences that matter moved somewhere the spec sheet does not go. How many tokens a model burns to finish a real job. How many steps it takes to get there. Whether it wanders or converges. How it behaves when it runs unattended for an hour. Two models that look identical on paper can differ three or four times over on the only thing you actually pay for, which is the finished task, not the token.</p>
+
+        <p>This month made it plain. The new releases did not lead with "we are smarter." They led with efficiency and behavior. When the vendors stop bragging about the leaderboard and start bragging about how little they waste, they are telling you where the competition moved.</p>
+
+        <p>Here is the edge. The differences that matter now are operational, and none of them are on the page the vendor hands you. You find them one way. Run the model on your own work, in your own stack, and measure what it costs to finish.</p>
+
+        <p>The spec sheet is now the least interesting thing about a model. Are you still choosing by it?</p>
+
+        <p>AI is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Nvidia Now Finances the Mine</title>
       <link>https://jerrywlambert.com/posts/nvidia-now-finances-the-mine.html</link>
