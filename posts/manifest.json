@@ -1,5 +1,11 @@
 [
   {
+    "slug": "your-prompts-are-not-private",
+    "title": "Your Prompts Are Not Private",
+    "date": "2026-07-17T14:00:00-05:00",
+    "excerpt": "On a company device, an AI prompt has the same privacy as a work email: effectively none. Companies monitor the machines they own, and the tooling is moving to the prompt. Write every prompt as if it will be read back to you."
+  },
+  {
     "slug": "the-differences-that-dont-show",
     "title": "The Differences That Don't Show",
     "date": "2026-07-15T08:00:00-05:00",

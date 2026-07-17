@@ -6,7 +6,27 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jul 2026 19:43:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 20:11:58 +0000</lastBuildDate>
+    <item>
+      <title>Your Prompts Are Not Private</title>
+      <link>https://jerrywlambert.com/posts/your-prompts-are-not-private.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/your-prompts-are-not-private.html</guid>
+      <pubDate>Fri, 17 Jul 2026 14:00:00 -0500</pubDate>
+      <description>On a company device, an AI prompt has the same privacy as a work email: effectively none. Companies monitor the machines they own, and the tooling is moving to the prompt. Write every prompt as if it will be read back to you.</description>
+      <content:encoded><![CDATA[<p>You open an AI assistant on your work laptop and start typing. It feels like a private conversation. A place to think out loud, paste the messy draft, ask the question you would not ask in a meeting.</p>
+
+        <p>It is not private. On a company device, it never was.</p>
+
+        <p>Companies run monitoring built to see everything that happens on the machines they own. That is not a side effect. It is the entire purpose. The same net that watches for malware and leaked files watches the box you are typing your prompts into. And that tooling is moving to the prompt itself, on purpose, because the prompt is where the sensitive data now goes.</p>
+
+        <p>The law settled this a long time ago. On company hardware you have no reasonable expectation of privacy. The acceptable-use policy you clicked through is your consent. This is not new, and it is not a gray area.</p>
+
+        <p>Here is the part people miss. Even if your employer never looks, the AI vendor keeps the prompt. Deleted does not always mean deleted. Prompts have already been pulled into court. Your words live in at least two places, and neither one of them is you.</p>
+
+        <p>None of this is a complaint. It is the arrangement you already agreed to. But if you are an employee, write every prompt as if it will be read back to you, because it can be. And if you run the company, know what your people are actually pasting into these tools. Customer records. Financials. Strategy. The risk is not the tool. It is the payload, and the belief that the box is private.</p>
+
+        <p>AI is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
     <item>
       <title>The Differences That Don&#x27;t Show</title>
       <link>https://jerrywlambert.com/posts/the-differences-that-dont-show.html</link>
