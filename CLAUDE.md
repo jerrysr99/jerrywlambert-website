@@ -1,7 +1,7 @@
 # jerrywlambert.com
 
 Personal website hosted on GitHub Pages. Repo: `jerrysr99/jerrywlambert-website`.
-Deploy: edit locally, `git push origin main`, auto-deploys in 2-3 min.
+Deploy: edit locally, `git push github main` (NOT origin — origin is the awsgit archive and does NOT deploy; GitHub Pages only watches the github remote). Auto-deploys in 2-3 min.
 
 ## Sync: Foundation Models from ai-proxy Registry
 
