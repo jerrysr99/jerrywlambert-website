@@ -6,7 +6,31 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Jul 2026 20:11:58 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2026 15:01:36 +0000</lastBuildDate>
+    <item>
+      <title>The New Spread. 178x the Cost, Same Million Tokens.</title>
+      <link>https://jerrywlambert.com/posts/the-new-spread.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/the-new-spread.html</guid>
+      <pubDate>Mon, 20 Jul 2026 10:00:00 -0500</pubDate>
+      <description>The floor halved and the frontier doubled: DeepSeek V4 Flash at $0.28 per million output tokens, Fable 5 at $50. A 178x spread, and the capability gap is not 178x. Don&#x27;t pay Einstein to summarize your emails.</description>
+      <content:encoded><![CDATA[<p>The price-per-token gap is widening. And it is real money.</p>
+
+        <p>In April, DeepSeek cut its output price in half. V4 Flash now runs $0.28 per million tokens and carries a million-token context window. In June, Anthropic priced its new flagship, Fable 5, at $50 per million &mdash; double the Opus tier below it.</p>
+
+        <p>The floor halved. The frontier doubled. The spread between the cheapest capable token and the most expensive one went from roughly 45x to roughly 178x. In six weeks.</p>
+
+        <p>Run it at scale. A billion output tokens costs $280 on one side of that spread and $50,000 on the other. A company pushing ten billion tokens a year through the wrong model is donating half a million dollars for capability it never used.</p>
+
+        <p>Here is the part the invoice does not show. The capability gap is real &mdash; Fable 5 sits at the top of the independent intelligence indexes and Flash is nowhere close. But the capability gap is not 178x. Most enterprise token volume is summarizing, extracting, classifying, drafting, routine code. Work the cheap tier finishes just fine.</p>
+
+        <p>Don't pay Einstein to summarize your emails.</p>
+
+        <p>The winning posture is not the smart model or the cheap one. It is routing: frontier tokens for frontier problems, floor tokens for everything else &mdash; and measuring on your own work which is which.</p>
+
+        <p>Both ends of this spread will keep moving apart. The companies that treat every token as the same token are the ones funding the difference.</p>
+
+        <p>AI is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Your Prompts Are Not Private</title>
       <link>https://jerrywlambert.com/posts/your-prompts-are-not-private.html</link>
