@@ -6,7 +6,29 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Jul 2026 15:01:36 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 15:34:41 +0000</lastBuildDate>
+    <item>
+      <title>They Are Selling Tokens</title>
+      <link>https://jerrywlambert.com/posts/they-are-selling-tokens.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/they-are-selling-tokens.html</guid>
+      <pubDate>Mon, 20 Jul 2026 12:00:00 -0500</pubDate>
+      <description>Agentic development burns tokens agent-to-agent with no budget in the loop — a boon to whoever sells tokens, whether your project succeeds or fails. They are selling shovels to miners with stars in their eyes. Give the loop a budget.</description>
+      <content:encoded><![CDATA[<p>Remember: they aren't selling solutions. They are selling tokens.</p>
+
+        <p>Agentic development is the token seller's dream. Agents planning, delegating, retrying, reviewing each other's work &mdash; every step of that machine-to-machine conversation is billed by the token, and nothing inside the loop has a budget. The vendor gets paid whether the swarm ships value or ships noise.</p>
+
+        <p>The numbers are not hidden. Anthropic's own engineering team reports that a single agent burns about 4x the tokens of a chat, and a multi-agent system burns about 15x. The same write-up found token usage alone explains 80 percent of the performance variance. Read that as a business model: the product gets better by consuming more of the thing they sell. Nvidia has already told investors that inference is revenue, priced per token. And Gartner projects that more than 40 percent of agentic AI projects will be canceled by the end of 2027 &mdash; escalating costs and unclear business value leading the reasons.</p>
+
+        <p>Here is the line that should stop you: the canceled projects and the successful ones pay the same bill.</p>
+
+        <p>This is the oldest trade in the book &mdash; selling shovels to miners with stars in their eyes. Except the shovel used to be a one-time purchase. This one bills by the swing.</p>
+
+        <p>The fix is not avoiding agents. I run them every day, and they produce. The fix is giving the loop the one thing the vendor never will: a budget. A token cap per task. A cost per finished outcome. A kill rule for loops that wander.</p>
+
+        <p>Their meter runs on activity. Yours runs on outcomes. Never confuse the two.</p>
+
+        <p>AI is a race. Time to catch up.</p>]]></content:encoded>
+    </item>
     <item>
       <title>The New Spread. 178x the Cost, Same Million Tokens.</title>
       <link>https://jerrywlambert.com/posts/the-new-spread.html</link>
