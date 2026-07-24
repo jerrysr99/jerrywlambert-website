@@ -1,5 +1,11 @@
 [
   {
+    "slug": "same-result-12x-the-cost",
+    "title": "Same Result, 12x The Cost",
+    "date": "2026-07-20T13:00:00-05:00",
+    "excerpt": "Evaluating one image on Opus 4.8 cost me 12 times what it cost on Haiku — for a result I could not tell apart. The gap that drains your AI budget is sitting inside the vendor you already use. Pick the smallest model that does the job."
+  },
+  {
     "slug": "they-are-selling-tokens",
     "title": "They Are Selling Tokens",
     "date": "2026-07-20T12:00:00-05:00",
