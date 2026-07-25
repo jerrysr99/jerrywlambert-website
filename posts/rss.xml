@@ -6,12 +6,12 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Jul 2026 17:15:50 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2026 14:36:19 +0000</lastBuildDate>
     <item>
       <title>Same Result, 12x The Cost</title>
       <link>https://jerrywlambert.com/posts/same-result-12x-the-cost.html</link>
       <guid isPermaLink="true">https://jerrywlambert.com/posts/same-result-12x-the-cost.html</guid>
-      <pubDate>Mon, 20 Jul 2026 13:00:00 -0500</pubDate>
+      <pubDate>Sat, 25 Jul 2026 13:00:00 -0500</pubDate>
       <description>Evaluating one image on Opus 4.8 cost me 12 times what it cost on Haiku — for a result I could not tell apart. The gap that drains your AI budget is sitting inside the vendor you already use. Pick the smallest model that does the job.</description>
       <content:encoded><![CDATA[<p>I ran the same image through two Claude models this morning. One cost twelve times the other. I could not tell the answers apart.</p>
 
@@ -33,7 +33,7 @@
       <title>They Are Selling Tokens</title>
       <link>https://jerrywlambert.com/posts/they-are-selling-tokens.html</link>
       <guid isPermaLink="true">https://jerrywlambert.com/posts/they-are-selling-tokens.html</guid>
-      <pubDate>Mon, 20 Jul 2026 12:00:00 -0500</pubDate>
+      <pubDate>Sat, 25 Jul 2026 12:00:00 -0500</pubDate>
       <description>Agentic development burns tokens agent-to-agent with no budget in the loop — a boon to whoever sells tokens, whether your project succeeds or fails. They are selling shovels to miners with stars in their eyes. Give the loop a budget.</description>
       <content:encoded><![CDATA[<p>Remember: they aren't selling solutions. They are selling tokens.</p>
 
@@ -55,7 +55,7 @@
       <title>The New Spread. 178x the Cost, Same Million Tokens.</title>
       <link>https://jerrywlambert.com/posts/the-new-spread.html</link>
       <guid isPermaLink="true">https://jerrywlambert.com/posts/the-new-spread.html</guid>
-      <pubDate>Mon, 20 Jul 2026 10:00:00 -0500</pubDate>
+      <pubDate>Sat, 25 Jul 2026 10:00:00 -0500</pubDate>
       <description>The floor halved and the frontier doubled: DeepSeek V4 Flash at $0.28 per million output tokens, Fable 5 at $50. A 178x spread, and the capability gap is not 178x. Don&#x27;t pay Einstein to summarize your emails.</description>
       <content:encoded><![CDATA[<p>The price-per-token gap is widening. And it is real money.</p>
 
