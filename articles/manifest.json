@@ -1,5 +1,11 @@
 [
   {
+    "file": "TDR_Concept_Paper_Foundation_Specification.pdf",
+    "title": "Token Detail Record (TDR) — The Method For Token Spending Accountability",
+    "date": "2026-08-08T09:35:00-06:00",
+    "excerpt": "The public definition of the Token Detail Record: a durable transaction record describing one completed AI inference event, preserving what is needed to identify, attribute, measure, rate, correlate and audit it. Covers why an atomic record is needed, the information classes within a TDR, the three sources of truth that must remain distinct, TDRs in agentic systems, and the term's lineage from telecom's Call Detail Record. Companion to the AGU-TDR-001 Foundation Specification."
+  },
+  {
     "file": "AGUTDR001_TDR_Specification_Issue1_3.pdf",
     "title": "Token Detail Record — Mediation Output Specification (AGU-TDR-001)",
     "date": "2026-08-08T09:15:00-06:00",
