@@ -1,5 +1,11 @@
 [
   {
+    "file": "AGUTDR001_TDR_Specification_Issue1_1.pdf",
+    "title": "Token Detail Record — Mediation Output Specification (AGU-TDR-001)",
+    "date": "2026-08-08T09:15:00-06:00",
+    "excerpt": "The companion engineering specification to the Accountability Framework: the normative definition of the Token Detail Record as emitted by the AgentU Proxy of Record. Issue 1, record format 1.7. Specifies record generation and structure, the 55-field record layout, file organisation and archive naming, two-stage delivery, exception handling, and conformance requirements for consuming systems."
+  },
+  {
     "file": "Enterprise_AI_Accountability_Framework.pdf",
     "title": "The Enterprise AI Accountability Framework",
     "date": "2026-07-15T15:15:00-05:00",
