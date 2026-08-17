@@ -6,7 +6,29 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Jul 2026 14:36:19 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 13:37:22 +0000</lastBuildDate>
+    <item>
+      <title>Tariff Management in a Token-Based Economy</title>
+      <link>https://jerrywlambert.com/posts/tariff-management-in-a-token-based-economy.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/tariff-management-in-a-token-based-economy.html</guid>
+      <pubDate>Mon, 17 Aug 2026 08:00:00 -0500</pubDate>
+      <description>Prices that float. Units that differ by vendor. A bill that moves with every request. AI reinvented metered billing. Telecom already named it, rated it, and reconciled it. It is still tariff management.</description>
+      <content:encoded><![CDATA[<p>AI didn't create the need for metered service usage by introducing tokens.</p>
+
+        <p>Prices that float. Units that differ by provider. Charges settled between machines that never meet. A bill that moves with every request. It is a new twist on a well known game.</p>
+
+        <p>For 40 years telecom priced exactly the way AI prices now. A rate deck for every destination. A detail record for every event. Least-cost routing to send each call down the cheapest path that still met the standard. Interconnect settlement to reconcile what one network owed another. The token is just a smaller minute of conversation. A Token Detail Record (TDR) would be just a variant of a Call Detail Record (CDR).</p>
+
+        <p>The industry is rediscovering all of it. GitHub finished moving to metered token billing this summer. Flat-rate subscriptions are disappearing for anyone running agents. The idea of a discretely metered service is making a comeback. It is not new, just retooled.</p>
+
+        <p>AI customers are meeting the old problems. We used to call it bill shock. Now an agent wanders down a bad path and burns the budget in an afternoon. Agentic projects are overrunning their budgets by more than two times. A hundred developers can cost half a million a year in tokens before anyone puts a single control in place. In telecom we call it looping. A single call that runs through the same switches over and over eating up capacity, minutes and dollars.</p>
+
+        <p>Telecom already solved this. Rate the usage yourself. Route to the cheapest thing that does the job. Reconcile every charge against your own measurement before you pay it. And be prepared to do it billions of times per month.</p>
+
+        <p>None of it is new. It only looks new because the people who built AI never had to run a phone company. The unit changed. The discipline did not.</p>
+
+        <p>It is still tariff management. Time to manage it.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Same Result, 12x The Cost</title>
       <link>https://jerrywlambert.com/posts/same-result-12x-the-cost.html</link>
