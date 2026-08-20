@@ -6,7 +6,31 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Aug 2026 13:37:22 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2026 13:05:18 +0000</lastBuildDate>
+    <item>
+      <title>A Tale of Two AI Businesses</title>
+      <link>https://jerrywlambert.com/posts/a-tale-of-two-ai-businesses.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/a-tale-of-two-ai-businesses.html</guid>
+      <pubDate>Thu, 20 Aug 2026 09:00:00 -0500</pubDate>
+      <description>One AI giant is profitable selling tokens. The other loses $14 billion this year. The market is splitting AI into two businesses: a metered enterprise utility and a subsidized consumer app. Buy from the one that works.</description>
+      <content:encoded><![CDATA[<p>One of the two biggest names in AI is making money. The other is losing $14 billion this year. The difference is not the technology. It is what they sell.</p>
+
+        <p>Anthropic just turned its token business profitable. Around 80 percent of its revenue comes from one place. Companies paying by the token to run Claude through an API. It sells metered usage to businesses, and the meter is now in the black.</p>
+
+        <p>OpenAI sells something else. A consumer subscription, and now ads. It has more users than anyone and still loses money on nearly every dollar it takes in. By its own projection it is not profitable until 2029.</p>
+
+        <p>Same technology. Same week in the headlines. Opposite economics.</p>
+
+        <p>The market is quietly sorting AI into two businesses. One is a metered enterprise utility. You pay for what you use, the vendor earns a margin on every call, and the model is boring and durable. The other is a consumer platform running on subscriptions and attention, still hunting for a price that covers its own cost.</p>
+
+        <p>Here is why an operator should care. If your AI spend runs through an enterprise API, you are the profitable customer. Your bill is their business model. That is stable. Nobody rewrites the deal on the thing that already makes them money.</p>
+
+        <p>If your AI runs on a plan that loses money, today's price is a subsidy. Subsidies end. They end at an IPO. They end when the ads arrive. They end when the funding stops being easy.</p>
+
+        <p>Know which business you are buying from. One of them still has to change the terms to survive. The other already found the terms that work.</p>
+
+        <p>Build on the one that works.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Tariff Management in a Token-Based Economy</title>
       <link>https://jerrywlambert.com/posts/tariff-management-in-a-token-based-economy.html</link>
