@@ -142,6 +142,13 @@ document.addEventListener('DOMContentLoaded', () => {
       date: 'March 5, 2024',
       relationship: 'Worked with Jerry for over a decade on development projects',
       quote: 'Have been working with Jerry for over a decade now and he\u2019s been managing development teams in India and have done a fantastic job managing teams & turning them around. Have helped him in many of these development projects. A core professional to count for sure.'
+    },
+    'pushpa-rajagopal': {
+      name: 'Pushpa Rajagopal',
+      title: 'Human Resources Manager at iPass India Pvt. Ltd.',
+      date: 'April 4, 2024',
+      relationship: 'Worked with Jerry at iPass India (Pareteum)',
+      quote: 'As a HR it was wonderful working with Jerry and taking the Company forward both from technical & operational perspective. Jerry is a visionary & a good human being. Brought in lot of value to the organization in the capacity as CTO. Wishing him the very best.'
     }
   };
 
