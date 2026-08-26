@@ -170,29 +170,6 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); }
   align-items: center;
 }
 
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 7px 18px;
-  background: var(--accent-glow);
-  border: 1px solid var(--border-accent);
-  border-radius: 100px;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--accent-bright);
-  margin-bottom: 28px;
-}
-
-.hero-badge::before {
-  content: '';
-  width: 7px; height: 7px;
-  background: var(--accent);
-  border-radius: 50%;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
 
 .hero h1 { margin-bottom: 20px; }
 .hero h1 small {
@@ -442,85 +419,6 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); }
   border-radius: 100px;
   color: var(--accent-bright);
   font-weight: 500;
-}
-
-/* --- AI Toolkit --- */
-.ai-toolkit {
-  padding: var(--section-pad) 0;
-  background: var(--bg-primary);
-}
-
-.toolkit-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-}
-
-.toolkit-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 32px 28px;
-  transition: all 0.3s;
-}
-
-.toolkit-card:hover {
-  border-color: var(--border-accent);
-  transform: translateY(-3px);
-}
-
-.toolkit-card h3 {
-  font-size: 1.1rem;
-  margin-bottom: 16px;
-  color: var(--text-primary);
-}
-
-.toolkit-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.toolkit-list li {
-  font-size: 0.88rem;
-  color: var(--text-secondary);
-  line-height: 1.5;
-  padding-left: 16px;
-  position: relative;
-}
-
-.toolkit-list li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 9px;
-  width: 6px;
-  height: 6px;
-  background: var(--accent);
-  border-radius: 50%;
-}
-
-.toolkit-list li strong {
-  color: var(--text-primary);
-  font-weight: 600;
-}
-
-.toolkit-subsection {
-  margin-bottom: 20px;
-}
-
-.toolkit-subsection:last-child {
-  margin-bottom: 0;
-}
-
-.toolkit-subsection h4 {
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--accent-bright);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 10px;
 }
 
 /* --- AI Systems --- */
@@ -1164,7 +1062,6 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); }
   .hero-photo { flex-direction: row; align-items: center; gap: 24px; }
   .headshot { width: 180px; height: 180px; }
   .competency-grid { grid-template-columns: repeat(2, 1fr); }
-  .toolkit-grid { grid-template-columns: 1fr; }
   .ai-systems-grid { grid-template-columns: 1fr 1fr; }
   .achievements-grid { grid-template-columns: repeat(2, 1fr); }
   .perspective-grid { grid-template-columns: repeat(2, 1fr); }

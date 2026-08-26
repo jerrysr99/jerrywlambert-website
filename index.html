@@ -32,8 +32,7 @@
         <li><a href="#achievements">Achievements</a></li>
         <li><a href="#perspective">Perspective</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="articles/">Articles</a></li>
-        <li><a href="posts/">Posts</a></li>
+        <li><a href="posts/">Writing</a></li>
         <li><a href="#patents">Patents</a></li>
         <li><a href="#contact" class="nav-cta">Contact Me</a></li>
       </ul>
@@ -48,7 +47,6 @@
     <div class="container">
       <div class="hero-layout">
         <div class="fade-up">
-          <div class="hero-badge">Open to Executive Opportunities</div>
           <h1>Jerry W. Lambert Sr.
             <small>AI Transformation Executive</small>
           </h1>
@@ -267,70 +265,7 @@
     </div>
   </section>
 
-  <!-- AI TOOLKIT -->
-  <section class="ai-toolkit" id="ai-toolkit">
-    <div class="container">
-      <div class="section-header center fade-up">
-        <span class="section-label">Daily Practice</span>
-        <h2>AI Models &amp; Platforms</h2>
-        <p style="color: var(--text-secondary); max-width: 680px; margin: 16px auto 0; font-size: 1rem; line-height: 1.8;">
-          Not a list of things I have heard of. These are tools and models I evaluate, compare, and use in production &mdash; daily.
-        </p>
-      </div>
-
-      <div class="toolkit-grid">
-        <div class="toolkit-card fade-up">
-          <h3>Foundation Models</h3>
-          <ul class="toolkit-list">
-            <li><strong>Anthropic</strong> &mdash; Fable 5, Opus 4.8, Sonnet 5, Haiku 4.5</li>
-            <li><strong>OpenAI</strong> &mdash; GPT-5.6 Sol/Terra/Luna, GPT-5.5 Pro, o3 Pro</li>
-            <li><strong>Google</strong> &mdash; Gemini 3.5 Flash, 3.1 Pro, 2.5 Pro, Gemma 4</li>
-            <li><strong>xAI</strong> &mdash; Grok 4.5, Grok 4.3, Grok 4.20, Grok Build</li>
-            <li><strong>Meta</strong> &mdash; Muse Spark, Llama 4 Scout, Llama 4 Maverick</li>
-            <li><strong>Microsoft</strong> &mdash; MAI-Code-1-Flash, MAI-Thinking-1</li>
-            <li><strong>DeepSeek</strong> &mdash; V4 Flash, V4 Pro</li>
-            <li><strong>Mistral</strong> &mdash; Medium 3.5, Large 3, Small 4</li>
-            <li><strong>Perplexity</strong> &mdash; Sonar Reasoning Pro, Sonar Pro</li>
-            <li><strong>Cohere</strong> &mdash; Command A+, Command R+</li>
-            <li><strong>Amazon</strong> &mdash; Nova Premier, Nova 2 Lite</li>
-            <li><strong>Alibaba</strong> &mdash; Qwen 3.7 Max, Qwen 3.7 Plus</li>
-            <li><strong>Zhipu</strong> &mdash; GLM-5.2, GLM-5.1</li>
-            <li><strong>Moonshot</strong> &mdash; Kimi K2.7 Code, Kimi K2.6</li>
-            <li><strong>MiniMax</strong> &mdash; MiniMax M3</li>
-            <li><strong>ByteDance</strong> &mdash; Seed 2.1 Pro</li>
-          </ul>
-        </div>
-        <div class="toolkit-card fade-up">
-          <h3>Agent &amp; Automation Platforms</h3>
-          <div class="toolkit-subsection">
-            <h4>Hands-on daily</h4>
-            <ul class="competency-tags">
-              <li>Crew.AI</li>
-              <li>ClawBot</li>
-              <li>FlowLang</li>
-              <li>n8n</li>
-              <li>NodeRed</li>
-              <li>YOLO</li>
-            </ul>
-          </div>
-          <div class="toolkit-subsection">
-            <h4>Broader landscape</h4>
-            <ul class="competency-tags">
-              <li>LangChain</li>
-              <li>AutoGPT</li>
-              <li>Copilot Studio</li>
-              <li>Vertex AI</li>
-              <li>Hugging Face</li>
-              <li>AgentGPT</li>
-              <li>Zapier AI</li>
-              <li>Make.com</li>
-              <li>UiPath</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  
 
   <!-- AI SYSTEMS -->
   <section class="ai-systems" id="ai-systems">
@@ -400,6 +335,19 @@
         </div>
 
       </div>
+    </div>
+  </section>
+
+
+  <!-- WRITING -->
+  <section class="posts-listing" id="writing">
+    <div class="container">
+      <div class="section-header center fade-up">
+        <span class="section-label">Writing</span>
+        <h2>Recent posts</h2>
+      </div>
+      <ul class="post-list" id="postList" data-src="posts/manifest.json" data-href-prefix="posts/" data-limit="3"></ul>
+      <p class="post-list-empty" id="postListEmpty" hidden>No posts yet.</p>
     </div>
   </section>
 
@@ -935,7 +883,7 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#competencies">Competencies</a></li>
         <li><a href="#perspective">Perspective</a></li>
-        <li><a href="posts/">Posts</a></li>
+        <li><a href="posts/">Writing</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="https://linkedin.com/in/jerry-lambert-3868135" target="_blank" rel="noopener">LinkedIn</a></li>
       </ul>
@@ -943,5 +891,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/posts.js"></script>
 </body>
 </html>
