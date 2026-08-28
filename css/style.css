@@ -817,6 +817,17 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); }
   align-items: flex-start;
 }
 
+a.patent-card {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: border-color 0.3s, transform 0.3s;
+}
+a.patent-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-3px);
+}
+
 .patent-icon {
   font-size: 2rem;
   flex-shrink: 0;
