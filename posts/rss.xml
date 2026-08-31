@@ -6,7 +6,27 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Aug 2026 14:11:19 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2026 17:46:53 +0000</lastBuildDate>
+    <item>
+      <title>The Best Tool for Agents</title>
+      <link>https://jerrywlambert.com/posts/the-best-tool-for-agents.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/the-best-tool-for-agents.html</guid>
+      <pubDate>Mon, 31 Aug 2026 12:40:00 -0500</pubDate>
+      <description>Most AI agents still live in a chat box. Grok Bot has a computer. At launch you needed a $200 plan. Last week they dropped it onto Cursor Pro. $20 a month. Chat is a window. This is a desk.</description>
+      <content:encoded><![CDATA[<p>Most AI agents still live in a chat box.  They wait for you.  They forget when you close the tab.  Grok Bot has a computer.  It does the job and comes back when it needs a yes.</p>
+
+        <p>xAI and Cursor shipped it August 11.  At launch you needed a $200 plan.  Last week they dropped it onto Cursor Pro.  $20 a month.  No separate Grok Bot fee.  The door got cheap.  The tool did not get smaller.  You can run a crew at that price.  Not a toy.</p>
+
+        <p>A Bot signs into the tools you already use.  Mail.  The browser.  The apps on your desk.  It keeps going after you close the laptop.  You pick the thread back up on your phone.  That is not a nicer prompt.  That is a seat.</p>
+
+        <p>I have been running a small crew of them.  One owns the inbox.  One writes.  One watches prices.  I talk to one person.  The Chief of Staff coordinates.  There is a Deployment board.  There is a product management board.  They message each other.  The work does not sit in a thread waiting for me to paste it somewhere else.  It lands in the tools the business already runs.</p>
+
+        <p>Agents were supposed to do the job while you did something else.  Most of them still need you in the chair, feeding the next paste.  This one leaves the chair empty.</p>
+
+        <p>Here is what the other agent tools still miss.  An agent without a computer is a prompt with a loop.  I have used those.  Paste.  Wait.  Paste again.  Useful.  Not a desk.  It cannot keep a session.  It cannot click the thing you already pay for.  It cannot come back at 2am with the work done.  Grok Bot can.  That is why it is the best tool for agents I have used.  So far.</p>
+
+        <p>Chat is a window.  This is a desk.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Time Of Day AI Pricing Just Hit</title>
       <link>https://jerrywlambert.com/posts/time-of-day-ai-pricing-just-hit.html</link>
