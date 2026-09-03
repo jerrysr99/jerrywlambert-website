@@ -6,7 +6,29 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Aug 2026 17:46:53 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 13:12:45 +0000</lastBuildDate>
+    <item>
+      <title>The Neutral Ground Just Got An Owner</title>
+      <link>https://jerrywlambert.com/posts/the-neutral-ground-just-got-an-owner.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/the-neutral-ground-just-got-an-owner.html</guid>
+      <pubDate>Thu, 03 Sep 2026 09:00:00 -0500</pubDate>
+      <description>NVIDIA is buying Hugging Face for $12.9 billion. The vendor-neutral hub where the AI world compares open models just got bought by the company that sells the chips they all run on. Keep your evaluation independent of anyone who sells you the stack.</description>
+      <content:encoded><![CDATA[<p>NVIDIA is buying Hugging Face for $12.9 billion. If you do not live in AI every day, that sentence looks like plumbing. It is not. It is the most important ownership change in the industry this year.</p>
+
+        <p>Hugging Face is where the AI world goes to compare models. Three million of them, from every lab, open for anyone to download, test, and run. Meta, Mistral, DeepSeek, the Chinese labs, the startups. It was the one place that did not care whose model won. Neutral ground.</p>
+
+        <p>NVIDIA sells the chips that all of those models run on. Now it owns the store where you shop for them.</p>
+
+        <p>Jensen Huang says the platform stays open. I believe he means it today. But incentives outlast promises. When the company that profits from every model you run also owns the place you go to choose one, the ground is no longer neutral. Not because anyone is dishonest. Because that is what ownership does.</p>
+
+        <p>Here is why an operator should care. Your open-source strategy was your hedge. The plan B you kept so you were not locked to a single vendor. That hedge lived on Hugging Face, the independent switchyard where you could pick up any model and walk. It just got bought by the biggest vendor in the stack.</p>
+
+        <p>Same company already sells the silicon, the systems, and the software. Now add the model hub. One firm, top to bottom.</p>
+
+        <p>The map changed today. Read it again before your next architecture decision.</p>
+
+        <p>Keep your evaluation independent of anyone who sells you the stack. The neutral ground has an owner now. Plan like it.</p>]]></content:encoded>
+    </item>
     <item>
       <title>The Best Tool for Agents</title>
       <link>https://jerrywlambert.com/posts/the-best-tool-for-agents.html</link>
