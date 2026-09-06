@@ -4,9 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Newsletter · Jerry W. Lambert's Overnight Model Brief</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   :root { --navy:#0F2742; --ink:#1A1F26; --muted:#5C6480; --panel:#F1F4F7; --on-navy:#C5D4E6; }
   * { box-sizing: border-box; }
@@ -18,12 +15,26 @@
   main { max-width: 34rem; margin: 0 auto; padding: 2.25rem 1.5rem 3.5rem; }
   h1 { font-size: 1.55rem; line-height: 1.2; margin: 0 0 0.65rem; color: var(--navy); letter-spacing: -0.02em; }
   .deck { color: var(--muted); font-size: 1.02rem; line-height: 1.5; margin: 0 0 1.75rem; }
-  .embed {
+  .banner { display:none; padding:0.85rem 1rem; border-radius:6px; margin:0 0 1.25rem; font-size:0.95rem; }
+  .banner.ok { display:block; background:#E8F5EC; color:#1B5E2A; border-left:3px solid #1B5E2A; }
+  .banner.err { display:block; background:#FDECEA; color:#8B1A1A; border-left:3px solid #8B1A1A; }
+  form.signup {
     background: var(--panel); border-left: 3px solid var(--navy);
-    padding: 1.35rem 1.25rem; min-height: 9rem; border-radius: 0 8px 8px 0;
+    padding: 1.35rem 1.25rem; border-radius: 0 8px 8px 0;
   }
+  label { display:block; font-size:0.78rem; font-weight:700; color:var(--navy); letter-spacing:0.04em; text-transform:uppercase; margin:0 0 0.35rem; }
+  input[type=email] {
+    width:100%; padding:0.7rem 0.75rem; margin:0 0 1rem; border:1px solid #C5D4E6; border-radius:6px;
+    font-size:1rem; color:var(--ink); background:#fff;
+  }
+  input:focus { outline:2px solid var(--navy); outline-offset:1px; }
+  button {
+    background:var(--navy); color:#fff; border:0; border-radius:6px; padding:0.75rem 1.15rem;
+    font-size:0.95rem; font-weight:700; cursor:pointer;
+  }
+  .note { margin:0.85rem 0 0; font-size:0.85rem; color:var(--muted); }
   footer { margin-top: 2.25rem; font-size: 0.9rem; color: var(--muted); }
-  footer a { color: var(--navy); font-weight: 600; }
+  footer a { color: var(--navy); font-weight: 600; text-decoration:none; margin-right:1rem; }
 </style>
 </head>
 <body>
@@ -35,14 +46,45 @@
   <main>
     <h1>Get Jerry W. Lambert's Overnight Model Brief by email</h1>
     <p class="deck">Daily model and tariff notes for operators. One email when it ships.</p>
-    <div class="embed">
-      <script>
-      (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments);},l=d.createElement(e),l.async=1,l.src=u,n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-      ml('account', '2616936');
-      </script>
-      <div class="ml-embedded" data-form="HV6Cbs"></div>
-    </div>
-    <footer><a href="/">Home</a> · <a href="/posts/">Writing</a></footer>
+    <div id="confirmed-ok" class="banner ok">You’re confirmed. You’ll get the next Overnight Model Brief by email.</div>
+    <div id="confirmed-err" class="banner err">That confirmation link is invalid or expired. Enter your email below to try again.</div>
+    <form class="signup" id="signup-form">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@company.com">
+      <button type="submit">Subscribe</button>
+      <p class="note">We’ll email a confirmation link. First-party form + Amazon SES.</p>
+      <p class="note" id="pending-msg" style="display:none;color:#1B5E2A;font-weight:600;">Check your email to confirm.</p>
+    </form>
+    <footer>
+      <a href="/">Home</a>
+      <a href="/overnight-model-brief/">Briefings</a>
+      <a href="/posts/">Writing</a>
+    </footer>
   </main>
+  <script>
+    (function () {
+      var q = new URLSearchParams(location.search);
+      if (q.get('confirmed') === '1') document.getElementById('confirmed-ok').style.display = 'block';
+      if (q.get('confirmed') === '0') document.getElementById('confirmed-err').style.display = 'block';
+      var FORMS_BASE = 'https://forms.jerrywlambert.com';
+      document.getElementById('signup-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var email = document.getElementById('email').value.trim();
+        var payload = { email: email, source: 'newsletter-page' };
+        fetch(FORMS_BASE + '/api/newsletter/signup', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        }).then(function (r) { return r.json().then(function (j) { return { status: r.status, j: j }; }); })
+          .then(function (x) {
+            if (x.j && x.j.ok) { document.getElementById('pending-msg').style.display = 'block'; return; }
+            var err = (x.j && x.j.error) || '';
+            if (x.status === 429 || err === 'rate_limited') alert('Too many tries. Wait a moment and try again.');
+            else if (err === 'invalid_email') alert('That email does not look valid.');
+            else alert('Could not subscribe. Check the email and try again.');
+          }).catch(function () { alert('Network error. Try again.'); });
+      });
+    })();
+  </script>
 </body>
 </html>
