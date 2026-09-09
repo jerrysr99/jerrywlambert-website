@@ -6,7 +6,27 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Sep 2026 13:12:45 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 15:57:18 +0000</lastBuildDate>
+    <item>
+      <title>GrokBot Agent Chatter... $$$$$$</title>
+      <link>https://jerrywlambert.com/posts/grokbot-agent-chatter.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/grokbot-agent-chatter.html</guid>
+      <pubDate>Wed, 09 Sep 2026 10:56:00 -0500</pubDate>
+      <description>Grok Bot may be the easiest agentic tool yet. But behind the clean interface the agents coordinate constantly, and every exchange is tokens. No spend cap, no model picker, an undisclosed allowance. Watch the meter.</description>
+      <content:encoded><![CDATA[<p>Grok Bot might be the best agentic tool I have used. It runs a real computer. You give it a job, walk away, and it works. The easiest agents to stand up to date. I mean that.</p>
+
+        <p>But watch the meter.</p>
+
+        <p>Behind the clean interface, the agents are talking to each other. A lot. You ask for one thing and a lead bot spins up helpers, hands off work, passes context back and forth, and every one of those exchanges is tokens. You never see the conversation. You pay for all of it.</p>
+
+        <p>This is not a Grok problem. It is how multi-agent systems work. A single agent already burns several times the tokens of a normal chat. Put a few of them in a room to coordinate and the overhead runs from 30 percent to six times the base budget, depending on how they are wired. One measured example. Five agents, fifty steps, one planning document, over two million tokens of coordination before any real work got counted.</p>
+
+        <p>Here is where it bites. The subscription makes it feel flat. It is not. Each plan includes a weekly allowance nobody publishes, in tokens or in dollars, and when you cross it you drop onto on-demand pricing billed by the token. There is no spend cap. There is no model picker to send the cheap work to a cheap model. The first signal most people get is the overage.</p>
+
+        <p>So enjoy the tool. It is genuinely good. Just do not confuse the flat monthly price with a flat monthly cost.</p>
+
+        <p>Watch what the agents say to each other. That conversation is the bill.</p>]]></content:encoded>
+    </item>
     <item>
       <title>The Neutral Ground Just Got An Owner</title>
       <link>https://jerrywlambert.com/posts/the-neutral-ground-just-got-an-owner.html</link>
