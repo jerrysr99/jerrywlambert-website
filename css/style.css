@@ -854,10 +854,31 @@ a.patent-card:hover {
 }
 
 .contact-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-  gap: 48px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
+  gap: 48px;
+}
+.contact-copy {
+  flex: 1 1 55%;
+  min-width: 0;
+}
+.contact-signature {
+  flex: 0 1 42%;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signature-stage-img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 16px;
+  border: 3px solid var(--border);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
 
 .contact-items { display: flex; flex-direction: column; gap: 24px; }
@@ -1106,7 +1127,8 @@ a.patent-card:hover {
   .testimonial-featured-quote { padding: 28px 24px; }
   .quote-mark { font-size: 3rem; top: 10px; left: 20px; }
   .patents-grid { grid-template-columns: 1fr; }
-  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .contact-grid { flex-direction: column; flex-wrap: wrap; gap: 32px; }
+  .contact-copy, .contact-signature { flex: 1 1 auto; width: 100%; }
   .hero-quick-stats { flex-wrap: wrap; gap: 24px; }
 
   .footer .container {
@@ -1144,17 +1166,4 @@ a.patent-card:hover {
   box-shadow: 0 8px 32px rgba(0,0,0,0.18);
 }
 
-/* --- Signature stage (beside contact) --- */
-.contact-signature {
-  display: flex;
-  justify-content: center;
-}
-.signature-stage-img {
-  width: min(420px, 100%);
-  height: auto;
-  border-radius: 16px;
-  border: 3px solid var(--border);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
-}
 
