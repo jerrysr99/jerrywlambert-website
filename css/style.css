@@ -855,9 +855,9 @@ a.patent-card:hover {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 64px;
-  align-items: start;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 48px;
+  align-items: center;
 }
 
 .contact-items { display: flex; flex-direction: column; gap: 24px; }
@@ -1144,13 +1144,13 @@ a.patent-card:hover {
   box-shadow: 0 8px 32px rgba(0,0,0,0.18);
 }
 
-/* --- Signature stage (near page close) --- */
-.signature-stage {
-  padding: 48px 0 12px;
-  text-align: center;
+/* --- Signature stage (beside contact) --- */
+.contact-signature {
+  display: flex;
+  justify-content: center;
 }
 .signature-stage-img {
-  width: min(420px, 70vw);
+  width: min(420px, 100%);
   height: auto;
   border-radius: 16px;
   border: 3px solid var(--border);
