@@ -1121,3 +1121,37 @@ a.patent-card:hover {
   .hero-actions { flex-direction: column; }
   .btn { justify-content: center; }
 }
+
+/* --- LinkedIn banner (above Testimonials) --- */
+.linkedin-banner {
+  padding: 0;
+  background: var(--bg, #0b1220);
+  overflow: hidden;
+}
+.linkedin-banner-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.linkedin-banner-inner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+
+/* --- Signature stage (near page close) --- */
+.signature-stage {
+  padding: 48px 0 12px;
+  text-align: center;
+}
+.signature-stage-img {
+  width: min(420px, 70vw);
+  height: auto;
+  border-radius: 16px;
+  border: 3px solid var(--border);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
