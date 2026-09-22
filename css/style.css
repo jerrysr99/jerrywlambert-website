@@ -1144,7 +1144,7 @@ a.patent-card:hover {
   .btn { justify-content: center; }
 }
 
-/* --- LinkedIn banner (dominates top; panelist heads kept, audience cropped in asset) --- */
+/* --- LinkedIn banner (heads→table framing; side pads allowed) --- */
 .linkedin-banner {
   padding: 0;
   background: #0b1220;
@@ -1153,22 +1153,22 @@ a.patent-card:hover {
 .linkedin-banner-inner {
   max-width: none;
   margin: 0;
-  padding: 0;
+  padding: 10px 0;
+  background: #0b1220;
 }
 .linkedin-banner-inner img {
   display: block;
   width: 100%;
-  height: clamp(140px, 21vh, 260px); /* ~half prior dominate height */
-  object-fit: cover;
-  object-position: center 18%; /* bias up so panelist heads stay; audience OK to crop */
+  height: clamp(200px, 28vh, 320px);
+  object-fit: contain; /* keep full vertical crop; letterbox sides */
+  object-position: center center;
   border-radius: 0;
   box-shadow: none;
+  background: #0b1220;
 }
 @media (max-width: 768px) {
   .linkedin-banner-inner img {
-    height: clamp(110px, 16vh, 180px);
-    object-position: center 20%;
+    height: clamp(160px, 24vh, 240px);
   }
 }
-
 
