@@ -1158,15 +1158,15 @@ a.patent-card:hover {
 .linkedin-banner-inner img {
   display: block;
   width: 100%;
-  height: clamp(280px, 42vh, 520px);
+  height: clamp(140px, 21vh, 260px); /* ~half prior dominate height */
   object-fit: cover;
-  object-position: center 18%; /* bias up so panelist heads stay */
+  object-position: center 18%; /* bias up so panelist heads stay; audience OK to crop */
   border-radius: 0;
   box-shadow: none;
 }
 @media (max-width: 768px) {
   .linkedin-banner-inner img {
-    height: clamp(200px, 32vh, 320px);
+    height: clamp(110px, 16vh, 180px);
     object-position: center 20%;
   }
 }
