@@ -1172,22 +1172,32 @@ a.patent-card:hover {
   }
 }
 
-/* --- Articles panel banner: full image, no height crop --- */
+/* --- Articles panel banner: half width, black side buffers --- */
 #articles-panel-banner.linkedin-banner {
-  overflow: visible;
+  overflow: hidden;
+  background: #000;
+}
+#articles-panel-banner .linkedin-banner-inner {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #articles-panel-banner .linkedin-banner-inner img {
-  width: 100%;
+  width: 50%;
+  max-width: 50%;
   height: auto;
   max-height: none;
   object-fit: contain;
   object-position: center center;
+  background: #000;
 }
 @media (max-width: 768px) {
   #articles-panel-banner .linkedin-banner-inner img {
+    width: 70%;
+    max-width: 70%;
     height: auto;
     max-height: none;
   }
 }
-
 
