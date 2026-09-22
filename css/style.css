@@ -142,11 +142,11 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); }
 
 /* --- Hero --- */
 .hero {
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   align-items: center;
   position: relative;
-  padding: 120px 0 var(--section-pad);
+  padding: 40px 0 var(--section-pad);
   overflow: hidden;
 }
 
@@ -1144,9 +1144,9 @@ a.patent-card:hover {
   .btn { justify-content: center; }
 }
 
-/* --- LinkedIn banner (above Testimonials) --- */
+/* --- LinkedIn banner (just below fixed top menu) --- */
 .linkedin-banner {
-  padding: 0;
+  padding: 72px 0 8px; /* clear fixed nav */
   background: var(--bg, #0b1220);
   overflow: hidden;
 }
