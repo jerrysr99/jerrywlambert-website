@@ -1172,3 +1172,22 @@ a.patent-card:hover {
   }
 }
 
+/* --- Articles panel banner: full image, no height crop --- */
+#articles-panel-banner.linkedin-banner {
+  overflow: visible;
+}
+#articles-panel-banner .linkedin-banner-inner img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: center center;
+}
+@media (max-width: 768px) {
+  #articles-panel-banner .linkedin-banner-inner img {
+    height: auto;
+    max-height: none;
+  }
+}
+
+
