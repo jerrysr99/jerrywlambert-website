@@ -1146,7 +1146,7 @@ a.patent-card:hover {
 
 /* --- LinkedIn banner (page top, above sticky menu) --- */
 .linkedin-banner {
-  padding: 16px 0 12px;
+  padding: 10px 0 6px;
   background: #0b1220;
   overflow: hidden;
 }
@@ -1158,12 +1158,14 @@ a.patent-card:hover {
 .linkedin-banner-inner img {
   display: block;
   width: 100%;
-  height: auto;
-  max-height: 220px;
+  height: 140px;
   object-fit: cover;
-  object-position: center 35%;
+  object-position: center 28%;
   border-radius: 12px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+@media (max-width: 768px) {
+  .linkedin-banner-inner img { height: 110px; object-position: center 30%; }
 }
 
 
