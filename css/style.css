@@ -1144,7 +1144,7 @@ a.patent-card:hover {
   .btn { justify-content: center; }
 }
 
-/* --- LinkedIn banner (heads→table framing; side pads allowed) --- */
+/* --- LinkedIn banner (Jerry-cleared heads→table crop; side pads OK) --- */
 .linkedin-banner {
   padding: 0;
   background: #0b1220;
@@ -1159,8 +1159,8 @@ a.patent-card:hover {
 .linkedin-banner-inner img {
   display: block;
   width: 100%;
-  height: clamp(200px, 28vh, 320px);
-  object-fit: contain; /* keep full vertical crop; letterbox sides */
+  height: clamp(220px, 30vh, 360px);
+  object-fit: contain;
   object-position: center center;
   border-radius: 0;
   box-shadow: none;
@@ -1168,7 +1168,7 @@ a.patent-card:hover {
 }
 @media (max-width: 768px) {
   .linkedin-banner-inner img {
-    height: clamp(160px, 24vh, 240px);
+    height: clamp(170px, 26vh, 260px);
   }
 }
 
