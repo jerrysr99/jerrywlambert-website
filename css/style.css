@@ -1153,7 +1153,7 @@ a.patent-card:hover {
 .linkedin-banner-inner {
   max-width: none;
   margin: 0;
-  padding: 10px 0;
+  padding: 0;
   background: #0b1220;
 }
 .linkedin-banner-inner img {
