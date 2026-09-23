@@ -1,5 +1,11 @@
 [
   {
+    "slug": "beware-phantom-context",
+    "title": "Beware Phantom Context",
+    "date": "2026-09-23T13:24:00-05:00",
+    "excerpt": "You open a fresh chat. You ask a general question. The answer comes back warm, familiar, and it mentions something about you that you never typed into that conversation. Where did that come from?"
+  },
+  {
     "slug": "grokbot-agent-chatter",
     "title": "GrokBot Agent Chatter... $$$$$$",
     "date": "2026-09-09T10:56:00-05:00",
@@ -39,13 +45,13 @@
     "slug": "same-result-12x-the-cost",
     "title": "Same Result, 12x The Cost",
     "date": "2026-07-25T13:00:00-05:00",
-    "excerpt": "Evaluating one image on Opus 4.8 cost me 12 times what it cost on Haiku — for a result I could not tell apart. The gap that drains your AI budget is sitting inside the vendor you already use. Pick the smallest model that does the job."
+    "excerpt": "Evaluating one image on Opus 4.8 cost me 12 times what it cost on Haiku \u2014 for a result I could not tell apart. The gap that drains your AI budget is sitting inside the vendor you already use. Pick the smallest model that does the job."
   },
   {
     "slug": "they-are-selling-tokens",
     "title": "They Are Selling Tokens",
     "date": "2026-07-25T12:00:00-05:00",
-    "excerpt": "Agentic development burns tokens agent-to-agent with no budget in the loop — a boon to whoever sells tokens, whether your project succeeds or fails. They are selling shovels to miners with stars in their eyes. Give the loop a budget."
+    "excerpt": "Agentic development burns tokens agent-to-agent with no budget in the loop \u2014 a boon to whoever sells tokens, whether your project succeeds or fails. They are selling shovels to miners with stars in their eyes. Give the loop a budget."
   },
   {
     "slug": "the-new-spread",
@@ -75,25 +81,25 @@
     "slug": "ai-testing-gets-intrusive",
     "title": "AI Testing Gets Intrusive",
     "date": "2026-07-09T17:00:00-05:00",
-    "excerpt": "An independent lab found the newest flagship gamed its own safety evals at a record rate — and hid it. Catching it took the model's raw reasoning from the inside. A benchmark number is the answer the model wanted you to see."
+    "excerpt": "An independent lab found the newest flagship gamed its own safety evals at a record rate \u2014 and hid it. Catching it took the model's raw reasoning from the inside. A benchmark number is the answer the model wanted you to see."
   },
   {
     "slug": "i-should-have-caught-that",
     "title": "\"I Should Have Caught That\"",
     "date": "2026-07-06T08:00:00-05:00",
-    "excerpt": "I run production Claude Opus 4.8 code through a different frontier model, Fable 5, for review. It finds real issues — and Opus itself concedes the miss. No model should grade its own homework. Put a rival model in the loop."
+    "excerpt": "I run production Claude Opus 4.8 code through a different frontier model, Fable 5, for review. It finds real issues \u2014 and Opus itself concedes the miss. No model should grade its own homework. Put a rival model in the loop."
   },
   {
     "slug": "sonnet-5-dropped-today",
     "title": "Sonnet 5 Dropped Today. Read the Curve.",
     "date": "2026-06-30T17:30:00-05:00",
-    "excerpt": "Claude Sonnet 5's real story isn't that it's smarter — it's that last quarter's flagship capability is now the cheap default, tuned to run agents autonomously. The floor price for agent-grade work just dropped."
+    "excerpt": "Claude Sonnet 5's real story isn't that it's smarter \u2014 it's that last quarter's flagship capability is now the cheap default, tuned to run agents autonomously. The floor price for agent-grade work just dropped."
   },
   {
     "slug": "the-638-billion-iou",
     "title": "The $638 Billion IOU",
     "date": "2026-06-30T08:00:00-05:00",
-    "excerpt": "Oracle booked a record $638B AI backlog on deeply negative free cash flow. A backlog isn't revenue — it's a promise the vendor still has to finance. Sign a multi-year AI deal and you're an unsecured creditor. Underwrite them like one."
+    "excerpt": "Oracle booked a record $638B AI backlog on deeply negative free cash flow. A backlog isn't revenue \u2014 it's a promise the vendor still has to finance. Sign a multi-year AI deal and you're an unsecured creditor. Underwrite them like one."
   },
   {
     "slug": "every-vendor-counts-tokens-differently",
@@ -105,13 +111,13 @@
     "slug": "ai-is-the-new-transaction-economy",
     "title": "AI Is the New Transaction Economy",
     "date": "2026-06-26T08:00:00-05:00",
-    "excerpt": "For thirty years we bought software by the seat. AI is ending that. Value is now priced per action, per token, per resolution — and agents are starting to pay each other."
+    "excerpt": "For thirty years we bought software by the seat. AI is ending that. Value is now priced per action, per token, per resolution \u2014 and agents are starting to pay each other."
   },
   {
     "slug": "ais-dsp-moment",
     "title": "AI's DSP Moment",
     "date": "2026-06-25T08:00:00-05:00",
-    "excerpt": "In 1983 the industry pulled signal math off the general CPU onto cheap, purpose-built DSP chips. AI is running that playbook again — at the chip layer and the model layer. Granular specialization is coming."
+    "excerpt": "In 1983 the industry pulled signal math off the general CPU onto cheap, purpose-built DSP chips. AI is running that playbook again \u2014 at the chip layer and the model layer. Granular specialization is coming."
   },
   {
     "slug": "your-vendor-has-a-landlord",
@@ -171,7 +177,7 @@
     "slug": "the-cuda-moat-cracked",
     "title": "The CUDA Moat Cracked",
     "date": "2026-04-28T08:00:00-05:00",
-    "excerpt": "Jensen Huang warned on April 15 that DeepSeek on Huawei chips would be horrible. Eight days later, DeepSeek shipped V4 on Huawei Ascend — trained entirely outside NVIDIA's ecosystem."
+    "excerpt": "Jensen Huang warned on April 15 that DeepSeek on Huawei chips would be horrible. Eight days later, DeepSeek shipped V4 on Huawei Ascend \u2014 trained entirely outside NVIDIA's ecosystem."
   },
   {
     "slug": "the-frontier-pileup",
@@ -189,13 +195,13 @@
     "slug": "what-is-apache-2-and-why-it-matters",
     "title": "What Is Apache 2.0 and Why It Matters",
     "date": "2026-04-10T12:00:00-05:00",
-    "excerpt": "Apache 2.0 is the gold standard of open source licensing. Google just released Gemma 4 under it — the most permissive license a frontier-class model family has ever shipped under."
+    "excerpt": "Apache 2.0 is the gold standard of open source licensing. Google just released Gemma 4 under it \u2014 the most permissive license a frontier-class model family has ever shipped under."
   },
   {
     "slug": "the-managed-llm-era",
     "title": "The Managed LLM Era",
     "date": "2026-04-10T08:00:00-05:00",
-    "excerpt": "For every company that spent two years saying \"we cannot use AI because our data cannot leave the building\" — that constraint just met its answer. Gemma 4 runs locally, under Apache 2.0."
+    "excerpt": "For every company that spent two years saying \"we cannot use AI because our data cannot leave the building\" \u2014 that constraint just met its answer. Gemma 4 runs locally, under Apache 2.0."
   },
   {
     "slug": "cybersecurity-changed-this-week",
@@ -207,11 +213,11 @@
     "slug": "open-source-ai-just-became-enterprise-ready",
     "title": "Open Source AI Just Became Enterprise-Ready",
     "date": "2026-04-08T12:00:00-05:00",
-    "excerpt": "Google released Gemma 4 — Apache 2.0, one architecture from phone to data center, native multimodality. The story is not the benchmarks. It is what landed in a single release."
+    "excerpt": "Google released Gemma 4 \u2014 Apache 2.0, one architecture from phone to data center, native multimodality. The story is not the benchmarks. It is what landed in a single release."
   },
   {
     "slug": "welcome",
-    "title": "Welcome — Why I’m Writing Publicly",
+    "title": "Welcome \u2014 Why I\u2019m Writing Publicly",
     "date": "2026-04-08T10:30:00-05:00",
     "excerpt": "A short note on what to expect from this space: AI transformation field notes, executive perspective on the rate of change, and lessons from running production AI workloads."
   },
@@ -219,12 +225,12 @@
     "slug": "ai-is-the-new-cloud",
     "title": "AI Is the New Cloud",
     "date": "2026-04-08T08:00:00-05:00",
-    "excerpt": "\"AI\" is the new \"cloud\" — a useful category but almost useless as a plan. Under the umbrella are at least a dozen distinct technologies, each with its own cost curve and failure modes."
+    "excerpt": "\"AI\" is the new \"cloud\" \u2014 a useful category but almost useless as a plan. Under the umbrella are at least a dozen distinct technologies, each with its own cost curve and failure modes."
   },
   {
     "slug": "your-product-roadmap-is-already-wrong",
     "title": "Your Product Roadmap Is Already Wrong",
     "date": "2026-04-07T08:00:00-05:00",
-    "excerpt": "AI has changed all of the timelines, budgets and features — most executives just don't know it yet. The transition is not in front of you. It is behind you."
+    "excerpt": "AI has changed all of the timelines, budgets and features \u2014 most executives just don't know it yet. The transition is not in front of you. It is behind you."
   }
 ]

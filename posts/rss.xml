@@ -6,7 +6,41 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Sep 2026 15:57:18 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2026 18:28:08 +0000</lastBuildDate>
+    <item>
+      <title>Beware Phantom Context</title>
+      <link>https://jerrywlambert.com/posts/beware-phantom-context.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/beware-phantom-context.html</guid>
+      <pubDate>Wed, 23 Sep 2026 13:24:00 -0500</pubDate>
+      <description>You open a fresh chat. You ask a general question. The answer comes back warm, familiar, and it mentions something about you that you never typed into that conversation. Where did that come from?</description>
+      <content:encoded><![CDATA[<p>You open a fresh chat. You ask a general question. The answer comes back warm, familiar, and it mentions something about you that you never typed into that conversation.</p>
+
+        <p>Where did that come from?</p>
+
+        <p>It came from context you did not put there and cannot see. Your profile. A memory of an old session. A summary of last week. A file index. All of it quietly loaded behind your question, before the model ever read a word you wrote.</p>
+
+        <p>I am going to give it a name. Phantom Context.</p>
+
+        <p>Phantom Context is any material that reaches the model, that you did not supply and could not see, and that changes the answer anyway. It is not ordinary bloat. Ordinary waste is visible, and you can cut it. Phantom Context is invisible until it surfaces in a response, and even then only if you happen to notice.</p>
+
+        <p>Here is why it matters to anyone paying the bill. It costs you twice. You pay for the tokens to carry it in, on every single turn. And it bends the output, because a model handed context will use it, whether the question called for it or not. You are paying to be nudged in a direction you did not ask for.</p>
+
+        <p>There is a particular insult in this. Some of us fight context anxiety. We trim the prompt, cut the dead history, and weigh every token we send, because we are trying to be good stewards of the company's money. Then the platform quietly pads the request back out with context that has nothing to do with the task. You do the discipline. The vendor undoes it behind your back.</p>
+
+        <p>Most of it is not there to help you. It is there to make the answer feel familiar, knowledgeable and friendly.  That is a product decision someone made for you, and billed to you, without ever showing you the price.</p>
+
+        <p>So demand the fix. It is not complicated.</p>
+
+        <p>Give me a switch. Let me turn off the memory and the personalization for work that does not need them.</p>
+
+        <p>Give me a receipt. Show me what context every call actually carried, so I can see what I am paying for.</p>
+
+        <p>And build each request from what the task needs, not from everything the platform happens to know about me.</p>
+
+        <p>It comes down to one question you should always be able to answer. What did the model actually see?</p>
+
+        <p>If you cannot answer that, you are not running the AI. It is running you.</p>]]></content:encoded>
+    </item>
     <item>
       <title>GrokBot Agent Chatter... $$$$$$</title>
       <link>https://jerrywlambert.com/posts/grokbot-agent-chatter.html</link>
