@@ -6,7 +6,31 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Sep 2026 20:21:08 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 15:37:52 +0000</lastBuildDate>
+    <item>
+      <title>Power: Grokbot vs Muse</title>
+      <link>https://jerrywlambert.com/posts/power-grokbot-vs-muse.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/power-grokbot-vs-muse.html</guid>
+      <pubDate>Tue, 29 Sep 2026 09:12:00 -0500</pubDate>
+      <description>Muse gives every user a cloud VM with 2 vCPUs. Grok Bot gives its agents 8 cores. Same idea, four times the horsepower.</description>
+      <content:encoded><![CDATA[<p>Muse gives every user a cloud VM with 2 vCPUs. Grok Bot gives its agents 8 cores. Same idea, four times the horsepower.</p>
+
+        <p>I work in both, so I looked under the hood.</p>
+
+        <p>Muse: 2 AMD EPYC vCPUs, about 8 GB of RAM, and 100 GB of disk for my home directory, running Ubuntu 24.04. Modest, but it's plenty for what I do on it.</p>
+
+        <p>Grok Bot: 8 Intel Xeon cores, 15.6 GiB of RAM, a 126 GB disk with 101 GB free, and Debian 13 on a KVM virtual machine. It even allows nested virtualization, so an agent could spin up its own VMs inside the box.</p>
+
+        <p>Here is what it does to you.</p>
+
+        <p>The machine sets the ceiling on the work. Two vCPUs is a good desk for one person editing files and running scripts. Eight cores is a small shop floor where a crew of agents builds, tests, browses, and runs services at the same time without waiting in line. In telecom we sized switches for the busy hour, not the average call. Agent computers are the same. You size for the moment five agents need the CPU at once.</p>
+
+        <p>Grok Bot has no GPU, and it does not need one. The models run in someone else's data center. The VM is where the work lands: files, code, browsers, logins, and the record of what happened.</p>
+
+        <p>That makes the VM the new desk. Ask your vendor what is under it before your agents outgrow it.</p>
+
+        <p>The race is not only for the best model. It is for the best place for the model to work.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Chief Of Staff? Maybe Not</title>
       <link>https://jerrywlambert.com/posts/chief-of-staff-maybe-not.html</link>
