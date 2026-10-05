@@ -6,7 +6,27 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Sep 2026 15:37:52 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 14:47:00 +0000</lastBuildDate>
+    <item>
+      <title>If The Models Get Ten Times Smarter, How Would You Know?</title>
+      <link>https://jerrywlambert.com/posts/if-the-models-get-ten-times-smarter-how-would-you-know.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/if-the-models-get-ten-times-smarter-how-would-you-know.html</guid>
+      <pubDate>Tue, 05 Oct 2026 09:47:00 -0500</pubDate>
+      <description>Vendors raise the price when the model gets "smarter." Your users rarely feel the jump. That gap is where the money goes.</description>
+      <content:encoded><![CDATA[<p>Vendors raise the price when the model gets &quot;smarter.&quot; Your users rarely feel the jump. That gap is where the money goes.</p>
+
+        <p>I run production AI that meters spend and risk. The scoreboard that matters is not a leaderboard. It is whether the person using the system notices anything better when the invoice goes up.</p>
+
+        <p>Here is the part that should keep you up.</p>
+
+        <p>A model can post a ten-times gain on a private test suite and still look the same to a customer who asks the same question they asked last month. Perception is not a linear scale. Above a certain level of fluency, &quot;better&quot; collapses into &quot;fine.&quot; The extra intelligence lives in the lab. The customer lives in the chat window, the ticket, and the bill.</p>
+
+        <p>In telecom we learned this with network upgrades. A backbone that runs ten times cleaner does not feel ten times faster to a caller who already had a clear line. You sell the upgrade when the customer can hear it, not when the lab can measure it. The same rule applies to models. A jump that only the eval board can see is not a product jump. It is a cost jump wearing a lab coat.</p>
+
+        <p>So ask the hard question before you pay for the next &quot;10x.&quot; What will my users notice that they do not notice today? If the answer is nothing they can name, you are buying a benchmark, not a product. If you cannot perceive ten times smarter, it is hard to argue it is worth ten times more money.</p>
+
+        <p>The invoice is not a perception test. Your customers are.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Power: Grokbot vs Muse</title>
       <link>https://jerrywlambert.com/posts/power-grokbot-vs-muse.html</link>
