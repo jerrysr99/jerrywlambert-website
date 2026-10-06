@@ -18,23 +18,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-  :root { --navy:#0F2742; --ink:#1A1F26; --muted:#5C6480; --panel:#F1F4F7; --light:#EEF3F9; --border:#E2E8F0; }
+  :root { --navy:#0F2742; --ink:#1A1F26; --muted:#5C6480; --panel:#F1F4F7; --on-navy:#C5D4E6; --light:#EEF3F9; --border:#E2E8F0; }
   * { box-sizing: border-box; }
   body { margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; color:var(--ink); background:#fff; }
-  .mast { background:#fff; border-top:6px solid var(--navy); border-bottom:2px solid var(--navy); padding:1.1rem 1.5rem 1rem; }
-  .mast-in { max-width:46rem; margin:0 auto; }
-  .mast .brand { margin:0 0 0.35rem; color:var(--navy); font-size:0.8rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; }
-  .mast .brand a { color:inherit; text-decoration:none; }
-  .mast .by { margin:0; font-size:0.85rem; color:var(--muted); }
-  main { max-width:46rem; margin:0 auto; padding:1.6rem 1.5rem 3.5rem; }
-  .back { display:inline-block; margin:0 0 1.1rem; color:var(--navy); font-weight:600; text-decoration:none; font-size:0.95rem; }
-  h1 { font-size:1.9rem; line-height:1.2; margin:0 0 0.4rem; color:var(--navy); letter-spacing:-0.02em; }
-  .deck { font-size:1.1rem; font-weight:600; color:var(--navy); margin:0 0 0.35rem; line-height:1.4; }
-  .meta { color:var(--muted); font-size:0.95rem; margin:0 0 1.1rem; }
-  .pdf { display:inline-block; background:#fff; color:var(--navy); border:2px solid var(--navy); text-decoration:none; font-weight:700; padding:0.5rem 0.95rem; border-radius:8px; margin:0 0 1.5rem; font-size:0.92rem; }
-  .pdf:hover { background:var(--light); }
-  h2 { font-size:1.15rem; color:var(--navy); margin:1.7rem 0 0.6rem; padding-bottom:0.25rem; border-bottom:2px solid var(--navy); }
-  p { line-height:1.6; margin:0 0 0.9rem; }
+  .masthead { background: var(--navy); color:#fff; padding: 1.35rem 1.5rem 1.2rem; }
+  .masthead .site { margin:0 0 0.45rem; font-size:0.78rem; letter-spacing:0.14em; text-transform:lowercase; color:var(--on-navy); }
+  .masthead .series { margin:0 0 0.35rem; font-size:1.15rem; font-weight:700; line-height:1.2; color:#fff; }
+  .masthead .by { margin:0; font-size:0.85rem; color:#8FA4C4; }
+  main { max-width: 46rem; margin: 0 auto; padding: 2rem 1.5rem 3.5rem; }
+  .back { display:inline-block; margin:0 0 1.25rem; color:var(--navy); font-weight:600; text-decoration:none; font-size:0.95rem; }
+  h1 { font-size: 1.55rem; line-height: 1.25; margin: 0 0 0.45rem; color: var(--navy); letter-spacing: -0.02em; }
+  .deck { font-size:1.05rem; font-weight:600; color:var(--navy); margin:0 0 0.35rem; line-height:1.4; }
+  .meta { color: var(--muted); font-size: 0.95rem; margin: 0 0 1.25rem; }
+  .pdf { display:inline-block; background:var(--navy); color:#fff; text-decoration:none; font-weight:600; padding:0.55rem 0.95rem; border-radius:8px; margin: 0 0 1.75rem; font-size:0.92rem; }
+  h2 { font-size: 1.05rem; color: var(--navy); margin: 1.6rem 0 0.55rem; padding-bottom:0.25rem; border-bottom:2px solid var(--navy); }
+  p { line-height: 1.6; margin: 0 0 0.9rem; }
   .summary { background:var(--panel); border-left:4px solid var(--navy); padding:0.9rem 1.1rem; }
   .summary p { margin:0 0 0.6rem; } .summary p:last-child { margin:0; font-weight:600; }
   .unit { font-size:0.85rem; color:var(--muted); margin:0 0 0.35rem; }
@@ -43,22 +41,23 @@
   code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:0.85em; }
   .scroll { overflow-x:auto; }
   table.data { width:100%; border-collapse:collapse; font-size:0.85rem; margin:0.25rem 0 0.6rem; min-width:34rem; }
-  table.data th { background:var(--light); color:var(--navy); text-align:left; padding:0.45rem 0.45rem; font-weight:700; border-top:2px solid var(--navy); border-bottom:2px solid var(--navy); }
-  table.data td { border-bottom:1px solid var(--border); padding:0.45rem 0.45rem; vertical-align:top; }
+  table.data th { background:var(--light); color:var(--navy); text-align:left; padding:0.45rem; font-weight:700; border-top:2px solid var(--navy); border-bottom:2px solid var(--navy); }
+  table.data td { border-bottom:1px solid var(--border); padding:0.45rem; vertical-align:top; }
   table.data tr:nth-child(even) td { background:var(--panel); }
   td.mono { word-break:break-word; } td.num { white-space:nowrap; }
-  .chart { display:block; width:100%; height:auto; margin:0.4rem 0 0.4rem; border:1px solid var(--border); border-radius:6px; }
+  .chart { display:block; width:100%; height:auto; margin:0.4rem 0; border:1px solid var(--border); border-radius:6px; }
   .cap { font-size:0.92rem; color:var(--muted); line-height:1.5; margin:0 0 1rem; }
   .note { font-size:0.85rem; color:var(--muted); border-top:1px solid var(--border); padding-top:0.8rem; margin-top:1.8rem; }
-  footer { margin-top:1.5rem; font-size:0.9rem; color:var(--muted); border-top:1px solid var(--border); padding-top:1.1rem; }
-  footer a { color:var(--navy); font-weight:600; }
+  footer { margin-top: 2.5rem; font-size: 0.9rem; color: var(--muted); border-top: 1px solid #E2E8F0; padding-top: 1.25rem; }
+  footer a { color: var(--navy); font-weight: 600; }
 </style>
 </head>
 <body>
-  <div class="mast"><div class="mast-in">
-    <p class="brand"><a href="/">JerryWLambert.com AI Briefing</a></p>
+  <div class="masthead">
+    <p class="site">jerrywlambert.com</p>
+    <p class="series">JerryWLambert.com AI Briefing</p>
     <p class="by">Jerry W. Lambert Sr.  ·  Tuesday, 6 October 2026</p>
-  </div></div>
+  </div>
   <main>
     <a class="back" href="/briefings/">&larr; All briefings</a>
     <h1>Daily Model Brief, October 6, 2026</h1>
@@ -68,7 +67,7 @@
 
 <h2>Executive Summary</h2><div class='summary'><p>Mistral Large 4 (<code>mistral-large-4</code>) is live in Public Preview at Mistral's discounted rate of $0.68 input, $0.07 cached and $2.09 output per million tokens (list $1.36 / $0.14 / $4.18), with a 1M-token context window. The existing <code>mistral-large</code> line stays on Large 3 at $0.50 / $1.50.</p><p>OpenAI will shut down <code>gpt-4.1-nano</code>, <code>o4-mini</code> and <code>gpt-image-1</code> on Thursday, October 22, 2026 at 7:00 PM CT (OpenAI lists October 23 with no time).</p><p>Google released Nano Banana 2.1 (<code>gemini-nano-banana-2.1</code>), set an October 29 shutdown for <code>gemini-3.1-flash-image</code> and set November 17 shutdowns for five preview audio models. Perplexity listed a second Decisions API model, and Alibaba posted a US (Virginia) price row for <code>qwen3.8-flash</code>.</p><p>No published price changed on the established production models tracked in this brief.</p></div>
 <h2>What This Means for Customers</h2><ul class='bul'><li>If you adopt Mistral Large 4, budget the sale price and plan for a return to list. Mistral prints no end date on the discount, and list is double the sale rate.</li><li>Do not confuse Large 4 with the existing <code>mistral-large</code> line. That line still bills at Large 3 prices.</li><li>Work still on <code>gpt-4.1-nano</code>, <code>o4-mini</code> or <code>gpt-image-1</code> needs a migration plan before the evening of October 22 (CT). Move to the named successors, not a silent remap.</li><li>Nano Banana 2.1 is an image model. Image output at $30.00 per million tokens works out to about $0.0336 per 1K image, $0.0504 per 2K image and $0.0756 per 4K image. Batch is half price. Treat it as a new image product, not a chat substitute.</li><li>Perplexity's Fast Search option for <code>web_search</code> is $0.001 per call beside the standard $0.0025. That is a per-call tool fee, not a token rate, so token-only dashboards will understate search-heavy agents.</li><li>Spread workloads across vendors and tiers so one retirement week (OpenAI October 22, Google image October 29, Google audio November 17) cannot hit every use case at once.</li></ul>
-<h2>New Models and Price Changes</h2><p class='unit'>Prices in USD per 1M tokens.</p><div class='scroll'><table class='data keep'><thead><tr><th class='w-v'>Vendor</th><th class='w-m'>Model ID</th><th>Status</th><th class='w-p'>Input</th><th class='w-p'>Cached</th><th class='w-o'>Output</th></tr></thead><tbody><tr><td><b>Mistral</b></td><td class='mono'>mistral-large-4</td><td>Public Preview, released Oct 6. 1M-token context.</td><td class='num'>$0.68<br>(list $1.36)</td><td class='num'>$0.07<br>(list $0.14)</td><td class='num'>$2.09<br>(list $4.18)</td></tr><tr><td><b>Google</b></td><td class='mono'>gemini-nano-banana-2.1</td><td>Generally available, released Oct 6. Image model.</td><td class='num'>$1.50</td><td class='num'>Not listed</td><td class='num'>$7.50 text<br>$30.00 image</td></tr><tr><td><b>Perplexity</b></td><td class='mono'>pplx-decider-v1.1-27b</td><td>Decisions API model, new on the pricing page.</td><td class='num'>$0.04</td><td class='num'>Not listed</td><td class='num'>Free</td></tr><tr><td><b>Alibaba</b></td><td class='mono'>qwen3.8-flash (US, Virginia)</td><td>New regional price row posted Oct 6.</td><td class='num'>$0.15</td><td class='num'>Not listed</td><td class='num'>$0.47</td></tr></tbody></table></div><ul class='notes'><li>Mistral shows the Large 4 rates as a sale price against the list price, with no end date. Mistral Large 3 stays at $0.50 input and $1.50 output.</li><li>Nano Banana 2.1 batch rates are half the standard rates.</li><li>Anthropic, OpenAI, xAI, DeepSeek, Moonshot, Z.ai, MiniMax, Meta and TypeSafe pricing, model and deprecation pages were unchanged since the morning check.</li></ul>
+<h2>New Models and Price Changes</h2><p class='unit'>Prices in USD per 1M tokens.</p><div class='scroll'><table class='data'><thead><tr><th class='w-v'>Vendor</th><th class='w-m'>Model ID</th><th>Status</th><th class='w-p'>Input</th><th class='w-p'>Cached</th><th class='w-o'>Output</th></tr></thead><tbody><tr><td><b>Mistral</b></td><td class='mono'>mistral-large-4</td><td>Public Preview, released Oct 6. 1M-token context.</td><td class='num'>$0.68<br>(list $1.36)</td><td class='num'>$0.07<br>(list $0.14)</td><td class='num'>$2.09<br>(list $4.18)</td></tr><tr><td><b>Google</b></td><td class='mono'>gemini-nano-banana-2.1</td><td>Generally available, released Oct 6. Image model.</td><td class='num'>$1.50</td><td class='num'>Not listed</td><td class='num'>$7.50 text<br>$30.00 image</td></tr><tr><td><b>Perplexity</b></td><td class='mono'>pplx-decider-v1.1-27b</td><td>Decisions API model, new on the pricing page.</td><td class='num'>$0.04</td><td class='num'>Not listed</td><td class='num'>Free</td></tr><tr><td><b>Alibaba</b></td><td class='mono'>qwen3.8-flash (US, Virginia)</td><td>New regional price row posted Oct 6.</td><td class='num'>$0.15</td><td class='num'>Not listed</td><td class='num'>$0.47</td></tr></tbody></table></div><ul class='notes'><li>Mistral shows the Large 4 rates as a sale price against the list price, with no end date. Mistral Large 3 stays at $0.50 input and $1.50 output.</li><li>Nano Banana 2.1 batch rates are half the standard rates.</li><li>Anthropic, OpenAI, xAI, DeepSeek, Moonshot, Z.ai, MiniMax, Meta and TypeSafe pricing, model and deprecation pages were unchanged since the morning check.</li></ul>
 <h2>Deprecations and Retirements</h2><div class='scroll'><table class='data'><thead><tr><th class='w-v'>Vendor</th><th class='w-dm'>Model ID</th><th class='w-d'>Shutdown (CT)</th><th class='w-r'>Replacement</th><th>Note</th></tr></thead><tbody><tr><td><b>OpenAI</b></td><td class='mono'>gpt-4.1-nano<br>o4-mini<br>gpt-image-1</td><td>Thu Oct 22, 2026, 7:00 PM CT</td><td class='mono'>gpt-5.6-luna<br>gpt-5.6-terra<br>gpt-image-2.5-sunburst or gpt-image-2.5-flare</td><td>OpenAI lists Oct 23 with no time; 7:00 PM CT Oct 22 is 00:00 UTC Oct 23.</td></tr><tr><td><b>Google</b></td><td class='mono'>gemini-omni-flash-preview</td><td>Thu Oct 22, 2026 (time not stated)</td><td class='mono'>gemini-omni-1.1-flash</td><td>Newly listed today.</td></tr><tr><td><b>Google</b></td><td class='mono'>veo-3.1-generate-preview<br>veo-3.1-fast-generate-preview<br>veo-3.1-lite-generate-preview</td><td>Thu Oct 22, 2026 (time not stated)</td><td class='mono'>gemini-omni-1.1-flash</td><td>Unchanged since the morning check.</td></tr><tr><td><b>Google</b></td><td class='mono'>gemini-3.1-flash-image</td><td>Thu Oct 29, 2026 (time not stated)</td><td class='mono'>gemini-nano-banana-2.1</td><td>New today.</td></tr><tr><td><b>Google</b></td><td class='mono'>gemini-3.1-flash-tts-preview<br>gemini-2.5-flash-preview-tts<br>gemini-2.5-pro-preview-tts</td><td>Tue Nov 17, 2026 (time not stated)</td><td class='mono'>gemini-3.8-flash-tts or gemini-3.8-flash-lite-tts</td><td>New today. Previously no shutdown date.</td></tr><tr><td><b>Google</b></td><td class='mono'>gemini-3.1-flash-live-preview<br>gemini-2.5-flash-native-audio-preview-12-2025</td><td>Tue Nov 17, 2026 (time not stated)</td><td class='mono'>gemini-3.8-live</td><td>New today. Previously no shutdown date.</td></tr><tr><td><b>Anthropic</b></td><td class='mono'>claude-sonnet-4-5-20250929</td><td>Mon Nov 30, 2026 (time not stated)</td><td class='mono'>claude-sonnet-5-5</td><td>Unchanged.</td></tr><tr><td><b>Anthropic</b></td><td class='mono'>claude-haiku-4-5-20251001</td><td>Not sooner than Thu Oct 15, 2026; no date set</td><td class='mono'>None named</td><td>Watch item. Active today.</td></tr></tbody></table></div><ul class='notes'><li>Unverified: Google&#x27;s deprecations page now shows gemini-2.5-flash-image shutting down Mon Mar 15, 2027, with gemini-3.1-flash-lite-image as the replacement, while Google&#x27;s pricing page still says it shut down Oct 2, 2026. Confirm with Google before you budget either date.</li><li>Perplexity will retire its Agent API and Router API routes to older OpenAI models (openai/gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.2, gpt-5.1, gpt-5 and gpt-5-mini) at 7:00 PM CT on Fri Oct 23, 2026.</li></ul>
 <h2>Around the Market</h2><p>The day&#x27;s first-party move is Mistral putting Large 4 on its pricing page at a clear sale against list, with no end date printed. That is a new model, not a rename of Large 3. OpenAI&#x27;s October 22 clock for three models is the hard calendar item for anyone still on gpt-4.1-nano, o4-mini or gpt-image-1. Google&#x27;s update adds an image successor in Nano Banana 2.1 and fills in shutdown dates for image and audio previews that previously had none. Perplexity&#x27;s Decisions line and Fast Search tool fee are product-shape news more than a frontier price change, and Alibaba&#x27;s US Virginia row for qwen3.8-flash is a regional posting. Anthropic, xAI, DeepSeek, Moonshot, Z.ai, MiniMax, Meta and TypeSafe left published rates alone.</p>
 <h2>Bottom Line</h2><p>Adopt Large 4 only if you want that class and can absorb a return to list. Drain gpt-4.1-nano, o4-mini and gpt-image-1 paths before the evening of October 22 (CT). Treat Nano Banana 2.1 as a new image product with its own cost shape, and keep Large 3 and Large 4 on separate cost lines.</p>
