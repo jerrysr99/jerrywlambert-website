@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Model Brief, October 7, 2026 · JerryWLambert.com AI Briefing</title>
+<meta name="description" content="Perplexity halves its Decisions API price, Google drops the October 29 shutdown for gemini-3.1-flash-image, and a 4K Nano Banana 2.1 image now costs about $0.113.">
+<link rel="canonical" href="https://jerrywlambert.com/briefings/2026-10-07/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Daily Model Brief, October 7, 2026 · JerryWLambert.com AI Briefing">
+<meta property="og:description" content="Perplexity halves its Decisions API price, Google drops the October 29 shutdown for gemini-3.1-flash-image, and a 4K Nano Banana 2.1 image now costs about $0.113.">
+<meta property="og:url" content="https://jerrywlambert.com/briefings/2026-10-07/">
+<meta property="og:site_name" content="JerryWLambert.com AI Briefing">
+<meta property="og:image" content="https://jerrywlambert.com/img/headshot.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jerrywlambert.com/img/headshot.jpg">
+<meta name="twitter:title" content="Daily Model Brief, October 7, 2026 · JerryWLambert.com AI Briefing">
+<meta name="twitter:description" content="Perplexity halves its Decisions API price, Google drops the October 29 shutdown for gemini-3.1-flash-image, and a 4K Nano Banana 2.1 image now costs about $0.113.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --navy:#0F2742; --ink:#1A1F26; --muted:#5C6480; --panel:#F1F4F7; --on-navy:#C5D4E6; --light:#EEF3F9; --border:#E2E8F0; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; color:var(--ink); background:#fff; }
+  .masthead { background: var(--navy); color:#fff; padding: 1.35rem 1.5rem 1.2rem; }
+  .masthead .site { margin:0 0 0.45rem; font-size:0.78rem; letter-spacing:0.14em; text-transform:lowercase; color:var(--on-navy); }
+  .masthead .series { margin:0 0 0.35rem; font-size:1.15rem; font-weight:700; line-height:1.2; color:#fff; }
+  .masthead .by { margin:0; font-size:0.85rem; color:#8FA4C4; }
+  main { max-width: 46rem; margin: 0 auto; padding: 2rem 1.5rem 3.5rem; }
+  .back { display:inline-block; margin:0 0 1.25rem; color:var(--navy); font-weight:600; text-decoration:none; font-size:0.95rem; }
+  h1 { font-size: 1.55rem; line-height: 1.25; margin: 0 0 0.45rem; color: var(--navy); letter-spacing: -0.02em; }
+  .deck { font-size:1.05rem; font-weight:600; color:var(--navy); margin:0 0 0.35rem; line-height:1.4; }
+  .meta { color: var(--muted); font-size: 0.95rem; margin: 0 0 1.25rem; }
+  .pdf { display:inline-block; background:var(--navy); color:#fff; text-decoration:none; font-weight:600; padding:0.55rem 0.95rem; border-radius:8px; margin: 0 0 1.75rem; font-size:0.92rem; }
+  h2 { font-size: 1.05rem; color: var(--navy); margin: 1.6rem 0 0.55rem; padding-bottom:0.25rem; border-bottom:2px solid var(--navy); }
+  p { line-height: 1.6; margin: 0 0 0.9rem; }
+  .summary { background:var(--panel); border-left:4px solid var(--navy); padding:0.9rem 1.1rem; }
+  .summary p { margin:0 0 0.6rem; } .summary p:last-child { margin:0; font-weight:600; }
+  .unit { font-size:0.85rem; color:var(--muted); margin:0 0 0.35rem; }
+  ul { margin:0.3rem 0 0.9rem; padding-left:1.2rem; } li { line-height:1.55; margin:0 0 0.4rem; }
+  ul.notes { font-size:0.92rem; }
+  code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:0.85em; }
+  .scroll { overflow-x:auto; }
+  table.data { width:100%; border-collapse:collapse; font-size:0.85rem; margin:0.25rem 0 0.6rem; min-width:34rem; }
+  table.data th { background:var(--light); color:var(--navy); text-align:left; padding:0.45rem; font-weight:700; border-top:2px solid var(--navy); border-bottom:2px solid var(--navy); }
+  table.data td { border-bottom:1px solid var(--border); padding:0.45rem; vertical-align:top; }
+  table.data tr:nth-child(even) td { background:var(--panel); }
+  td.mono { word-break:break-word; } td.num { white-space:nowrap; }
+  .chart { display:block; width:100%; height:auto; margin:0.4rem 0; border:1px solid var(--border); border-radius:6px; }
+  .cap { font-size:0.92rem; color:var(--muted); line-height:1.5; margin:0 0 1rem; }
+  .note { font-size:0.85rem; color:var(--muted); border-top:1px solid var(--border); padding-top:0.8rem; margin-top:1.8rem; }
+  footer { margin-top: 2.5rem; font-size: 0.9rem; color: var(--muted); border-top: 1px solid #E2E8F0; padding-top: 1.25rem; }
+  footer a { color: var(--navy); font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="masthead">
+    <p class="site">jerrywlambert.com</p>
+    <p class="series">JerryWLambert.com AI Briefing</p>
+    <p class="by">Jerry W. Lambert Sr.  ·  Wednesday, 7 October 2026</p>
+  </div>
+  <main>
+    <a class="back" href="/briefings/">&larr; All briefings</a>
+    <h1>Daily Model Brief, October 7, 2026</h1>
+    <p class="deck">Perplexity halves its Decisions API price. Google drops an October image shutdown and raises the cost of a 4K image.</p>
+    <p class="meta">Wednesday, October 7, 2026 · Prices as of 8:45 AM CT</p>
+    <a class="pdf" href="./daily-model-brief-2026-10-07.pdf">Download PDF</a>
+
+<h2>Executive Summary</h2><div class='summary'><p>Perplexity cut both Decisions API models, <code>pplx-decider-v1.1-27b</code> and <code>pplx-decider-v1-27b</code>, from $0.04 to $0.02 per million input tokens. Output stays free.</p><p>Google withdrew the October 29 shutdown date for <code>gemini-3.1-flash-image</code>, which now shows no shutdown date, with Nano Banana 2.1 still named as its replacement. Google also repriced 4K output for Nano Banana 2.1 (<code>gemini-nano-banana-2.1</code>): a 4K image now counts as 3,780 tokens, about $0.113 per image, up from $0.0756. The $30.00 per million image-token rate did not change.</p><p>Mistral Large 4 (<code>mistral-large-4</code>) stays at its discounted $0.68 input, $0.07 cached and $2.09 output per million tokens (list $1.36 / $0.14 / $4.18), still with no end date. Mistral now lists it at 52B active parameters out of 1.05T total.</p><p>Cohere still lists <code>command-r</code> and <code>command-r-plus</code> as deprecated since September 15, 2025 and closed to new customers, with no shutdown date set. Anthropic's Mythos 5 and 5.1 remain limited access, now offered to organizations verified through Anthropic's verification programs.</p><p>No published token price changed on the established production models tracked in this brief.</p></div>
+<h2>What This Means for Customers</h2><ul class='bul'><li>If you use Perplexity's Decisions API, input cost halves to $0.02 per million tokens and output is still free. Both the v1 and v1.1 models carry the same price.</li><li>Budget Nano Banana 2.1 at about $0.113 per 4K image (batch about $0.0567), not the $0.0756 Google showed yesterday. 1K and 2K images are unchanged at about $0.0336 and $0.0504.</li><li>Work on <code>gemini-3.1-flash-image</code> no longer faces an October 29 cutoff. Keep the move to Nano Banana 2.1 on the plan, but it is no longer this month's deadline.</li><li>The October 22 deadline holds. <code>gpt-4.1-nano</code>, <code>o4-mini</code> and <code>gpt-image-1</code> (OpenAI) shut down that evening (CT), and Google's <code>gemini-omni-flash-preview</code> and Veo 3.1 previews shut down the same day.</li><li>Mistral Large 4 is still on sale with no end date. Budget the sale price and plan for a return to list, which is double the sale rate.</li><li>If you still run <code>command-r</code> or <code>command-r-plus</code>, plan a move to <code>command-r-08-2024</code>, <code>command-r-plus-08-2024</code> or <code>command-a-03-2025</code>, the replacements Cohere recommends. Cohere can set a retirement date at any time.</li></ul>
+<div class='keepsec'><h2>New Models and Price Changes</h2><p class='unit'>Prices in USD per 1M tokens.</p><div class='scroll'><table class='data'><thead><tr><th class='w-v'>Vendor</th><th class='w-m'>Model ID</th><th>Status</th><th class='w-p'>Input</th><th class='w-p'>Cached</th><th class='w-o'>Output</th></tr></thead><tbody><tr><td><b>Perplexity</b></td><td class='mono'>pplx-decider-v1.1-27b</td><td>Decisions API. Price cut Oct 7 (was $0.04).</td><td class='num'>$0.02</td><td class='num'>Not listed</td><td class='num'>Free</td></tr><tr><td><b>Perplexity</b></td><td class='mono'>pplx-decider-v1-27b</td><td>Decisions API. Price cut Oct 7 (was $0.04).</td><td class='num'>$0.02</td><td class='num'>Not listed</td><td class='num'>Free</td></tr><tr><td><b>Google</b></td><td class='mono'>gemini-nano-banana-2.1</td><td>4K image output repriced Oct 7: 3,780 tokens per image (was 2,520).</td><td class='num'>$1.50</td><td class='num'>Not listed</td><td class='num'>$7.50 text<br>$30.00 image<br>(4K about $0.113)</td></tr><tr><td><b>Mistral</b></td><td class='mono'>mistral-large-4</td><td>Public Preview. Sale price unchanged, no end date.</td><td class='num'>$0.68<br>(list $1.36)</td><td class='num'>$0.07<br>(list $0.14)</td><td class='num'>$2.09<br>(list $4.18)</td></tr></tbody></table></div></div><ul class='notes'><li>Nano Banana 2.1 batch rates are half the standard rates, so a batch 4K image is now about $0.0567 (was $0.0378).</li><li>Anthropic, OpenAI, xAI, DeepSeek, Moonshot, Z.ai, MiniMax, Meta and TypeSafe published token prices were unchanged since yesterday&#x27;s brief.</li><li>Alibaba&#x27;s price page could not be checked this morning, and Amazon, Microsoft and ByteDance did not publish readable price tables. Their last confirmed prices stand.</li></ul>
+<h2>Deprecations and Retirements</h2><div class='scroll'><table class='data'><thead><tr><th class='w-v'>Vendor</th><th class='w-dm'>Model ID</th><th class='w-d'>Shutdown (CT)</th><th class='w-r'>Replacement</th><th>Note</th></tr></thead><tbody><tr><td><b>OpenAI</b></td><td class='mono'>gpt-4.1-nano<br>o4-mini<br>gpt-image-1</td><td>Thu Oct 22, 2026, 7:00 PM CT</td><td class='mono'>gpt-5.6-luna<br>gpt-5.6-terra<br>gpt-image-2.5-sunburst or gpt-image-2.5-flare</td><td>Unchanged. OpenAI lists Oct 23 with no time; 7:00 PM CT Oct 22 is 00:00 UTC Oct 23.</td></tr><tr><td><b>Google</b></td><td class='mono'>gemini-omni-flash-preview</td><td>Thu Oct 22, 2026 (time not stated)</td><td class='mono'>gemini-omni-1.1-flash</td><td>Unchanged.</td></tr><tr><td><b>Google</b></td><td class='mono'>veo-3.1-generate-preview<br>veo-3.1-fast-generate-preview<br>veo-3.1-lite-generate-preview</td><td>Thu Oct 22, 2026 (time not stated)</td><td class='mono'>gemini-omni-1.1-flash</td><td>Unchanged.</td></tr><tr><td><b>Google</b></td><td class='mono'>gemini-3.1-flash-image</td><td>No shutdown date announced</td><td class='mono'>gemini-nano-banana-2.1</td><td>Changed today. Yesterday Google listed Thu Oct 29, 2026.</td></tr><tr><td><b>Google</b></td><td class='mono'>gemini-3.1-flash-tts-preview<br>gemini-2.5-flash-preview-tts<br>gemini-2.5-pro-preview-tts</td><td>Tue Nov 17, 2026 (time not stated)</td><td class='mono'>gemini-3.8-flash-tts or gemini-3.8-flash-lite-tts</td><td>Unchanged since yesterday.</td></tr><tr><td><b>Google</b></td><td class='mono'>gemini-3.1-flash-live-preview<br>gemini-2.5-flash-native-audio-preview-12-2025</td><td>Tue Nov 17, 2026 (time not stated)</td><td class='mono'>gemini-3.8-live</td><td>Unchanged since yesterday.</td></tr><tr><td><b>Anthropic</b></td><td class='mono'>claude-sonnet-4-5-20250929</td><td>Mon Nov 30, 2026 (time not stated)</td><td class='mono'>claude-sonnet-5-5</td><td>Unchanged.</td></tr><tr><td><b>Anthropic</b></td><td class='mono'>claude-haiku-4-5-20251001</td><td>Not sooner than Thu Oct 15, 2026; no date set</td><td class='mono'>None named</td><td>Watch item. Active today.</td></tr><tr><td><b>Cohere</b></td><td class='mono'>command-r<br>command-r-plus</td><td>Deprecated Sep 15, 2025; no shutdown date set</td><td class='mono'>command-r-08-2024<br>command-r-plus-08-2024<br>command-a-03-2025</td><td>Closed to new customers; existing users keep access until retirement.</td></tr></tbody></table></div><ul class='notes'><li>Unverified: Google&#x27;s deprecations page shows gemini-2.5-flash-image shutting down Mon Mar 15, 2027, with gemini-3.1-flash-lite-image as the replacement, while Google&#x27;s pricing page still says it shut down Oct 2, 2026. Confirm with Google before you budget either date.</li><li>Perplexity will retire its Agent API and Router API routes to older OpenAI models (openai/gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.2, gpt-5.1, gpt-5 and gpt-5-mini) at 7:00 PM CT on Fri Oct 23, 2026, as announced in yesterday&#x27;s update.</li></ul>
+<h2>Around the Market</h2><p>A quiet morning for headline token rates. The moves are at the edges: Perplexity halved the input price on its Decisions line, and Google changed what a 4K Nano Banana 2.1 image costs by counting more tokens per image rather than by touching the per-token rate. Google also pulled the October 29 shutdown it had set only yesterday for gemini-3.1-flash-image, a reminder that published retirement dates can move in both directions. Mistral kept Large 4 on sale for a second day with no end date, OpenAI&#x27;s pricing, model and deprecation pages were unchanged, and Anthropic changed only who can apply for Mythos access, not its price. xAI, DeepSeek, Moonshot, Z.ai, MiniMax, Meta and TypeSafe left published rates alone.</p>
+<h2>Bottom Line</h2><p>Nothing in today&#x27;s moves raises the cost of established production work. Re-cost any 4K image pipeline on Nano Banana 2.1 at about $0.113 per image, take the Perplexity Decisions cut if you use it, and keep October 22 as the hard date for the OpenAI and Google preview retirements.</p>
+<h2>Model Size vs. Price</h2><img class='chart' src='./model-size-vs-price.png' alt='Model Size vs. Price: Active Models in Our Registry (JerryWLambert.com AI Briefing)'><p class='cap'>Across the 20 active models whose vendors publish parameter counts, price tracks active parameters far more closely than total size. Mistral Large 4 (1.05T total, 52B active) sits mid-pack at $0.68 input and $2.09 output per 1M tokens. Prices as of October 6, 2026.</p>
+<h2>Price vs. Performance</h2><img class='chart' src='./price-vs-performance.png' alt='Price vs. Performance: Active Models in Our Registry (JerryWLambert.com AI Briefing)'><p class='cap'>Across the 45 active models with a measured Artificial Analysis Intelligence Index score (fetched Oct 7, 2026, 9:39 AM CT), price rises with performance only loosely (rank correlation 0.45 on output price). Several models scoring near 40 cost $0.60 or less per 1M output tokens, including GLM-5.3-Flash, GPT-6 Luna and DeepSeek V4.1 Flash, while the top scorer, Claude Opus 5.5 at 57.6, costs $20.</p>
+<p class='note'>All times Central. Prices, dates and model IDs are taken from first-party vendor pricing, model and deprecation pages as of 8:45 AM CT on October 7, 2026; chart prices are as of October 6, 2026. Performance scores are from the Artificial Analysis Intelligence Index. Items that could not be confirmed are marked unverified.</p>
+    <footer>
+      <a href="/newsletter/">Get the Brief by email</a> ·
+      <a href="/newsletter/unsubscribe/">Unsubscribe</a> ·
+      <a href="/briefings/">All briefings</a> ·
+      <a href="/">Home</a>
+    </footer>
+  </main>
+</body>
+</html>
