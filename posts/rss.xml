@@ -6,7 +6,27 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Oct 2026 14:47:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 23:20:00 +0000</lastBuildDate>
+    <item>
+      <title>They Are Selling Compute, Not Software</title>
+      <link>https://jerrywlambert.com/posts/they-are-selling-compute-not-software.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/they-are-selling-compute-not-software.html</guid>
+      <pubDate>Thu, 08 Oct 2026 18:20:00 -0500</pubDate>
+      <description>The frontier companies are not selling software. They are selling compute, metered by the token. The product is the bill.</description>
+      <content:encoded><![CDATA[<p>The frontier companies are not selling software. They are selling compute, metered by the token. The product is the bill.</p>
+
+        <p>I buy AI the way I bought network capacity. Not a license that sits on a shelf. A meter that runs every time something happens. Software was a product you owned. This is a utility you rent by the swing.</p>
+
+        <p>Here is the part the invoice does not show.</p>
+
+        <p>The demo looks like an application. A chat window. An agent desk. A shiny front end that feels like a tool you installed. Underneath it is GPU time, context windows, and retries, all priced per token. When usage climbs, the bill climbs. When agents talk to each other, the bill climbs twice. The &quot;software&quot; is the packaging. The business is the meter.</p>
+
+        <p>In telecom we sold minutes and circuits, not the softswitch. Customers paid for what crossed the wire. AI is the same model with a new unit. Call it tokens, call it inference, call it seats that quietly burn compute behind a flat subscription. The economics do not care what the packaging says.</p>
+
+        <p>So stop buying the packaging story. Ask who owns the meter, what a token means on that vendor&#x27;s clock, and what happens to your spend when the workload doubles. If you cannot answer those three, you are not buying a product. You are funding someone else&#x27;s data center.</p>
+
+        <p>The product is the bill. Treat it that way.</p>]]></content:encoded>
+    </item>
     <item>
       <title>If The Models Get Ten Times Smarter, How Would You Know?</title>
       <link>https://jerrywlambert.com/posts/if-the-models-get-ten-times-smarter-how-would-you-know.html</link>
