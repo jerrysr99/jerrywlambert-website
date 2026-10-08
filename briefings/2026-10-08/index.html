@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Model Brief, October 8, 2026 · JerryWLambert.com AI Briefing</title>
+<meta name="description" content="Anthropic launches Claude Haiku 5.5 at $0.10 / $0.50 per million tokens for prompts up to 100,000 tokens, and halves Sonnet 5.5 cache hits to $0.10.">
+<link rel="canonical" href="https://jerrywlambert.com/briefings/2026-10-08/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Daily Model Brief, October 8, 2026 · JerryWLambert.com AI Briefing">
+<meta property="og:description" content="Anthropic launches Claude Haiku 5.5 at $0.10 / $0.50 per million tokens for prompts up to 100,000 tokens, and halves Sonnet 5.5 cache hits to $0.10.">
+<meta property="og:url" content="https://jerrywlambert.com/briefings/2026-10-08/">
+<meta property="og:site_name" content="JerryWLambert.com AI Briefing">
+<meta property="og:image" content="https://jerrywlambert.com/img/headshot.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jerrywlambert.com/img/headshot.jpg">
+<meta name="twitter:title" content="Daily Model Brief, October 8, 2026 · JerryWLambert.com AI Briefing">
+<meta name="twitter:description" content="Anthropic launches Claude Haiku 5.5 at $0.10 / $0.50 per million tokens for prompts up to 100,000 tokens, and halves Sonnet 5.5 cache hits to $0.10.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --navy:#0F2742; --ink:#1A1F26; --muted:#5C6480; --panel:#F1F4F7; --on-navy:#C5D4E6; --light:#EEF3F9; --border:#E2E8F0; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; color:var(--ink); background:#fff; }
+  .masthead { background:#0F2742; color:#FFFFFF; padding:1.35rem 1.5rem 1.2rem; }
+  .masthead .site { margin:0 0 0.45rem; font-size:0.82rem; letter-spacing:0.14em; text-transform:lowercase; color:#C5D4E6; }
+  .masthead .date { margin:0; font-size:1.1rem; font-weight:700; line-height:1.25; color:#FFFFFF; }
+
+  main { max-width: 46rem; margin: 0 auto; padding: 2rem 1.5rem 3.5rem; }
+  .back { display:inline-block; margin:0 0 1.25rem; color:var(--navy); font-weight:600; text-decoration:none; font-size:0.95rem; }
+  h1 { font-size: 1.55rem; line-height: 1.25; margin: 0 0 0.45rem; color: var(--navy); letter-spacing: -0.02em; }
+  .deck { font-size:1.05rem; font-weight:600; color:var(--navy); margin:0 0 0.35rem; line-height:1.4; }
+  .meta { color: var(--muted); font-size: 0.95rem; margin: 0 0 1.25rem; }
+  .pdf { display:inline-block; background:var(--navy); color:#fff; text-decoration:none; font-weight:600; padding:0.55rem 0.95rem; border-radius:8px; margin: 0 0 1.75rem; font-size:0.92rem; }
+  h2 { font-size: 1.05rem; color: var(--navy); margin: 1.6rem 0 0.55rem; padding-bottom:0.25rem; border-bottom:2px solid var(--navy); }
+  p { line-height: 1.6; margin: 0 0 0.9rem; }
+  .summary { background:var(--panel); border-left:4px solid var(--navy); padding:0.9rem 1.1rem; }
+  .summary p { margin:0 0 0.6rem; } .summary p:last-child { margin:0; font-weight:600; }
+  .unit { font-size:0.85rem; color:var(--muted); margin:0 0 0.35rem; }
+  ul { margin:0.3rem 0 0.9rem; padding-left:1.2rem; } li { line-height:1.55; margin:0 0 0.4rem; }
+  ul.notes { font-size:0.92rem; }
+  code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:0.85em; }
+  .scroll { overflow-x:auto; }
+  table.data { width:100%; border-collapse:collapse; font-size:0.85rem; margin:0.25rem 0 0.6rem; min-width:34rem; }
+  table.data th { background:var(--light); color:var(--navy); text-align:left; padding:0.45rem; font-weight:700; border-top:2px solid var(--navy); border-bottom:2px solid var(--navy); }
+  table.data td { border-bottom:1px solid var(--border); padding:0.45rem; vertical-align:top; }
+  table.data tr:nth-child(even) td { background:var(--panel); }
+  td.mono { word-break:break-word; } td.num { white-space:nowrap; }
+  .chart { display:block; width:100%; height:auto; margin:0.4rem 0; border:1px solid var(--border); border-radius:6px; }
+  .cap { font-size:0.92rem; color:var(--muted); line-height:1.5; margin:0 0 1rem; }
+  .note { font-size:0.85rem; color:var(--muted); border-top:1px solid var(--border); padding-top:0.8rem; margin-top:1.8rem; }
+  footer { margin-top: 2.5rem; font-size: 0.9rem; color: var(--muted); border-top: 1px solid #E2E8F0; padding-top: 1.25rem; }
+  footer a { color: var(--navy); font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="masthead"><p class="site">jerrywlambert.com</p><p class="date">Thursday, 8 October 2026</p></div>
+  <main>
+    <a class="back" href="/briefings/">&larr; All briefings</a>
+    <h1>Daily Model Brief, October 8, 2026</h1>
+    <p class="deck">Anthropic launches Claude Haiku 5.5 at a tenth of Haiku 4.5&#x27;s price and halves the cost of Sonnet 5.5 cache hits.</p>
+    <p class="meta">Thursday, October 8, 2026 · Prices as of 8:45 AM CT</p>
+    <a class="pdf" href="./daily-model-brief-2026-10-08.pdf">Download PDF</a>
+
+<h2>Executive Summary</h2><div class='summary'><p>Anthropic launched Claude Haiku 5.5 (<code>claude-haiku-5-5</code>) on October 7, priced by prompt length: $0.10 per million input tokens and $0.50 output for prompts up to 100,000 tokens, and $0.50 / $2.50 for the whole request when the prompt is longer. Cache hits are $0.01 ($0.05 on long prompts). It has a 1M-token context window and 128K max output.</p><p>That is a tenth of Haiku 4.5's $1.00 / $5.00, and Haiku 5.5 scores 43.4 on the Artificial Analysis Intelligence Index at its highest setting, the top score of any model in this brief's chart at $0.50 or less per million output tokens. Anthropic warns that code written for Haiku 4.5 can break on Haiku 5.5.</p><p>Anthropic also cut cache hits on Claude Sonnet 5.5 (<code>claude-sonnet-5-5</code>) from $0.20 to $0.10 per million tokens, 0.05x the input price. Input ($2.00), cache writes ($2.50) and output ($10.00) are unchanged.</p><p>Haiku 4.5 (<code>claude-haiku-4-5-20251001</code>) remains active, with retirement not sooner than October 15, 2026 and no date set. Mistral Large 4 stays on sale at $0.68 input and $2.09 output with no end date, and Anthropic's Mythos 5 and 5.1 remain limited access.</p><p>No other vendor changed a published token price since yesterday's brief.</p></div>
+<h2>What This Means for Customers</h2><ul class='bul'><li>If you run high-volume, short-prompt work on Haiku 4.5, test Haiku 5.5 now. It lists at a tenth of the price for prompts up to 100,000 tokens, but Anthropic says its newer tokenizer turns the same text into about 30% more tokens, so expect a real saving closer to 87% than 90%.</li><li>Watch the 100,000-token line. A prompt one token over it reprices the whole request at $0.50 / $2.50, still half of Haiku 4.5, but five times the short-prompt rate.</li><li>Check your code before you switch. Haiku 5.5 supports only adaptive thinking: a manual thinking budget returns an error, and responses can begin with thinking blocks by default.</li><li>If you cache heavily on Sonnet 5.5, re-cost cached reads at $0.10 per million tokens. Nothing else on Sonnet 5.5 moved.</li><li>Haiku 4.5 is not retiring before October 15 and Anthropic has not set a date. With Haiku 5.5 out, plan for a notice and keep a tested fallback ready.</li><li>The October 22 deadline holds. <code>gpt-4.1-nano</code>, <code>o4-mini</code> and <code>gpt-image-1</code> (OpenAI) shut down that evening (CT), and Google's <code>gemini-omni-flash-preview</code> and Veo 3.1 previews shut down the same day.</li></ul>
+<div class='keepsec'><h2>New Models and Price Changes</h2><p class='unit'>Prices in USD per 1M tokens.</p><div class='scroll'><table class='data'><thead><tr><th class='w-v'>Vendor</th><th class='w-m'>Model ID</th><th>Status</th><th class='w-p'>Input</th><th class='w-p'>Cached</th><th class='w-o'>Output</th></tr></thead><tbody><tr><td><b>Anthropic</b></td><td class='mono'>claude-haiku-5-5</td><td>New Oct 7. Available now. Prompts up to 100,000 tokens.</td><td class='num'>$0.10</td><td class='num'>$0.01</td><td class='num'>$0.50</td></tr><tr><td><b>Anthropic</b></td><td class='mono'>claude-haiku-5-5</td><td>Prompts over 100,000 tokens (whole request).</td><td class='num'>$0.50</td><td class='num'>$0.05</td><td class='num'>$2.50</td></tr><tr><td><b>Anthropic</b></td><td class='mono'>claude-sonnet-5-5</td><td>Cache-hit price cut Oct 7 (was $0.20). Other rates unchanged.</td><td class='num'>$2.00</td><td class='num'>$0.10<br>(was $0.20)</td><td class='num'>$10.00</td></tr><tr><td><b>Mistral</b></td><td class='mono'>mistral-large-4</td><td>Public Preview. Sale price unchanged, no end date.</td><td class='num'>$0.68<br>(list $1.36)</td><td class='num'>$0.07<br>(list $0.14)</td><td class='num'>$2.09<br>(list $4.18)</td></tr></tbody></table></div></div><ul class='notes'><li>Haiku 5.5 cache writes are $0.125 per million tokens for a 5-minute cache and $0.20 for a 1-hour cache on prompts up to 100,000 tokens ($0.625 and $1.00 above that). It is also offered on Amazon Bedrock, Google Cloud and Microsoft Foundry, and Anthropic says it will not retire before October 7, 2027.</li><li>OpenAI, Google, xAI, DeepSeek, Moonshot, Z.ai, MiniMax, Mistral, Perplexity, Meta and TypeSafe published token prices were unchanged since yesterday&#x27;s brief.</li><li>Alibaba&#x27;s price page could not be checked for a second day, and Amazon, Microsoft and ByteDance did not publish readable price tables. Their last confirmed prices stand.</li></ul>
+<h2>Deprecations and Retirements</h2><div class='scroll'><table class='data'><thead><tr><th class='w-v'>Vendor</th><th class='w-dm'>Model ID</th><th class='w-d'>Shutdown (CT)</th><th class='w-r'>Replacement</th><th>Note</th></tr></thead><tbody><tr><td><b>OpenAI</b></td><td class='mono'>gpt-4.1-nano<br>o4-mini<br>gpt-image-1</td><td>Thu Oct 22, 2026, 7:00 PM CT</td><td class='mono'>gpt-5.6-luna<br>gpt-5.6-terra<br>gpt-image-2.5-sunburst or gpt-image-2.5-flare</td><td>Unchanged. OpenAI lists Oct 23 with no time; 7:00 PM CT Oct 22 is 00:00 UTC Oct 23.</td></tr><tr><td><b>Google</b></td><td class='mono'>gemini-omni-flash-preview</td><td>Thu Oct 22, 2026 (time not stated)</td><td class='mono'>gemini-omni-1.1-flash</td><td>Unchanged.</td></tr><tr><td><b>Google</b></td><td class='mono'>veo-3.1-generate-preview<br>veo-3.1-fast-generate-preview<br>veo-3.1-lite-generate-preview</td><td>Thu Oct 22, 2026 (time not stated)</td><td class='mono'>gemini-omni-1.1-flash</td><td>Unchanged.</td></tr><tr><td><b>Google</b></td><td class='mono'>gemini-3.1-flash-image</td><td>No shutdown date announced</td><td class='mono'>gemini-nano-banana-2.1</td><td>Unchanged since Google withdrew its Oct 29 date yesterday.</td></tr><tr><td><b>Google</b></td><td class='mono'>gemini-3.1-flash-tts-preview<br>gemini-2.5-flash-preview-tts<br>gemini-2.5-pro-preview-tts</td><td>Tue Nov 17, 2026 (time not stated)</td><td class='mono'>gemini-3.8-flash-tts or gemini-3.8-flash-lite-tts</td><td>Unchanged.</td></tr><tr><td><b>Google</b></td><td class='mono'>gemini-3.1-flash-live-preview<br>gemini-2.5-flash-native-audio-preview-12-2025</td><td>Tue Nov 17, 2026 (time not stated)</td><td class='mono'>gemini-3.8-live</td><td>Unchanged.</td></tr><tr><td><b>Anthropic</b></td><td class='mono'>claude-sonnet-4-5-20250929</td><td>Mon Nov 30, 2026 (time not stated)</td><td class='mono'>claude-sonnet-5-5</td><td>Unchanged.</td></tr><tr><td><b>Anthropic</b></td><td class='mono'>claude-haiku-4-5-20251001</td><td>Not sooner than Thu Oct 15, 2026; no date set</td><td class='mono'>None named</td><td>Watch item. Still active; Haiku 5.5 launched Oct 7.</td></tr><tr><td><b>Cohere</b></td><td class='mono'>command-r<br>command-r-plus</td><td>Deprecated Sep 15, 2025; no shutdown date set</td><td class='mono'>command-r-08-2024<br>command-r-plus-08-2024<br>command-a-03-2025</td><td>Closed to new customers; existing users keep access until retirement.</td></tr></tbody></table></div><ul class='notes'><li>Unverified: Google&#x27;s deprecations page still shows gemini-2.5-flash-image shutting down Mon Mar 15, 2027, with gemini-3.1-flash-lite-image as the replacement, while Google&#x27;s pricing page says it shut down Oct 2, 2026. Confirm with Google before you budget either date.</li><li>Perplexity will retire its Agent API and Router API routes to older OpenAI models (openai/gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, gpt-5.2, gpt-5.1, gpt-5 and gpt-5-mini) at 7:00 PM CT on Fri Oct 23, 2026, as announced on October 6.</li></ul>
+<h2>Around the Market</h2><p>Anthropic made the only moves since yesterday&#x27;s brief, and both lower costs. Haiku 5.5 brings prompt-length pricing to Anthropic&#x27;s fastest model: short prompts get the low rate, and a prompt past 100,000 tokens reprices the whole request. The Sonnet 5.5 cut is narrower but useful for cache-heavy agents and chat apps, where cached reads can be most of the input bill. Everywhere else, published rates held. OpenAI&#x27;s and Google&#x27;s pricing, model and deprecation pages were unchanged, Mistral kept Large 4 on sale for a third day with no end date, and Perplexity&#x27;s Decisions API stayed at yesterday&#x27;s $0.02 input. xAI, DeepSeek, Moonshot, Z.ai, MiniMax, Meta and TypeSafe left published rates alone.</p>
+<h2>Bottom Line</h2><p>Haiku 5.5 resets the price of a fast Claude model to $0.10 / $0.50 for prompts up to 100,000 tokens. Test it against Haiku 4.5 now, mind the tokenizer and the long-prompt line when you re-cost, take the Sonnet 5.5 cache-hit cut if you cache, and keep October 22 as the hard date for the OpenAI and Google preview retirements.</p>
+<h2>Model Size vs. Price</h2><img class='chart' src='./model-size-vs-price.png' alt='Model Size vs. Price: Active Models (JerryWLambert.com AI Briefing)'><p class='cap'>Across the 20 active models whose vendors publish parameter counts, price rises only loosely with total size (rank correlation 0.39 on output price). Anthropic publishes no parameter counts, so Claude Haiku 5.5 is not plotted. Prices as of October 8, 2026.</p>
+<h2>Price vs. Performance</h2><img class='chart' src='./price-vs-performance.png' alt='Price vs. Performance: Active Models (JerryWLambert.com AI Briefing)'><p class='cap'>Across the 46 active models with a measured Artificial Analysis Intelligence Index score (fetched Oct 8, 2026, 9:47 AM CT), price rises with performance only loosely (rank correlation 0.43 on output price). New Claude Haiku 5.5 scores 43.4 at $0.50 per 1M output tokens, ahead of GLM-5.3-Flash (41.8), DeepSeek V4.1 Flash (39.5) and GPT-6 Luna (38.1) at $0.60 or less, while the top scorer, Claude Opus 5.5 at 57.6, costs $20.</p>
+<p class='note'>All times Central. Prices, dates and model IDs are taken from first-party vendor pricing, model, deprecation and release-note pages as of 8:45 AM CT on October 8, 2026; chart prices are as of October 8, 2026. Performance scores are from the Artificial Analysis Intelligence Index. Items that could not be confirmed are marked unverified.</p>
+    <footer>
+      <a href="/newsletter/">Get the Brief by email</a> ·
+      <a href="/newsletter/unsubscribe/">Unsubscribe</a> ·
+      <a href="/briefings/">All briefings</a> ·
+      <a href="/">Home</a>
+    </footer>
+  </main>
+</body>
+</html>
