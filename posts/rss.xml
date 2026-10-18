@@ -6,7 +6,37 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Oct 2026 23:20:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 14:16:35 +0000</lastBuildDate>
+    <item>
+      <title>AI Pricing Complexity Just Spiked</title>
+      <link>https://jerrywlambert.com/posts/ai-pricing-complexity-just-spiked.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/ai-pricing-complexity-just-spiked.html</guid>
+      <pubDate>Sun, 18 Oct 2026 09:00:00 -0500</pubDate>
+      <description>DeepSeek now charges $0.75 per 1,000 successful web searches, and another $0.75 per 1,000 fetches. Not per token. Per request.</description>
+      <content:encoded><![CDATA[<p>DeepSeek now charges $0.75 per 1,000 successful web searches, and another $0.75 per 1,000 fetches. Not per token. Per request.</p>
+
+        <p>That is a per-call fee, and it will not show up in any token math.</p>
+
+        <p>For two years, AI pricing fit on one line: input and output, per million tokens. Easy to budget. Easy to audit.</p>
+
+        <p>That line is gone.</p>
+
+        <p>Anthropic lists Claude Opus 5.5 at $4 in and $20 out per million tokens. Turn on fast mode and it is $8 and $40. Same model, same prompt, twice the price.</p>
+
+        <p>Ask Anthropic for US-only inference on Claude 4.6 and later, and a 1.1x multiplier lands on every token category, cache included. It stacks on top of fast mode.</p>
+
+        <p>DeepSeek also bills its peak hours at double the off-peak rate.</p>
+
+        <p>I have seen this movie. I spent 40 years in telecom billing operations: rating, mediation, trillions of CDRs. Per-minute pricing started simple too. Then came surcharges. Time-of-day bands. Roaming and jurisdiction multipliers. The carriers that rated every call correctly kept their margin. The ones that averaged leaked it.</p>
+
+        <p>Here is the part the invoice does not show.</p>
+
+        <p>A monthly total tells you what you spent. It does not tell you which agent ran fast mode on work that could wait, which workflow pinned US routing it did not need, or how many fetch calls one loop made overnight.</p>
+
+        <p>To answer that, every request needs its own Token Detail Record. Model. Tokens in and out. Tool calls counted as units. Speed tier. Geography. Time band. Then rate it against the Tariff in force that day.</p>
+
+        <p>Token rates are the headline. The modifiers are the bill.</p>]]></content:encoded>
+    </item>
     <item>
       <title>They Are Selling Compute, Not Software</title>
       <link>https://jerrywlambert.com/posts/they-are-selling-compute-not-software.html</link>
