@@ -6,7 +6,50 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Oct 2026 14:16:35 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 20:20:00 +0000</lastBuildDate>
+    <item>
+      <title>What Is Under Your Agentic Hood?</title>
+      <link>https://jerrywlambert.com/posts/what-is-under-your-agentic-hood.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/what-is-under-your-agentic-hood.html</guid>
+      <pubDate>Tue, 20 Oct 2026 13:00:00 -0500</pubDate>
+      <description>My premise is simple. A cloud agent should come with a cloud computer. Its own CPU, memory, and disk, there when the agent needs to keep working. That machine is the engine under the hood.</description>
+      <content:encoded><![CDATA[<p><img src="https://jerrywlambert.com/img/what-is-under-your-agentic-hood-table.png" alt="Agentic Horsepower table of fourteen agentic AI players showing whether each provides a cloud computer and its CPU, RAM, and disk. Grok Bot persistent, 8 cores, 15 GB, 125 GB. OpenAI dots persistent, 9 cores, about 9.7 GB, about 32 GB. Manus Advanced plan persistent, 2 vCPU, 8 GB, 120 GB. Meta Muse persistent, 2 vCPU, 8 GB, 100 GB. Genspark Claw persistent add-on, specs not published. Claude Code on the web per-session VM, 4 vCPU, 16 GB, 30 GB. OpenAI Codex Pro per-task container, 4 vCPU, 16 GiB, 32 GiB. Cursor Cloud Agents per-agent VM, 16 GB RAM. Devin per-session VM, not published. Google Jules short-lived VM, 20 GB disk. Copilot Studio metered Cloud PC pool, not published. Perplexity Computer hybrid, not published. Gemini Agent and Amazon Nova Act: none, browser only. Sizes only, not per-core speed." width="1200" height="1000" loading="lazy" style="display:block;width:100%;max-width:800px;height:auto;border:1px solid #E2E8F0;border-radius:8px;"></p>
+
+        <p>My premise is simple. A cloud agent should come with a cloud computer. Its own CPU, memory, and disk, there when the agent needs to keep working. That machine is the engine under the hood.</p>
+
+        <p>Some do. Many do not.</p>
+
+        <p>The chart lists fourteen agentic players and what each gives you. A few provide a persistent machine. Others spin up a VM or container per session or task instead of a machine that stays. Some run only a remote browser, so the computer column reads None. Many vendors do not publish the spec at all, so I wrote Not published rather than guess.</p>
+
+        <p>The figures are a mix of official vendor docs and user measurements. Sources are in the first comment.</p>
+
+        <p>Here is the part the spec sheet does not show.</p>
+
+        <p>These are sizes, not speed. A bigger box is not automatically a faster one, and per-core performance differs by vendor. Among the persistent machines with figures, Grok Bot has the most memory and disk, while OpenAI dots has one more core and, per Geekbench runs, likely faster ones. My Grok Bot numbers are one measurement on one account, and they could change.</p>
+
+        <p>Agent buyers should ask: is there a computer, how many cores, how much memory, how much disk, and does it stay between tasks. If we are ultimately buying compute, then all compute matters.</p>
+
+        <p>If your agentic platform is not providing you a server as part of the service, why not?</p>
+
+        <h2>Sources</h2>
+        <p>Sources (sizes only, not per-core speed; checked Oct 20, 2026):</p>
+        <ul>
+          <li>Grok Bot: measured on my account, Oct 20, 2026 (xAI publishes no spec).</li>
+          <li>OpenAI dots (user-measured): <a href="https://www.reddit.com/r/OpenAI/comments/1wu1sue/i_asked_an_openai_dot_to_inspect_its_own/" target="_blank" rel="noopener">https://www.reddit.com/r/OpenAI/comments/1wu1sue/i_asked_an_openai_dot_to_inspect_its_own/</a> and <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/geekbench-7-results-suggest-openais-dots-agent-runs-on-nine-core-amd-epyc-vms-with-nearly-10gb-of-memory-newest-runs-score-about-six-times-meta-muse-in-multi-core" target="_blank" rel="noopener">https://www.tomshardware.com/tech-industry/artificial-intelligence/geekbench-7-results-suggest-openais-dots-agent-runs-on-nine-core-amd-epyc-vms-with-nearly-10gb-of-memory-newest-runs-score-about-six-times-meta-muse-in-multi-core</a></li>
+          <li>Manus Advanced (official): <a href="https://help.manus.im/en/articles/15392078-understanding-cloud-computer-plans-and-billing" target="_blank" rel="noopener">https://help.manus.im/en/articles/15392078-understanding-cloud-computer-plans-and-billing</a></li>
+          <li>Meta Muse (user-measured): <a href="https://www.tomshardware.com/pc-components/cpus/meta-muse-runs-agents-on-amd-epyc-turin-hosts-with-two-cores-and-8gb-of-memory-ai-agent-can-pass-terminal-commands-to-ubuntu-host-system" target="_blank" rel="noopener">https://www.tomshardware.com/pc-components/cpus/meta-muse-runs-agents-on-amd-epyc-turin-hosts-with-two-cores-and-8gb-of-memory-ai-agent-can-pass-terminal-commands-to-ubuntu-host-system</a> and <a href="https://www.starkinsider.com/2026/09/meta-muse-specs-what-it-runs-on.html" target="_blank" rel="noopener">https://www.starkinsider.com/2026/09/meta-muse-specs-what-it-runs-on.html</a></li>
+          <li>Genspark Claw (official, no specs): <a href="https://www.genspark.ai/helpcenter/genspark-claw" target="_blank" rel="noopener">https://www.genspark.ai/helpcenter/genspark-claw</a></li>
+          <li>Claude Code on the web (official, approximate): <a href="https://code.claude.com/docs/en/cloud-environments" target="_blank" rel="noopener">https://code.claude.com/docs/en/cloud-environments</a></li>
+          <li>OpenAI Codex cloud (official): <a href="https://learn.chatgpt.com/docs/environments/cloud-environments" target="_blank" rel="noopener">https://learn.chatgpt.com/docs/environments/cloud-environments</a></li>
+          <li>Cursor Cloud Agents: <a href="https://cursor.com/docs/cloud-agent/setup" target="_blank" rel="noopener">https://cursor.com/docs/cloud-agent/setup</a> and <a href="https://forum.cursor.com/t/cloud-agent-unclear-error-and-termination-of-sessions-when-using-too-much-ram/167322/5" target="_blank" rel="noopener">https://forum.cursor.com/t/cloud-agent-unclear-error-and-termination-of-sessions-when-using-too-much-ram/167322/5</a></li>
+          <li>Devin (official, no specs): <a href="https://docs.devin.ai/onboard-devin/environment" target="_blank" rel="noopener">https://docs.devin.ai/onboard-devin/environment</a></li>
+          <li>Google Jules (official): <a href="https://jules.google/docs/environment/" target="_blank" rel="noopener">https://jules.google/docs/environment/</a></li>
+          <li>Copilot Studio (official, no specs): <a href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/use-cloud-pc-pool" target="_blank" rel="noopener">https://learn.microsoft.com/en-us/microsoft-copilot-studio/use-cloud-pc-pool</a></li>
+          <li>Perplexity Computer (official, no specs): <a href="https://www.perplexity.ai/hub/products/hybrid-compute" target="_blank" rel="noopener">https://www.perplexity.ai/hub/products/hybrid-compute</a></li>
+          <li>Gemini Agent (official): <a href="https://support.google.com/gemini/answer/16821166?hl=en" target="_blank" rel="noopener">https://support.google.com/gemini/answer/16821166?hl=en</a></li>
+          <li>Amazon Nova Act (official): <a href="https://aws.amazon.com/nova/act/" target="_blank" rel="noopener">https://aws.amazon.com/nova/act/</a></li>
+        </ul>]]></content:encoded>
+    </item>
     <item>
       <title>AI Pricing Complexity Just Spiked</title>
       <link>https://jerrywlambert.com/posts/ai-pricing-complexity-just-spiked.html</link>
