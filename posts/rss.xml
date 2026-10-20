@@ -13,13 +13,13 @@
       <guid isPermaLink="true">https://jerrywlambert.com/posts/what-is-under-your-agentic-hood.html</guid>
       <pubDate>Tue, 20 Oct 2026 13:00:00 -0500</pubDate>
       <description>My premise is simple. A cloud agent should come with a cloud computer. Its own CPU, memory, and disk, there when the agent needs to keep working. That machine is the engine under the hood.</description>
-      <content:encoded><![CDATA[<p><img src="https://jerrywlambert.com/img/what-is-under-your-agentic-hood-table.png" alt="Agentic Horsepower table of sixteen agentic AI players showing whether each provides a cloud computer and its CPU, RAM, and disk. Grok Bot persistent, 8 cores, 15 GB, 125 GB. OpenAI dots persistent, 9 cores, about 9.7 GB, about 32 GB. Manus Advanced plan persistent, 2 vCPU, 8 GB, 120 GB. Meta Muse persistent, 2 vCPU, 8 GB, 100 GB. Genspark Claw persistent add-on, specs not published. Claude Code on the web per-session VM, 4 vCPU, 16 GB, 30 GB. OpenAI Codex Pro per-task container, 4 vCPU, 16 GiB, 32 GiB. Cursor Cloud Agents per-agent VM, 16 GB RAM. Devin per-session VM, not published. Google Jules short-lived VM, 20 GB disk. Copilot Studio metered Cloud PC pool, not published. Perplexity Computer hybrid, not published. Gemini Agent and Amazon Nova Act: none, browser only. OpenClaw: none, you host it. CrewAI: none, framework. Sizes only, not per-core speed." width="1200" height="1120" loading="lazy" style="display:block;width:100%;max-width:800px;height:auto;border:1px solid #E2E8F0;border-radius:8px;"></p>
+      <content:encoded><![CDATA[<p><img src="https://jerrywlambert.com/img/what-is-under-your-agentic-hood-table.png" alt="Agentic Horsepower table of twenty agentic AI players showing whether each provides a cloud computer and its CPU, RAM, and disk. Grok Bot persistent, 8 cores, 15 GB, 125 GB. OpenAI dots persistent, 9 cores, about 9.7 GB, about 32 GB. Manus Advanced plan persistent, 2 vCPU, 8 GB, 120 GB. Meta Muse persistent, 2 vCPU, 8 GB, 100 GB. Genspark Claw persistent add-on, specs not published. Claude Code on the web per-session VM, 4 vCPU, 16 GB, 30 GB. OpenAI Codex Pro per-task container, 4 vCPU, 16 GiB, 32 GiB. Cursor Cloud Agents per-agent VM, 16 GB RAM. Devin per-session VM, not published. Google Jules short-lived VM, 20 GB disk. Copilot Studio metered Cloud PC pool, not published. Perplexity Computer hybrid, not published. Gemini Agent and Amazon Nova Act: none, browser only. OpenClaw: none, you host it. CrewAI: none, framework. LangGraph: none, framework. Microsoft AutoGen: none, framework. n8n: none, workflow tool. Zapier Agents: none, automation. Sizes only, not per-core speed." width="1200" height="1360" loading="lazy" style="display:block;width:100%;max-width:800px;height:auto;border:1px solid #E2E8F0;border-radius:8px;"></p>
 
         <p>My premise is simple. A cloud agent should come with a cloud computer. Its own CPU, memory, and disk, there when the agent needs to keep working. That machine is the engine under the hood.</p>
 
         <p>Some do. Many do not.</p>
 
-        <p>The chart lists sixteen agentic players and what each gives you. A few provide a persistent machine. Others spin up a VM or container per session or task instead of a machine that stays. Some run only a remote browser or leave the hosting to you, so the computer column reads None. Many vendors do not publish the spec at all, so I wrote Not published rather than guess.</p>
+        <p>The chart lists twenty agentic players and what each gives you. A few provide a persistent machine. Others spin up a VM or container per session or task instead of a machine that stays. Some run only a remote browser or leave the hosting to you, so the computer column reads None. Many vendors do not publish the spec at all, so I wrote Not published rather than guess.</p>
 
         <p>The figures are a mix of official vendor docs and user measurements. Sources are below.</p>
 
@@ -50,6 +50,10 @@
           <li>Amazon Nova Act (official): <a href="https://aws.amazon.com/nova/act/" target="_blank" rel="noopener">https://aws.amazon.com/nova/act/</a></li>
           <li>OpenClaw (self-hosted, runs on your own machine): <a href="https://openclaw.ai" target="_blank" rel="noopener">https://openclaw.ai</a></li>
           <li>CrewAI (open-source framework): <a href="https://docs.crewai.com" target="_blank" rel="noopener">https://docs.crewai.com</a></li>
+          <li>LangGraph (open-source framework): <a href="https://langchain-ai.github.io/langgraph/" target="_blank" rel="noopener">https://langchain-ai.github.io/langgraph/</a></li>
+          <li>Microsoft AutoGen (open-source framework): <a href="https://microsoft.github.io/autogen/" target="_blank" rel="noopener">https://microsoft.github.io/autogen/</a></li>
+          <li>n8n (workflow automation, self-hosted or n8n cloud): <a href="https://n8n.io" target="_blank" rel="noopener">https://n8n.io</a></li>
+          <li>Zapier Agents (automation): <a href="https://zapier.com/agents" target="_blank" rel="noopener">https://zapier.com/agents</a></li>
         </ul>]]></content:encoded>
     </item>
     <item>
