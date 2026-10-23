@@ -135,3 +135,6 @@ td.num,th.num{text-align:right}
  .bar{grid-template-columns:110px 1fr 64px;gap:.5rem}.cal .d{min-height:58px}.cal .ev{font-size:0;padding:0;width:8px;height:8px;border-radius:50%}
  .card{padding:1rem}.search,.combo{min-width:0;width:100%}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+.mh-cta{display:inline-block;margin-left:16px;padding:8px 16px;border-radius:999px;background:#C5D4E6;color:#0F2742;font-weight:600;font-size:14px;text-decoration:none;transition:background .15s,transform .15s}
+.mh-cta:hover,.mh-cta:focus-visible{background:#fff;transform:translateY(-1px)}
+@media (max-width:640px){.mh-cta{margin-left:8px;padding:6px 12px;font-size:13px}}
