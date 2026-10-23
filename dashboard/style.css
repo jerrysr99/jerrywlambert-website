@@ -138,3 +138,27 @@ td.num,th.num{text-align:right}
 .mh-cta{display:inline-block;margin-left:16px;padding:8px 16px;border-radius:999px;background:#C5D4E6;color:#0F2742;font-weight:600;font-size:14px;text-decoration:none;transition:background .15s,transform .15s}
 .mh-cta:hover,.mh-cta:focus-visible{background:#fff;transform:translateY(-1px)}
 @media (max-width:640px){.mh-cta{margin-left:8px;padding:6px 12px;font-size:13px}}
+
+.back{display:inline-block;margin:0 0 .75rem;font-size:.88rem;font-weight:600;text-decoration:none;color:var(--navy)}
+.back:hover{text-decoration:underline}
+.mlink{text-decoration:none;color:var(--navy)}.mlink:hover b{text-decoration:underline}
+.dname{font-size:1.45rem;margin-bottom:.8rem}
+.facts{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.75rem}
+.facts div{background:var(--panel);border-radius:10px;padding:.6rem .75rem}
+.facts span{display:block;font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.facts b{color:var(--navy);font-variant-numeric:tabular-nums}
+.pgroup{padding:.9rem 0;border-top:1px solid #F0F3F7}.pgroup:first-of-type{border-top:0;padding-top:.2rem}
+.pgroup h3{margin:0 0 .6rem;font-size:.92rem;color:var(--navy)}
+.pgroup h3 small{font-weight:500;color:var(--muted);margin-left:.4rem;font-size:.78rem}
+.ptiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:.75rem}
+.ptile{border:1px solid var(--line);border-radius:10px;padding:.75rem .85rem;display:flex;flex-direction:column;gap:.15rem}
+.ptile .pl{font-size:.75rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.ptile b{font-size:1.35rem;color:var(--navy);font-variant-numeric:tabular-nums}
+.ptile small{color:var(--muted);font-size:.78rem}
+.ptable td:first-child{white-space:nowrap}
+@media (max-width:600px){.ptiles{grid-template-columns:1fr 1fr}.ptile b{font-size:1.1rem}.dname{font-size:1.2rem}}
+.psum{margin:0;font-size:.95rem}
+dialog#billDlg{border:0;border-radius:var(--r);padding:1.25rem 1.4rem;max-width:720px;width:calc(100% - 2rem);max-height:85vh;overflow:auto;box-shadow:0 20px 50px rgba(15,39,66,.3)}
+dialog#billDlg::backdrop{background:rgba(15,39,66,.45)}
+.dlg-h{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:.6rem}
+ul.bill{margin:0 0 .9rem;padding-left:1.1rem;display:flex;flex-direction:column;gap:.35rem;font-size:.92rem}

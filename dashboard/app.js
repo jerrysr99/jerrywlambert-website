@@ -100,7 +100,9 @@ function table(el, cols, rows, state, rerender) {
 
 // ---------- tabs ----------
 const TABS = ['performance', 'economics', 'calendars', 'tools'], drawn = {};
-function showTab(t, focus) { if (!TABS.includes(t)) t = 'performance';
+function showTab(t, focus) { const md = /^model\/(.+)$/.exec(t || ''); $('#model').hidden = !md;
+  if (md) { TABS.forEach(x => { const b = $('#tab-' + x); b.setAttribute('aria-selected', false); $('#' + x).hidden = true; }); detail(decodeURIComponent(md[1])); scrollTo(0, 0); return; }
+  if (!TABS.includes(t)) t = 'performance';
   TABS.forEach(x => { const b = $('#tab-' + x); b.setAttribute('aria-selected', x === t); b.tabIndex = x === t ? 0 : -1; $('#' + x).hidden = x !== t; });
   if (focus) $('#tab-' + t).focus();
   if (!drawn[t]) { drawn[t] = true; ({performance: perf, economics: econ, calendars: cals, tools})[t](); } else (redraw[t] || (() => {}))(); }
@@ -275,7 +277,7 @@ function tools() {
     r.sort((a, b) => { const A = a[st.sort], B = b[st.sort]; if (A == null || A === '') return 1; if (B == null || B === '') return -1; return (A > B ? 1 : A < B ? -1 : 0) * st.dir; });
     const pages = Math.max(1, Math.ceil(r.length / PER)); st.page = Math.min(st.page, pages - 1);
     $('#mtCount').textContent = `${fmt(r.length, 0)} models`; $('#mtPage').textContent = `Page ${st.page + 1} of ${pages}`; $('#mtPrev').disabled = st.page === 0; $('#mtNext').disabled = st.page >= pages - 1;
-    table($('#mtable'), [{k: 'name', l: 'Model', f: x => `<b>${esc(x.name)}</b>`}, {k: 'vendor', l: 'Vendor'}, {k: 'ii', l: 'Intelligence', num: 1, f: x => fmt(x.ii, 1)},
+    table($('#mtable'), [{k: 'name', l: 'Model', f: x => `<a class="mlink" href="#model/${encodeURIComponent(x.id)}"><b>${esc(x.name)}</b></a>`}, {k: 'vendor', l: 'Vendor'}, {k: 'ii', l: 'Intelligence', num: 1, f: x => fmt(x.ii, 1)},
       {k: 'sp', l: 'Tokens/s', num: 1, f: x => fmt(x.sp, 0)}, {k: 'pin', l: 'Input $/1M', num: 1, f: x => usd(x.pin)}, {k: 'pout', l: 'Output $/1M', num: 1, f: x => usd(x.pout)},
       {k: 'n', l: 'Scores', num: 1}, {k: 'release', l: 'Released', f: x => x.release ? dlabel(x.release) : '<span class="muted">-</span>'}, {k: 'first', l: 'First tracked', f: x => dlabel(x.first)}],
       r.slice(st.page * PER, st.page * PER + PER), st, mt); };
@@ -283,6 +285,48 @@ function tools() {
   $('#mtPrev').onclick = () => { st.page--; mt(); }; $('#mtNext').onclick = () => { st.page++; mt(); };
   mt();
 }
+
+// ---------- model detail ----------
+const UNIT = {input: ['Input', 'Prompt tokens sent to the model'], output: ['Output', 'Generated tokens, including reasoning'],
+  cache_read: ['Cached input', 'Prompt tokens served from cache'], cache_write: ['Cache write', 'Prompt tokens written to cache']};
+const ORDER = ['input', 'cache_read', 'cache_write', 'output'];
+const kt = n => n >= 1e6 ? fmt(n / 1e6, 2) + 'M' : fmt(n / 1000, 0) + 'K';
+const p1m = v => { if (v === 0) return 'Free'; if (v >= 1) return '$' + Number(v).toFixed(2); let x = String(+Number(v).toPrecision(4)); if ((x.split('.')[1] || '').length < 2) x = Number(x).toFixed(2); return '$' + x; };
+function pricingCard(id) {
+  const P = (D.pricing || {})[id]; if (!P) return `<div class="card"><div class="card-h"><h2>List pricing</h2></div><p class="empty">No list pricing on file for this model yet.</p></div>`;
+  const units = ORDER.filter(u => P.tokens[u]);
+  const tokens = `<div class="pgroup"><h3>Tokens <small>USD per 1M tokens</small></h3><div class="ptiles">${units.map(u => `<div class="ptile"><span class="pl">${UNIT[u][0]}</span><b>${p1m(P.tokens[u].usd)}</b><small>${UNIT[u][1]}</small></div>`).join('')}</div></div>`;
+  const cond = t => t.over != null ? `Prompts over ${kt(t.over)} tokens` : `Prompts of ${kt(t.min)} tokens or more`;
+  const tblU = rows => units.filter(u => rows.some(r => r[u] != null));
+  const grid = (heads, rows) => { const us = tblU(rows.map(r => r.t)); return `<div class="tbl-wrap"><table class="ptable"><thead><tr><th>Applies to</th>${us.map(u => `<th class="num">${UNIT[u][0]}</th>`).join('')}</tr></thead><tbody>${rows.map(r =>
+    `<tr><td>${r.l}</td>${us.map(u => `<td class="num">${r.t[u] != null ? p1m(r.t[u]) : '<span class="muted">-</span>'}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`; };
+  const flat = o => Object.fromEntries(Object.entries(o).map(([u, v]) => [u, v.usd]));
+  let html = tokens;
+  if (P.tiers.length) { const lo = P.tiers[0]; html += `<div class="pgroup"><h3>Context tiers <small>USD per 1M tokens</small></h3>
+    <p class="note">Long prompts are billed at a higher rate for the whole request.</p>${grid([], [{l: lo.over != null ? `Prompts up to ${kt(lo.over)} tokens` : `Prompts under ${kt(lo.min)} tokens`, t: flat(P.tokens)}, ...P.tiers.map(t => ({l: cond(t), t: flat(t.tokens)}))])}</div>`; }
+  if (P.tod) html += `<div class="pgroup"><h3>Time of day <small>USD per 1M tokens</small></h3>
+    <p class="note">Peak hours: ${esc(P.tod.peak)}. All other hours bill at the off-peak rate.</p>${grid([], [{l: '<span class="pill rel">Off-peak</span>', t: flat(P.tokens)}, {l: '<span class="pill soon">Peak</span>', t: flat(P.tod.peak_tokens)}])}</div>`;
+  if (P.fees.length) html += `<div class="pgroup"><h3>Per-use fees</h3>${P.fees.map(f => `<div class="rrow"><span>${esc(f.l)}<small>${esc(f.cond || '')}</small></span><b>${esc(f.price)}</b></div>`).join('')}</div>`;
+  const extra = [P.tokens.cache_read && 'cache pricing', P.tiers.length && 'context tiers', P.tod && 'peak hours', P.fees.length && 'per-use fees'].filter(Boolean);
+  const summary = `<div class="pgroup"><p class="psum">${esc(P.bill[0])}${extra.length ? ' Also has ' + extra.join(', ') + '.' : ''}</p></div>`;
+  return `<div class="card"><div class="card-h"><h2>List pricing</h2><div class="ctrls"><span class="pill">Effective ${dlabel(P.at)}</span><button class="btn" id="billBtn" aria-haspopup="dialog">How it's billed</button></div></div>${summary}${tokens}
+    <dialog id="billDlg" aria-labelledby="billT"><div class="dlg-h"><h2 id="billT">How ${esc(NAME(id))} is billed</h2><button class="btn icon" id="billX" aria-label="Close">&times;</button></div>
+    <ul class="bill">${P.bill.map(l => `<li>${esc(l)}</li>`).join('')}</ul>${html}<p class="note">List pricing effective ${dlabel(P.at)}. USD.</p></dialog></div>`;
+}
+function detail(id) { const m = D.models[id], el = $('#model');
+  if (!m) { el.innerHTML = '<div class="card"><p class="empty">That model is not in the dashboard.</p><a class="btn" href="#tools">Back to all models</a></div>'; return; }
+  const facts = [['Vendor', esc(m.vendor)], ['Released', dlabel(m.release)], ['First tracked', dlabel(m.first)], ['Context window', m.ctx ? fmt(m.ctx, 0) + ' tokens' : '-'], ['Retires', m.retire ? dlabel(m.retire) : '-']];
+  const sc = D.key.map(k => [k.label, score(k.metric, id)]).filter(x => x[1] != null);
+  el.innerHTML = `<a class="back" href="#tools">&larr; All models</a>
+    <div class="card dhead"><h2 class="dname">${esc(m.name)}</h2><div class="facts">${facts.map(([l, v]) => `<div><span>${l}</span><b>${v}</b></div>`).join('')}</div></div>
+    ${pricingCard(id)}
+    ${sc.length ? `<div class="card"><div class="card-h"><h2>Key scores</h2></div><div class="facts">${sc.map(([l, v]) => `<div><span>${esc(l)}</span><b>${fmt(v, 1)}</b></div>`).join('')}</div></div>` : ''}`;
+  const dlg = $('#billDlg'), btn = $('#billBtn'); if (!dlg) return;
+  btn.onclick = () => { dlg.showModal(); $('#billX').focus(); };  // showModal gives a native focus trap and Esc to close
+  $('#billX').onclick = () => dlg.close(); dlg.onclick = e => { if (e.target === dlg) dlg.close(); };
+  dlg.addEventListener('keydown', e => { if (e.key !== 'Tab') return; const f = [...dlg.querySelectorAll('button,[href],[tabindex]:not([tabindex="-1"])')]; const i = f.indexOf(document.activeElement);
+    if (e.shiftKey && i <= 0) { e.preventDefault(); f[f.length - 1].focus(); } else if (!e.shiftKey && i === f.length - 1) { e.preventDefault(); f[0].focus(); } });
+  dlg.addEventListener('close', () => btn.focus()); }
 
 // ---------- boot ----------
 fetch('data/dashboard.json').then(r => r.json()).then(d => {
