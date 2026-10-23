@@ -154,6 +154,21 @@ function econ() {
   table($('#gaps'), [{k: 'model', l: 'Model', f: g => esc(NAME(g.model))}, {k: 'unit', l: 'Type'},
     {k: 'list', l: 'List', num: 1, f: g => usd(g.list.usd)}, {k: 'market', l: 'Market', num: 1, f: g => usd(g.market.usd)},
     {k: 'd', l: 'Gap', num: 1, f: g => { const d = g.market.usd - g.list.usd; return `<span class="${d > 0 ? 'down' : 'up'}">${d > 0 ? '+' : ''}${usd(d).replace('$-', '-$')}</span>`; }}], D.price_gaps);
+  // price movers
+  const UNIT = {input: 'Input', output: 'Output', cache_read: 'Cache read', cache_write: 'Cache write'};
+  const pm2 = v => (v < 0 ? '-' : '') + usd(Math.abs(v));
+  let pdir = 'all';
+  const pm = () => { let r = (D.price_movers || []).map(m => ({...m, d: m.to - m.from}));
+    if (pdir !== 'all') r = r.filter(m => (pdir === 'up') === (m.d > 0));
+    r = r.map((m, i) => ({...m, rank: i + 1}));
+    if (!r.length) { $('#pmovers').innerHTML = '<p class="empty">No price changes in the last 90 days.</p>'; return; }
+    table($('#pmovers'), [{k: 'rank', l: '#', num: 1, f: m => `<b>${m.rank}</b>`},
+      {k: 'model', l: 'Model', f: m => `${esc(m.name)}<br><small class="muted">${esc(m.vendor)}</small>`},
+      {k: 'unit', l: 'Type', f: m => esc(UNIT[m.unit] || m.unit)},
+      {k: 'from', l: 'Change', num: 1, f: m => `${usd(m.from)} &rarr; <b>${usd(m.to)}</b> <span class="${m.d < 0 ? 'up' : 'down'}">${m.d > 0 ? '+' : ''}${pm2(m.d)} (${m.pct > 0 ? '+' : ''}${fmt(m.pct, 1)}%)</span>`},
+      {k: 'to_at', l: 'Date', f: m => dlabel(m.to_at)}], r.slice(0, 20)); };
+  seg($('#pmDir'), [{v: 'all', l: 'All'}, {v: 'up', l: 'Increased'}, {v: 'down', l: 'Cut'}], pdir, v => { pdir = v; pm(); });
+  pm();
   // price history
   const priced = Object.keys(D.price_obs).map(id => ({v: id, l: NAME(id), s: VEND(id)})).sort((a, b) => a.l.localeCompare(b.l));
   const ph = sel => { const el = $('#priceHist'); if (!sel) { // aggregate view
