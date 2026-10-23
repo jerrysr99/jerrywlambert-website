@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Model Dashboard · JerryWLambert.com</title>
+<meta name="description" content="Model performance, pricing, release calendars and cost tools, updated daily.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="vendor/fonts/fonts.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap mh">
+    <div>
+      <p class="site"><a href="../">jerrywlambert.com</a></p>
+      <h1>AI Model Dashboard</h1>
+      <p class="sub">Performance, pricing and release calendars for the models I track, updated daily.</p>
+    </div>
+    <div class="mh-right"><span class="upd" id="updated"></span><a class="mh-link" href="../briefings/">Daily Briefings</a></div>
+  </div>
+</header>
+<div class="countbar"><div class="wrap" id="counts" aria-label="Dashboard counts"></div></div>
+<nav class="tabbar"><div class="wrap"><div class="tabs" role="tablist" aria-label="Dashboard sections">
+  <button role="tab" id="tab-performance" aria-controls="performance" data-tab="performance">Performance</button>
+  <button role="tab" id="tab-economics" aria-controls="economics" data-tab="economics">Economics</button>
+  <button role="tab" id="tab-calendars" aria-controls="calendars" data-tab="calendars">Calendars</button>
+  <button role="tab" id="tab-tools" aria-controls="tools" data-tab="tools">Tools</button>
+</div></div></nav>
+<main class="wrap">
+  <section role="tabpanel" id="performance" aria-labelledby="tab-performance" hidden>
+    <div class="card">
+      <div class="card-h"><h2>Top models by capability</h2>
+        <div class="ctrls"><div class="seg" id="lbMetric" role="radiogroup" aria-label="Capability"></div></div></div>
+      <div class="ctrls row">
+        <label class="rng">Show top <output id="lbNOut">15</output><input type="range" id="lbN" min="5" max="40" step="5" value="15"></label>
+        <label class="tog"><input type="checkbox" id="lbPriced"><span></span>Priced models only</label>
+        <div class="combo" id="lbVendors" data-placeholder="Filter vendors"></div>
+      </div>
+      <div id="lb" class="bars"></div>
+    </div>
+    <div class="grid2">
+      <div class="card"><div class="card-h"><h2>Capability vs speed</h2></div>
+        <p class="note">Intelligence Index against output tokens per second. Up and to the right is fast and smart.</p>
+        <div id="capSpeed" class="chart"></div></div>
+      <div class="card"><div class="card-h"><h2>Score movers</h2>
+        <div class="seg sm" id="mvDir" role="radiogroup" aria-label="Direction"></div></div>
+        <div id="movers" class="tbl-wrap"></div></div>
+    </div>
+  </section>
+
+  <section role="tabpanel" id="economics" aria-labelledby="tab-economics" hidden>
+    <div class="card"><div class="card-h"><h2>Price vs capability</h2>
+      <div class="ctrls"><div class="seg sm" id="pvPrice" role="radiogroup" aria-label="Price basis"></div>
+      <label class="tog"><input type="checkbox" id="pvLog" checked><span></span>Log scale</label></div></div>
+      <p class="note">Each dot is a model with both a price and an Intelligence Index score. Blended price assumes 3 input tokens per output token.</p>
+      <div id="priceCap" class="chart tall"></div></div>
+    <div class="grid2">
+      <div class="card"><div class="card-h"><h2>Cheapest per capability tier</h2></div><div id="tiers"></div></div>
+      <div class="card"><div class="card-h"><h2>List vs market price gaps</h2></div>
+        <p class="note">Where the price paid in the market differs from the vendor's list price, per 1M tokens.</p>
+        <div id="gaps" class="tbl-wrap"></div></div>
+    </div>
+    <div class="card"><div class="card-h"><h2>Price check history</h2>
+      <div class="combo single" id="phModel" data-placeholder="Pick a model to see its price history"></div></div>
+      <div id="priceHist" class="chart"></div></div>
+  </section>
+
+  <section role="tabpanel" id="calendars" aria-labelledby="tab-calendars" hidden>
+    <div class="grid2 wide-left">
+      <div class="card"><div class="card-h"><h2 id="calTitle">Calendar</h2>
+        <div class="ctrls"><button class="btn icon" id="calPrev" aria-label="Previous month">&#8249;</button>
+        <button class="btn" id="calToday">Today</button><button class="btn icon" id="calNext" aria-label="Next month">&#8250;</button></div></div>
+        <div class="legend"><span class="ev rel">Release</span><span class="ev ret">Retirement</span><span class="ev new">First tracked</span>
+        <label class="tog"><input type="checkbox" id="calNew"><span></span>Show first-tracked</label></div>
+        <div id="cal" class="cal"></div></div>
+      <div class="card"><div class="card-h"><h2>Retirements</h2></div><div id="retire"></div>
+        <p class="note" id="lifeNote"></p></div>
+    </div>
+    <div class="card"><div class="card-h"><h2>Release timeline</h2>
+      <div class="seg sm" id="tlRange" role="radiogroup" aria-label="Range"></div></div>
+      <div id="timeline" class="chart"></div></div>
+  </section>
+
+  <section role="tabpanel" id="tools" aria-labelledby="tab-tools" hidden>
+    <div class="card"><div class="card-h"><h2>Monthly cost calculator</h2></div>
+      <div class="calc">
+        <div class="calc-in">
+          <div class="combo" id="ccModels" data-placeholder="Add models (priced only)"></div>
+          <label class="rng">Input tokens per month <output id="ccInOut"></output><input type="range" id="ccIn" min="0" max="100" value="50"></label>
+          <label class="rng">Output tokens per month <output id="ccOutOut"></output><input type="range" id="ccOut" min="0" max="100" value="35"></label>
+          <label class="rng">Cached share of input <output id="ccCacheOut"></output><input type="range" id="ccCache" min="0" max="90" step="5" value="0"></label>
+        </div>
+        <div id="ccResult" class="bars"></div>
+      </div></div>
+    <div class="card"><div class="card-h"><h2>Compare models</h2></div>
+      <div class="combo" id="cmpModels" data-placeholder="Pick 2 to 4 models" data-max="4"></div>
+      <div id="compare" class="tbl-wrap"></div></div>
+    <div class="card"><div class="card-h"><h2>All models</h2><span class="note" id="mtCount"></span></div>
+      <div class="ctrls row">
+        <input type="search" id="mtSearch" class="search" placeholder="Search models or vendors" aria-label="Search models">
+        <div class="combo" id="mtVendors" data-placeholder="Vendors"></div>
+        <label class="tog"><input type="checkbox" id="mtPriced"><span></span>Priced</label>
+        <label class="tog"><input type="checkbox" id="mtScored"><span></span>Scored</label>
+      </div>
+      <div id="mtable" class="tbl-wrap"></div>
+      <div class="pager"><button class="btn" id="mtPrev">Previous</button><span id="mtPage"></span><button class="btn" id="mtNext">Next</button></div></div>
+  </section>
+</main>
+<footer class="wrap foot"><span>&copy; 2026 Jerry W. Lambert</span><span id="built"></span></footer>
+<div id="tip" class="tip" role="tooltip" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
