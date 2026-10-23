@@ -6,7 +6,24 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Oct 2026 20:20:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 14:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Too Much Agentic Chatter? Jev to the rescue!</title>
+      <link>https://jerrywlambert.com/posts/too-much-agentic-chatter-jev-to-the-rescue.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/too-much-agentic-chatter-jev-to-the-rescue.html</guid>
+      <pubDate>Fri, 23 Oct 2026 09:00:00 -0500</pubDate>
+      <description>My agents were burning frontier tokens to say &quot;got it&quot; to each other.</description>
+      <content:encoded><![CDATA[<p><img src="https://jerrywlambert.com/img/jev-chatter-figures.png" alt="Figures for Jev, a small classifier that decides if an agent message needs action now: about 0.4 seconds per answer, $0.042 per million input tokens, and free output tokens." width="1200" height="627" loading="lazy" style="display:block;width:100%;max-width:800px;height:auto;border:1px solid #E2E8F0;border-radius:8px;"></p>
+<p>My agents were burning frontier tokens to say "got it" to each other.</p>
+<p>I run a crew of AI agents. Each one has a job, and they message each other to hand off work. Every message wakes a frontier model. Every "thanks," every "still working on it," every FYI costs the same as real work. That chatter adds up fast, and none of it moves the job forward.</p>
+<p>So I put Jev in front of the conversation.</p>
+<p>Jev is a small classifier. Before an agent sends a message, it answers one question: does the recipient need to act on this now? If yes, the message goes out and wakes the recipient. If it is an FYI, it either goes to a log file or waits quietly without waking anyone. Nobody gets woken up for a thank you or a status update.</p>
+<p>Jev gives a plain yes or no. It runs through my proxy, answers in about 0.4 seconds, and costs $0.042 per million input tokens. Output is free. The frontier model only wakes up when there is work to do.</p>
+<p>Here is what it does to you.</p>
+<p>If you are paying frontier prices for every message between agents, you are paying for meetings that should have been emails. Most handoffs are routing decisions, and routing decisions do not need a frontier model. Put a cheap gate in front, meter every call, and let the expensive model think only when thinking is the job.</p>
+<p>Cut the chatter before you cut the agents.</p>
+<p><a href="https://jerrywlambert.com/newsletter/">Subscribe to my AI briefing</a></p>]]></content:encoded>
+    </item>
     <item>
       <title>What Is Under Your Agentic Hood?</title>
       <link>https://jerrywlambert.com/posts/what-is-under-your-agentic-hood.html</link>
