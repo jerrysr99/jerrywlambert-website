@@ -275,7 +275,7 @@ fetch('data/dashboard.json').then(r => r.json()).then(d => {
   Object.entries(D.latest).forEach(([mid, rows]) => { VAL[mid] = {}; rows.forEach(([id, v]) => { if (D.models[id]) VAL[mid][id] = v; }); });
   const c = D.counts;
   $('#counts').innerHTML = [[c.models, 'models'], [c.vendors, 'vendors'], [c.metrics, 'metrics'], [c.priced, 'priced'], [c.price_changes, 'list price changes'],
-    [c.gaps, 'list vs market gaps'], [c.movers, 'score movers'], [c.new_week, 'first tracked this week'], [c.retiring, 'upcoming retirements']]
+    [c.gaps, 'list vs market gaps'], [c.movers, 'score movers'], [c.retiring, 'upcoming retirements']]
     .map(([n, l]) => `<div><b>${fmt(n, 0)}</b><span>${l}</span></div>`).join('');
   $('#updated').textContent = 'Updated ' + dlabel(D.updated);
   $('#built').textContent = 'Data refreshed ' + dlabel(D.updated);
