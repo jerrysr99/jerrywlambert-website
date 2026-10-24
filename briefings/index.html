@@ -28,6 +28,13 @@
   .post-list .title { margin:0; font-size:1.1rem; font-weight:700; color:var(--navy); line-height:1.35; }
   .post-list .sub { margin:0.3rem 0 0; font-size:0.95rem; color:var(--ink); line-height:1.45; }
   .post-list a:hover .title { text-decoration: underline; }
+  .special { display:block; text-decoration:none; color:inherit; background:var(--panel); border:1px solid #E2E8F0; border-left:5px solid #D97706; border-radius:10px; padding:1.2rem 1.3rem; margin:0 0 2rem; }
+  .special .kick { margin:0 0 0.35rem; font-size:0.75rem; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#B45309; }
+  .special .title { margin:0; font-size:1.35rem; font-weight:800; color:var(--navy); line-height:1.25; }
+  .special .sub { margin:0.45rem 0 0.8rem; font-size:0.98rem; line-height:1.5; }
+  .special .go { font-weight:700; color:var(--navy); }
+  .special:hover .title { text-decoration:underline; }
+  .cta.big { font-size:1.05rem; padding:0.85rem 1.4rem; margin:0 0 1.25rem; }
   footer { margin-top: 2.25rem; font-size: 0.9rem; color: var(--muted); }
   footer a { color: var(--navy); font-weight: 600; }
 </style>
@@ -37,7 +44,13 @@
   <main>
     <h1>Briefings</h1>
     <p class="deck">Daily model and tariff notes. Archive as produced.</p>
-    <a class="cta" href="/newsletter/">Get the Brief by email</a>
+    <a class="cta big" href="https://jerrywlambert.com/newsletter/">Subscribe to my AI briefing</a>
+    <a class="special" href="/briefings/28-ways-ai-gets-billed/">
+      <p class="kick">Special Edition · Free Industry Report</p>
+      <p class="title">28 Ways AI Gets Billed: The Full List</p>
+      <p class="sub">Every pricing mechanism I can document across 106 models from 18 vendors, ranked from most common to most obscure, with what to watch, how to optimize and what to avoid for each one.</p>
+      <span class="go">Read the full list and download the PDF &rarr;</span>
+    </a>
     <ul class="post-list">
       <li>
         <a href="/briefings/2026-10-23/">
