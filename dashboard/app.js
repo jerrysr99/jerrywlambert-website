@@ -3,7 +3,8 @@
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt = (v, d = 1) => v == null || isNaN(v) ? '-' : Number(v).toLocaleString('en-US', {maximumFractionDigits: d, minimumFractionDigits: 0});
-const usd = v => v == null ? '-' : '$' + (v >= 100 ? fmt(v, 0) : v >= 1 ? Number(v).toFixed(2) : Number(v).toFixed(v === 0 ? 2 : 3));
+const usd = v => { if (v == null || isNaN(v)) return '-'; v = Number(v); const a = Math.abs(v); return (v < 0 && a >= 0.0000005 ? '-' : '') + '$' + a.toLocaleString('en-US', {minimumFractionDigits: 6, maximumFractionDigits: 6}); };
+const pctf = p => { if (p == null || isNaN(p)) return '-'; const a = Math.abs(p); const s = p > 0 ? '+' : p < 0 ? '-' : ''; return a === 0 ? '0%' : a < 0.05 ? s + '<0.1%' : s + fmt(a, 1) + '%'; };
 const money = v => '$' + Number(v).toLocaleString('en-US', {minimumFractionDigits: v < 100 ? 2 : 0, maximumFractionDigits: v < 100 ? 2 : 0});
 const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 const dlabel = s => { if (!s) return '-'; const [y, m, d] = s.split('-'); return d ? `${MON[+m-1]} ${+d}, ${y}` : m ? `${MON[+m-1]} ${y}` : y; };
@@ -146,7 +147,7 @@ function econ() {
   let basis = 'blend';
   const pc = () => { const pts = Object.entries(VAL[II()] || {}).filter(([id]) => price(id, basis) > 0)
     .map(([id, y]) => ({id, y, x: price(id, basis), l: NAME(id), s: ' · ' + VEND(id)}));
-    scatter($('#priceCap'), pts, {xl: `USD per 1M tokens (${basis === 'blend' ? 'blended' : basis})`, yl: 'Intelligence Index', logX: $('#pvLog').checked, label: 12, h: 420, fx: v => '$' + (v < 1 ? v.toFixed(2) : fmt(v, 0))}); };
+    scatter($('#priceCap'), pts, {xl: `USD per 1M tokens (${basis === 'blend' ? 'blended' : basis})`, yl: 'Intelligence Index', logX: $('#pvLog').checked, label: 12, h: 420, fx: v => v < 1 ? usd(v) : '$' + fmt(v, 0)}); };
   seg($('#pvPrice'), [{v: 'blend', l: 'Blended'}, {v: 'input', l: 'Input'}, {v: 'output', l: 'Output'}], basis, v => { basis = v; pc(); });
   $('#pvLog').onchange = pc; pc(); redraw.economics = pc;
   const tiers = [[50, 100, 'Frontier', '50+'], [40, 50, 'High', '40 to 50'], [30, 40, 'Mid', '30 to 40'], [20, 30, 'Light', '20 to 30'], [0, 20, 'Basic', 'under 20']];
@@ -167,7 +168,7 @@ function econ() {
     table($('#pmovers'), [{k: 'rank', l: '#', num: 1, f: m => `<b>${m.rank}</b>`},
       {k: 'model', l: 'Model', f: m => `${esc(m.name)}<br><small class="muted">${esc(m.vendor)}</small>`},
       {k: 'unit', l: 'Type', f: m => esc(UNIT[m.unit] || m.unit)},
-      {k: 'from', l: 'Change', num: 1, f: m => `${usd(m.from)} &rarr; <b>${usd(m.to)}</b> <span class="${m.d < 0 ? 'up' : 'down'}">${m.d > 0 ? '+' : ''}${pm2(m.d)} (${m.pct > 0 ? '+' : ''}${fmt(m.pct, 1)}%)</span>`},
+      {k: 'from', l: 'Change', num: 1, f: m => `${m.from === 0 ? 'Free' : usd(m.from)} &rarr; <b>${m.to === 0 ? 'Free' : usd(m.to)}</b> <span class="${m.d < 0 ? 'up' : 'down'}">${m.d > 0 ? '+' : ''}${pm2(m.d)} (${pctf(m.pct)})</span>`},
       {k: 'to_at', l: 'Date', f: m => dlabel(m.to_at)}], r.slice(0, 20)); };
   seg($('#pmDir'), [{v: 'all', l: 'All'}, {v: 'up', l: 'Increased'}, {v: 'down', l: 'Cut'}], pdir, v => { pdir = v; pm(); });
   pm();
@@ -291,7 +292,7 @@ const UNIT = {input: ['Input', 'Prompt tokens sent to the model'], output: ['Out
   cache_read: ['Cached input', 'Prompt tokens served from cache'], cache_write: ['Cache write', 'Prompt tokens written to cache']};
 const ORDER = ['input', 'cache_read', 'cache_write', 'output'];
 const kt = n => n >= 1e6 ? fmt(n / 1e6, 2) + 'M' : fmt(n / 1000, 0) + 'K';
-const p1m = v => { if (v === 0) return 'Free'; if (v >= 1) return '$' + Number(v).toFixed(2); let x = String(+Number(v).toPrecision(4)); if ((x.split('.')[1] || '').length < 2) x = Number(x).toFixed(2); return '$' + x; };
+const p1m = v => v === 0 ? 'Free' : usd(v);
 function pricingCard(id) {
   const P = (D.pricing || {})[id]; if (!P) return `<div class="card"><div class="card-h"><h2>List pricing</h2></div><p class="empty">No list pricing on file for this model yet.</p></div>`;
   const units = ORDER.filter(u => P.tokens[u]);

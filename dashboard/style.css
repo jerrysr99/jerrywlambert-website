@@ -162,3 +162,7 @@ dialog#billDlg{border:0;border-radius:var(--r);padding:1.25rem 1.4rem;max-width:
 dialog#billDlg::backdrop{background:rgba(15,39,66,.45)}
 .dlg-h{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:.6rem}
 ul.bill{margin:0 0 .9rem;padding-left:1.1rem;display:flex;flex-direction:column;gap:.35rem;font-size:.92rem}
+
+#pmovers td:nth-child(4),#pmovers td:nth-child(5){white-space:nowrap}
+.ptile b,.pgroup td.num{white-space:nowrap;font-variant-numeric:tabular-nums}
+.ptile b{font-size:min(1em,1.1rem)}
