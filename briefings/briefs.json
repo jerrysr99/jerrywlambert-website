@@ -2,6 +2,46 @@
   "featured": "28-ways-ai-gets-billed",
   "entries": [
     {
+      "id": "2026-10-23",
+      "date": "2026-10-23",
+      "href": "/briefings/2026-10-23/",
+      "date_line": "October 23, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, October 23, 2026",
+      "summary": "No vendor changed a token price on any model I track today. OpenAI's October 23 shutdown date for gpt-4.1-nano, o4-mini and gpt-image-1 has arrived, and Perplexity retires its routes to seven older OpenAI models at 7:00 PM CT tonight."
+    },
+    {
+      "id": "2026-10-22",
+      "date": "2026-10-22",
+      "href": "/briefings/2026-10-22/",
+      "date_line": "October 22, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, October 22, 2026",
+      "summary": "No vendor changed a token price on any model I track today. Alibaba listed Qwen3.8-27B at $0.50 input and $3.00 output per million tokens, and OpenAI's gpt-4.1-nano, o4-mini and gpt-image-1 stop at 7:00 PM CT tonight."
+    },
+    {
+      "id": "2026-10-21",
+      "date": "2026-10-21",
+      "href": "/briefings/2026-10-21/",
+      "date_line": "October 21, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, October 21, 2026",
+      "summary": "Mistral ended its sale on Mistral Large 4, so its list price of $1.36 input, $0.14 cached and $4.18 output per million tokens now applies, twice Tuesday's sale price. No other tracked token price changed, and Xiaomi retired MiMo-V2.5-Pro and MiMo-V2.5 overnight."
+    },
+    {
+      "id": "2026-10-20",
+      "date": "2026-10-20",
+      "href": "/briefings/2026-10-20/",
+      "date_line": "October 20, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, October 20, 2026",
+      "summary": "No vendor changed an existing token price since Monday and no new publicly priced model appeared. Google's pricing page now warns that the Gemini Omni Flash and Veo 3.1 previews shut down this Thursday, October 22, and Google lists Gemini Omni Flash as stable."
+    },
+    {
+      "id": "2026-10-19",
+      "date": "2026-10-19",
+      "href": "/briefings/2026-10-19/",
+      "date_line": "October 19, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, October 19, 2026",
+      "summary": "MiniMax launched MiniMax-M3.1-Flash at $0.15 input and $0.60 output per million tokens, DeepSeek set November 1 as the billing start for search and fetch calls made through coding tools, and no vendor changed an existing token price since Friday."
+    },
+    {
       "id": "2026-10-16",
       "date": "2026-10-16",
       "href": "/briefings/2026-10-16/",
