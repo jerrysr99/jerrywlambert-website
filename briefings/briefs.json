@@ -1,0 +1,215 @@
+{
+  "featured": "28-ways-ai-gets-billed",
+  "entries": [
+    {
+      "id": "2026-10-16",
+      "date": "2026-10-16",
+      "href": "/briefings/2026-10-16/",
+      "date_line": "October 16, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, October 16, 2026",
+      "summary": "No vendor changed a token price overnight. Anthropic took Claude Opus 5.5 fast mode out of research preview at $8 / $40, DeepSeek launched per-request Search and Fetch APIs, and Meta released open weights for Muse Spark."
+    },
+    {
+      "id": "2026-10-15",
+      "date": "2026-10-15",
+      "href": "/briefings/2026-10-15/",
+      "date_line": "October 15, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, October 15, 2026",
+      "summary": "TypeSafe shipped Jev 1.14 at the same price as 1.13, while Meta's Muse Wonder, Google's Gemini 4 Argon launch price, and OpenAI's January 2027 shutdowns for GPT-4.1 and GPT-4o remain on the vendor pages."
+    },
+    {
+      "id": "2026-10-14",
+      "date": "2026-10-14",
+      "href": "/briefings/2026-10-14/",
+      "date_line": "October 14, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, October 14, 2026",
+      "summary": "Google released Gemini 4 Argon at a launch price of $2.00 input and $10.00 output per million tokens through November 30, rising to $4.00 and $20.00 on December 1."
+    },
+    {
+      "id": "2026-10-13",
+      "date": "2026-10-13",
+      "href": "/briefings/2026-10-13/",
+      "date_line": "October 13, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, October 13, 2026",
+      "summary": "Meta opened Muse Wonder on its pay-as-you-go API at $4.00 input and $20.00 output per million tokens. Correction: Z.ai moved ten GLM models on its price page rather than dropping them; their prices are unchanged."
+    },
+    {
+      "id": "2026-10-12",
+      "date": "2026-10-12",
+      "href": "/briefings/2026-10-12/",
+      "date_line": "October 12, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, October 12, 2026",
+      "summary": "Google retired gemini-3.5-flash and gemini-3.7-flash from its price page and now routes them to 3.6 and 3.8 Flash. No other list-price change forces a budget rewrite today; Z.ai is on watch."
+    },
+    {
+      "id": "2026-10-09",
+      "date": "2026-10-09",
+      "href": "/briefings/2026-10-09/",
+      "date_line": "October 9, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, October 9, 2026",
+      "summary": "No list price changed today. OpenAI adds a GPT-6.1 Sol Ultrafast tier at six times Standard, and Google sets an October 23 shutdown for a Deep Research preview."
+    },
+    {
+      "id": "2026-10-08",
+      "date": "2026-10-08",
+      "href": "/briefings/2026-10-08/",
+      "date_line": "October 8, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, October 8, 2026",
+      "summary": "Anthropic launches Claude Haiku 5.5 at a tenth of Haiku 4.5's price and halves the cost of Sonnet 5.5 cache hits."
+    },
+    {
+      "id": "2026-10-07",
+      "date": "2026-10-07",
+      "href": "/briefings/2026-10-07/",
+      "date_line": "October 7, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, October 7, 2026",
+      "summary": "Perplexity halves its Decisions API price. Google drops an October image shutdown and raises the cost of a 4K image."
+    },
+    {
+      "id": "2026-10-06",
+      "date": "2026-10-06",
+      "href": "/briefings/2026-10-06/",
+      "date_line": "October 6, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, October 6, 2026",
+      "summary": "Mistral Large 4 lands at a discount. Three OpenAI models retire October 22."
+    },
+    {
+      "id": "2026-09-07",
+      "date": "2026-09-07",
+      "href": "/briefings/2026-09-07/",
+      "date_line": "September 7, 2026",
+      "title": "Quiet overnight on first-party tariffs. Current model prices hold."
+    },
+    {
+      "id": "2026-09-05",
+      "date": "2026-09-05",
+      "href": "/briefings/2026-09-05/",
+      "date_line": "September 5, 2026",
+      "title": "OpenAI cleared the GPT-6 Astra Trusted Access banner. The price stayed put."
+    },
+    {
+      "id": "28-ways-ai-gets-billed",
+      "date": "2026-10-24",
+      "href": "/briefings/28-ways-ai-gets-billed/",
+      "date_line": "October 24, 2026 · JerryWLambert.com AI Briefing",
+      "title": "28 Ways AI Gets Billed: The Full List",
+      "summary": "Every pricing mechanism I can document across 106 models from 18 vendors, ranked from most common to most obscure, with what to watch, how to optimize and what to avoid for each one.",
+      "pdf": "/briefings/28-ways-ai-gets-billed/The-28-Ways-AI-Models-Charge.pdf",
+      "intro": "I track 106 priced models from 18 vendors. Across them I count 28 distinct ways a vendor turns usage into a charge. Two are close to universal. Everything else is a twist on those two meters, and the twists are where budgets break. Here is the full list, most common first.",
+      "list": [
+        {
+          "name": "Per Input and Output Token",
+          "line": "The vendor prices input and output tokens separately, per million. Every tracked model uses it."
+        },
+        {
+          "name": "Cached Input Read Discount",
+          "line": "When a request reuses a prompt prefix the vendor already holds in cache, those tokens bill at a cache-hit price below the normal input price."
+        },
+        {
+          "name": "Per-Call Server Tool Fees",
+          "line": "When the vendor runs a tool on its own servers, such as web search, it charges per call or per 1,000 calls."
+        },
+        {
+          "name": "Separate Cache Write Charge",
+          "line": "The vendor bills the cache write as its own line, separate from cached reads."
+        },
+        {
+          "name": "Batch Discount",
+          "line": "You submit work asynchronously and accept a delay, typically up to 24 hours. Batch cuts the price in half on 39 tracked models."
+        },
+        {
+          "name": "Free Tiers and $0 Price Lines",
+          "line": "The vendor prices a model, a unit or a usage band at zero, either permanently or for a limited time."
+        },
+        {
+          "name": "Speed, Priority and \"Highspeed\" Tiers",
+          "line": "You pay more for faster output or for priority admission. OpenAI Ultrafast reaches 6x standard."
+        },
+        {
+          "name": "Container and Session Runtime Fees",
+          "line": "The vendor charges by time for a sandbox or an agent session, separately from tokens."
+        },
+        {
+          "name": "Data Residency and Regional Price Lists",
+          "line": "The vendor adds a surcharge to keep processing inside a named geography, or publishes a separate price list for each region."
+        },
+        {
+          "name": "Prompt-Size (Long Context) Bands",
+          "line": "When the prompt crosses a threshold, the whole request reprices at a higher band. 22 tracked models do this."
+        },
+        {
+          "name": "Cache Write Priced by Retention Time (TTL)",
+          "line": "The longer the vendor holds the cache, the more the write costs."
+        },
+        {
+          "name": "Flex (Slow, Cheap Synchronous) Tier",
+          "line": "The request stays synchronous but accepts slower or interruptible service in exchange for a batch-like discount."
+        },
+        {
+          "name": "Hidden Token Overhead",
+          "line": "These are tokens you pay for but did not write: tool system prompts, tool definitions, tokenizer changes and fixed blocks."
+        },
+        {
+          "name": "Reasoning (Thinking) Tokens Billed as Output",
+          "line": "Internal reasoning tokens bill at the output price, even when the vendor hides or encrypts them."
+        },
+        {
+          "name": "Cache and File Storage by Time",
+          "line": "The vendor charges to keep data available, priced per token-hour or per GB-day."
+        },
+        {
+          "name": "Promotional Pricing and Dated Step-Ups",
+          "line": "The vendor publishes a price with an announced end date, or schedules an increase in advance."
+        },
+        {
+          "name": "Time-of-Day and Day-of-Week Bands",
+          "line": "The same model costs different amounts depending on when the request runs."
+        },
+        {
+          "name": "Legacy Model Names Billed as a Different Model",
+          "line": "An old model name keeps working, but a different model serves the request and sets the bill."
+        },
+        {
+          "name": "Per Image, Per Second, Per Minute, Per Character",
+          "line": "The vendor prices media outside the token meter, or converts each asset into a fixed number of tokens."
+        },
+        {
+          "name": "Fine-Tuning, Training and Fine-Tuned Inference",
+          "line": "The vendor charges for training, then charges a higher inference price for the customized model."
+        },
+        {
+          "name": "Subscription With Bundled, Rationed Usage",
+          "line": "The customer pays a flat monthly fee that includes usage measured in opaque limits instead of tokens."
+        },
+        {
+          "name": "Per-User License and Bring-Your-Own-Key Fees",
+          "line": "The customer pays a fixed fee per user, or pays a platform fee when it supplies its own vendor API key (bring your own key, or BYOK)."
+        },
+        {
+          "name": "Minimums, Top-Ups and Expiring Prepaid Balances",
+          "line": "Vendors set spend floors, require unlock payments and let prepaid balances lapse."
+        },
+        {
+          "name": "Commits, Take-or-Pay and Negotiated Volume Discounts",
+          "line": "The customer promises to spend a set amount in return for a lower price, and the vendor still bills any unused commitment."
+        },
+        {
+          "name": "Marketplace Consumption Units",
+          "line": "The vendor prices usage in dollars, then converts it into the marketplace's own billing unit."
+        },
+        {
+          "name": "Data-for-Discount Tiers",
+          "line": "The vendor lowers the price in exchange for the right to use your data."
+        },
+        {
+          "name": "Billing-Event Rules",
+          "line": "These rules decide which events are billable, separate from the price itself."
+        },
+        {
+          "name": "Resale Markup and Reseller Chains",
+          "line": "A reseller prices on top of vendor cost, and resellers can sit under other resellers."
+        }
+      ]
+    }
+  ]
+}

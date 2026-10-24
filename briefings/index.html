@@ -28,12 +28,18 @@
   .post-list .title { margin:0; font-size:1.1rem; font-weight:700; color:var(--navy); line-height:1.35; }
   .post-list .sub { margin:0.3rem 0 0; font-size:0.95rem; color:var(--ink); line-height:1.45; }
   .post-list a:hover .title { text-decoration: underline; }
-  .special { display:block; text-decoration:none; color:inherit; background:var(--panel); border:1px solid #E2E8F0; border-left:5px solid #D97706; border-radius:10px; padding:1.2rem 1.3rem; margin:0 0 2rem; }
-  .special .kick { margin:0 0 0.35rem; font-size:0.75rem; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#B45309; }
-  .special .title { margin:0; font-size:1.35rem; font-weight:800; color:var(--navy); line-height:1.25; }
-  .special .sub { margin:0.45rem 0 0.8rem; font-size:0.98rem; line-height:1.5; }
-  .special .go { font-weight:700; color:var(--navy); }
-  .special:hover .title { text-decoration:underline; }
+  .featured { background:var(--panel); border:1px solid #E2E8F0; border-left:5px solid #D97706; border-radius:10px; padding:1.3rem 1.4rem; margin:0 0 2rem; scroll-margin-top:1rem; }
+  .featured .kick { margin:0 0 0.35rem; font-size:0.75rem; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#B45309; }
+  .featured .title { margin:0; font-size:1.4rem; font-weight:800; line-height:1.25; }
+  .featured .title a { color:var(--navy); text-decoration:none; }
+  .featured .title a:hover { text-decoration:underline; }
+  .featured .intro { margin:0.5rem 0 0.9rem; font-size:0.98rem; line-height:1.5; }
+  .feat-list { margin:0 0 1.1rem; padding-left:1.6rem; font-size:0.93rem; line-height:1.45; }
+  .feat-list li { margin:0 0 0.45rem; }
+  .feat-list strong { color:var(--navy); }
+  .feat-actions { display:flex; gap:0.7rem; flex-wrap:wrap; }
+  .feat-actions .cta { margin:0; }
+  .cta.alt { background:#fff; color:var(--navy); border:2px solid var(--navy); }
   .cta.big { font-size:1.05rem; padding:0.85rem 1.4rem; margin:0 0 1.25rem; }
   footer { margin-top: 2.25rem; font-size: 0.9rem; color: var(--muted); }
   footer a { color: var(--navy); font-weight: 600; }
@@ -45,12 +51,46 @@
     <h1>Briefings</h1>
     <p class="deck">Daily model and tariff notes. Archive as produced.</p>
     <a class="cta big" href="https://jerrywlambert.com/newsletter/">Subscribe to my AI briefing</a>
-    <a class="special" href="/briefings/28-ways-ai-gets-billed/">
-      <p class="kick">Special Edition · Free Industry Report</p>
-      <p class="title">28 Ways AI Gets Billed: The Full List</p>
-      <p class="sub">Every pricing mechanism I can document across 106 models from 18 vendors, ranked from most common to most obscure, with what to watch, how to optimize and what to avoid for each one.</p>
-      <span class="go">Read the full list and download the PDF &rarr;</span>
-    </a>
+    <!-- BRIEFINGS:GENERATED START (edit briefings/briefs.json, then run briefings/_build/build_index.py) -->
+    <section class="featured" id="featured">
+      <p class="kick">Featured Brief</p>
+      <h2 class="title"><a href="/briefings/28-ways-ai-gets-billed/">28 Ways AI Gets Billed: The Full List</a></h2>
+      <p class="intro">I track 106 priced models from 18 vendors. Across them I count 28 distinct ways a vendor turns usage into a charge. Two are close to universal. Everything else is a twist on those two meters, and the twists are where budgets break. Here is the full list, most common first.</p>
+      <ol class="feat-list">
+        <li><strong>Per Input and Output Token.</strong> The vendor prices input and output tokens separately, per million. Every tracked model uses it.</li>
+        <li><strong>Cached Input Read Discount.</strong> When a request reuses a prompt prefix the vendor already holds in cache, those tokens bill at a cache-hit price below the normal input price.</li>
+        <li><strong>Per-Call Server Tool Fees.</strong> When the vendor runs a tool on its own servers, such as web search, it charges per call or per 1,000 calls.</li>
+        <li><strong>Separate Cache Write Charge.</strong> The vendor bills the cache write as its own line, separate from cached reads.</li>
+        <li><strong>Batch Discount.</strong> You submit work asynchronously and accept a delay, typically up to 24 hours. Batch cuts the price in half on 39 tracked models.</li>
+        <li><strong>Free Tiers and $0 Price Lines.</strong> The vendor prices a model, a unit or a usage band at zero, either permanently or for a limited time.</li>
+        <li><strong>Speed, Priority and &quot;Highspeed&quot; Tiers.</strong> You pay more for faster output or for priority admission. OpenAI Ultrafast reaches 6x standard.</li>
+        <li><strong>Container and Session Runtime Fees.</strong> The vendor charges by time for a sandbox or an agent session, separately from tokens.</li>
+        <li><strong>Data Residency and Regional Price Lists.</strong> The vendor adds a surcharge to keep processing inside a named geography, or publishes a separate price list for each region.</li>
+        <li><strong>Prompt-Size (Long Context) Bands.</strong> When the prompt crosses a threshold, the whole request reprices at a higher band. 22 tracked models do this.</li>
+        <li><strong>Cache Write Priced by Retention Time (TTL).</strong> The longer the vendor holds the cache, the more the write costs.</li>
+        <li><strong>Flex (Slow, Cheap Synchronous) Tier.</strong> The request stays synchronous but accepts slower or interruptible service in exchange for a batch-like discount.</li>
+        <li><strong>Hidden Token Overhead.</strong> These are tokens you pay for but did not write: tool system prompts, tool definitions, tokenizer changes and fixed blocks.</li>
+        <li><strong>Reasoning (Thinking) Tokens Billed as Output.</strong> Internal reasoning tokens bill at the output price, even when the vendor hides or encrypts them.</li>
+        <li><strong>Cache and File Storage by Time.</strong> The vendor charges to keep data available, priced per token-hour or per GB-day.</li>
+        <li><strong>Promotional Pricing and Dated Step-Ups.</strong> The vendor publishes a price with an announced end date, or schedules an increase in advance.</li>
+        <li><strong>Time-of-Day and Day-of-Week Bands.</strong> The same model costs different amounts depending on when the request runs.</li>
+        <li><strong>Legacy Model Names Billed as a Different Model.</strong> An old model name keeps working, but a different model serves the request and sets the bill.</li>
+        <li><strong>Per Image, Per Second, Per Minute, Per Character.</strong> The vendor prices media outside the token meter, or converts each asset into a fixed number of tokens.</li>
+        <li><strong>Fine-Tuning, Training and Fine-Tuned Inference.</strong> The vendor charges for training, then charges a higher inference price for the customized model.</li>
+        <li><strong>Subscription With Bundled, Rationed Usage.</strong> The customer pays a flat monthly fee that includes usage measured in opaque limits instead of tokens.</li>
+        <li><strong>Per-User License and Bring-Your-Own-Key Fees.</strong> The customer pays a fixed fee per user, or pays a platform fee when it supplies its own vendor API key (bring your own key, or BYOK).</li>
+        <li><strong>Minimums, Top-Ups and Expiring Prepaid Balances.</strong> Vendors set spend floors, require unlock payments and let prepaid balances lapse.</li>
+        <li><strong>Commits, Take-or-Pay and Negotiated Volume Discounts.</strong> The customer promises to spend a set amount in return for a lower price, and the vendor still bills any unused commitment.</li>
+        <li><strong>Marketplace Consumption Units.</strong> The vendor prices usage in dollars, then converts it into the marketplace&#x27;s own billing unit.</li>
+        <li><strong>Data-for-Discount Tiers.</strong> The vendor lowers the price in exchange for the right to use your data.</li>
+        <li><strong>Billing-Event Rules.</strong> These rules decide which events are billable, separate from the price itself.</li>
+        <li><strong>Resale Markup and Reseller Chains.</strong> A reseller prices on top of vendor cost, and resellers can sit under other resellers.</li>
+      </ol>
+      <div class="feat-actions">
+        <a class="cta" href="/briefings/28-ways-ai-gets-billed/">Read the full brief</a>
+        <a class="cta alt" href="/briefings/28-ways-ai-gets-billed/The-28-Ways-AI-Models-Charge.pdf">Download the PDF</a>
+      </div>
+    </section>
     <ul class="post-list">
       <li>
         <a href="/briefings/2026-10-23/">
@@ -163,6 +203,7 @@
         </a>
       </li>
     </ul>
+    <!-- BRIEFINGS:GENERATED END -->
     <footer>
       <a href="/newsletter/">Newsletter</a> ·
       <a href="/newsletter/unsubscribe/">Unsubscribe</a> ·
