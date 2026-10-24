@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
       list.innerHTML = shown.map(p => {
         const when = fmt.format(new Date(p.date));
         return `<li class="post-list-item fade-up visible">
-          <a href="${hrefPrefix}${p.slug}.html" class="post-list-link">
+          <a href="${p.url || (hrefPrefix + p.slug + '.html')}" class="post-list-link">
             <div class="post-list-meta">${when}</div>
             <h3 class="post-list-title">${p.title}</h3>
             <p class="post-list-excerpt">${p.excerpt || ''}</p>

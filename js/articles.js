@@ -16,9 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const d = new Date(p.date);
         const when = fmt.format(d);
         const iso = d.toISOString();
+        const isPage = /\.html$/.test(p.file);
         return `<li class="post-list-item fade-up visible">
-          <a href="./${p.file}" class="post-list-link" target="_blank" rel="noopener">
-            <div class="post-list-meta">First published <time datetime="${iso}">${when}</time> &middot; PDF</div>
+          <a href="./${p.file}" class="post-list-link"${isPage ? '' : ' target="_blank" rel="noopener"'}>
+            <div class="post-list-meta">First published <time datetime="${iso}">${when}</time> &middot; ${isPage ? 'Article and PDF' : 'PDF'}</div>
             <h3 class="post-list-title">${p.title}</h3>
             <p class="post-list-excerpt">${p.excerpt || ''}</p>
           </a>
