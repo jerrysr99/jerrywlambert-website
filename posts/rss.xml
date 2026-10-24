@@ -12,10 +12,10 @@
       <link>https://jerrywlambert.com/articles/how-much-notice-ai-vendors-give.html</link>
       <guid isPermaLink="true">https://jerrywlambert.com/articles/how-much-notice-ai-vendors-give.html</guid>
       <pubDate>Sat, 24 Oct 2026 15:30:00 -0500</pubDate>
-      <description>How many days first-party AI model vendors give between announcing a change and the day it takes effect, measured from 44 verified events across 11 vendors&apos; own pages.</description>
-      <content:encoded><![CDATA[<p><img src="https://jerrywlambert.com/img/how-much-notice-ai-vendors-give-chart.png" alt="Scatter chart of days of notice for 37 model retirement announcements. Median notice falls from 150.5 days in 2025 to 92 days in 2026." width="1380" height="800" loading="lazy" style="display:block;width:100%;max-width:800px;height:auto;border:1px solid #E2E8F0;border-radius:8px;"></p>
-<p>How many days first-party AI model vendors give between announcing a change and the day it takes effect, measured from 44 verified events across 11 vendors' own pages.</p>
-<p>Model retirements get a median of 95.5 days of notice. Rate increases get 31.5 days. Rate decreases took effect the day they were announced. Retirement notice is shrinking: the 2025 median was 150.5 days and the 2026 median so far is 92.</p>
+      <description>Vendors rarely change prices. When they do, buyers get days, not months. Model retirements come with months of notice, and that notice has been getting shorter.</description>
+      <content:encoded><![CDATA[<p><img src="https://jerrywlambert.com/img/how-much-notice-v4-1-days-of-notice-by-change-type.png" alt="Chart of median days of notice by change type. Retirements get a median of 92 days, price increases 31.5 days, and both dated price cuts took effect the day they were announced." width="1520" height="668" loading="lazy" style="max-width:100%;height:auto;"></p>
+<p>Vendors rarely change prices. When they do, buyers get days, not months. Model retirements come with months of notice, and that notice has been getting shorter.</p>
+<p>Across 70 notice events, retirements got a median of 92 days and price increases 31.5 days. One in four changes arrived with no usable notice. List prices changed only 0.36 times per model-year, and six of eight forced migrations got cheaper per token.</p>
 <p><a href="https://jerrywlambert.com/articles/how-much-notice-ai-vendors-give.html">Read the full report</a> or <a href="https://jerrywlambert.com/articles/2026-10-24-How-Much-Notice-AI-Vendors-Give.pdf">download the PDF</a>.</p>
 <p><a href="https://jerrywlambert.com/newsletter/">Subscribe to my AI briefing</a></p>]]></content:encoded>
     </item>
