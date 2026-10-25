@@ -31,7 +31,7 @@
       "href": "/briefings/2026-10-20/",
       "date_line": "October 20, 2026 · JerryWLambert.com AI Briefing",
       "title": "Daily Model Brief, October 20, 2026",
-      "summary": "No vendor changed an existing token price since Monday and no new publicly priced model appeared. Google's pricing page now warns that the Gemini Omni Flash and Veo 3.1 previews shut down this Thursday, October 22, and Google lists Gemini Omni Flash as stable."
+      "summary": "No vendor changed an existing token price since Monday and no new publicly priced model appeared. Google now warns that the Gemini Omni Flash and Veo 3.1 previews shut down this Thursday, October 22, and Google lists Gemini Omni Flash as stable."
     },
     {
       "id": "2026-10-19",
@@ -71,7 +71,7 @@
       "href": "/briefings/2026-10-13/",
       "date_line": "October 13, 2026 · JerryWLambert.com AI Briefing",
       "title": "Daily Model Brief, October 13, 2026",
-      "summary": "Meta opened Muse Wonder on its pay-as-you-go API at $4.00 input and $20.00 output per million tokens. Correction: Z.ai moved ten GLM models on its price page rather than dropping them; their prices are unchanged."
+      "summary": "Meta opened Muse Wonder on its pay-as-you-go API at $4.00 input and $20.00 output per million tokens. Correction: Z.ai moved ten GLM models in its price list rather than dropping them; their prices are unchanged."
     },
     {
       "id": "2026-10-12",
@@ -79,7 +79,7 @@
       "href": "/briefings/2026-10-12/",
       "date_line": "October 12, 2026 · JerryWLambert.com AI Briefing",
       "title": "Daily Model Brief, October 12, 2026",
-      "summary": "Google retired gemini-3.5-flash and gemini-3.7-flash from its price page and now routes them to 3.6 and 3.8 Flash. No other list-price change forces a budget rewrite today; Z.ai is on watch."
+      "summary": "Google retired gemini-3.5-flash and gemini-3.7-flash from its price list and now routes them to 3.6 and 3.8 Flash. No other list-price change forces a budget rewrite today; Z.ai is on watch."
     },
     {
       "id": "2026-10-09",
