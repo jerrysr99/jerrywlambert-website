@@ -154,7 +154,7 @@ function econ() {
   $('#tiers').innerHTML = '<p class="note">Lowest blended price per 1M tokens within each Intelligence Index band.</p>' + tiers.map(([lo, hi, n, r]) => {
     const rows = Object.entries(VAL[II()] || {}).filter(([id, v]) => v >= lo && v < hi && price(id) != null && price(id) > 0).sort((a, b) => price(a[0]) - price(b[0])).slice(0, 3);
     return `<div class="tier"><h3>${n}<small>Index ${r}</small></h3><ol>${rows.length ? rows.map(([id, v]) => `<li><span>${esc(NAME(id))} <small class="muted">${fmt(v, 1)}</small></span><b>${usd(price(id))}</b></li>`).join('') : '<li class="muted">No priced models</li>'}</ol></div>`; }).join('');
-  table($('#gaps'), [{k: 'model', l: 'Model', f: g => esc(NAME(g.model))}, {k: 'unit', l: 'Type'},
+  if (!(D.price_gaps || []).length) { const gc = $('#gaps').closest('.card'); gc.parentNode.classList.remove('grid2'); gc.remove(); } else table($('#gaps'), [{k: 'model', l: 'Model', f: g => esc(NAME(g.model))}, {k: 'unit', l: 'Type'},
     {k: 'list', l: 'List', num: 1, f: g => usd(g.list.usd)}, {k: 'market', l: 'Market', num: 1, f: g => usd(g.market.usd)},
     {k: 'd', l: 'Gap', num: 1, f: g => { const d = g.market.usd - g.list.usd; return `<span class="${d > 0 ? 'down' : 'up'}">${d > 0 ? '+' : ''}${usd(d).replace('$-', '-$')}</span>`; }}], D.price_gaps);
   // price movers
@@ -335,7 +335,7 @@ fetch('data/dashboard.json').then(r => r.json()).then(d => {
   Object.entries(D.latest).forEach(([mid, rows]) => { VAL[mid] = {}; rows.forEach(([id, v]) => { if (D.models[id]) VAL[mid][id] = v; }); });
   const c = D.counts;
   $('#counts').innerHTML = [[c.models, 'models'], [c.vendors, 'vendors'], [c.metrics, 'metrics'], [c.priced, 'priced'], [c.price_changes, 'list price changes'],
-    [c.gaps, 'list vs market gaps'], [c.movers, 'score movers'], [c.retiring, 'upcoming retirements']]
+    ...(c.gaps ? [[c.gaps, 'list vs market gaps']] : []), [c.movers, 'score movers'], [c.retiring, 'upcoming retirements']]
     .map(([n, l]) => `<div><b>${fmt(n, 0)}</b><span>${l}</span></div>`).join('');
   $('#updated').textContent = 'Updated ' + dlabel(D.updated);
   $('#built').textContent = 'Data refreshed ' + dlabel(D.updated);
