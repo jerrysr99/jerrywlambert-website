@@ -1,5 +1,5 @@
 {
-  "featured": "18-ways-ai-gets-billed",
+  "featured": "28-ways-ai-gets-billed",
   "entries": [
     {
       "id": "2026-10-23",
@@ -128,18 +128,18 @@
       "title": "OpenAI cleared the GPT-6 Astra Trusted Access banner. The price stayed put."
     },
     {
-      "id": "18-ways-ai-gets-billed",
+      "id": "28-ways-ai-gets-billed",
       "date": "2026-10-24",
-      "href": "/briefings/18-ways-ai-gets-billed/",
+      "href": "/briefings/28-ways-ai-gets-billed/",
       "date_line": "October 24, 2026 · JerryWLambert.com AI Briefing",
-      "title": "18 Ways AI Gets Billed",
-      "summary": "Every pricing mechanism I can document on at least one of 106 tracked models from 18 vendors, ranked from most common to least common, with what to watch, how to optimize and what to avoid for each one.",
-      "pdf": "/briefings/18-ways-ai-gets-billed/The-18-Ways-AI-Models-Charge.pdf",
-      "intro": "I track 106 priced models from 18 vendors. Across them I count 18 distinct ways a vendor turns usage into a charge. Two are close to universal. Everything else is a twist on those two meters, and the twists are where budgets break. Here is the full list, most common first.",
+      "title": "28 Ways AI Gets Billed",
+      "summary": "Every pricing mechanism I can document across 106 models from 18 vendors, ranked from most common to most obscure, with what to watch, how to optimize and what to avoid for each one.",
+      "pdf": "/briefings/28-ways-ai-gets-billed/The-28-Ways-AI-Models-Charge.pdf",
+      "intro": "I track 106 priced models from 18 vendors. Across them I count 28 distinct ways a vendor turns usage into a charge. Two are close to universal. Everything else is a twist on those two meters, and the twists are where budgets break. Here is the full list, most common first.",
       "list": [
         {
           "name": "Per Input and Output Token",
-          "line": "The vendor prices input and output tokens separately, per million. Every tracked model uses it."
+          "line": "The vendor prices input and output tokens separately, per million."
         },
         {
           "name": "Cached Input Read Discount",
@@ -155,7 +155,7 @@
         },
         {
           "name": "Batch Discount",
-          "line": "You submit work asynchronously and accept a delay, typically up to 24 hours. Batch cuts the price in half on 39 tracked models."
+          "line": "You submit work asynchronously and accept a delay, typically up to 24 hours. Batch cuts the price in half."
         },
         {
           "name": "Free Tiers and $0 Price Lines",
@@ -175,7 +175,7 @@
         },
         {
           "name": "Prompt-Size (Long Context) Bands",
-          "line": "When the prompt crosses a threshold, the whole request reprices at a higher band. 22 tracked models do this."
+          "line": "When the prompt crosses a threshold, the whole request reprices at a higher band."
         },
         {
           "name": "Cache Write Priced by Retention Time (TTL)",
@@ -208,6 +208,46 @@
         {
           "name": "Legacy Model Names Billed as a Different Model",
           "line": "An old model name keeps working, but a different model serves the request and sets the bill."
+        },
+        {
+          "name": "Per Image, Per Second, Per Minute, Per Character",
+          "line": "The vendor prices media outside the token meter, or converts each asset into a fixed number of tokens."
+        },
+        {
+          "name": "Fine-Tuning, Training and Fine-Tuned Inference",
+          "line": "The vendor charges for training, then charges a higher inference price for the customized model."
+        },
+        {
+          "name": "Subscription With Bundled, Rationed Usage",
+          "line": "The customer pays a flat monthly fee that includes usage measured in opaque limits instead of tokens."
+        },
+        {
+          "name": "Per-User License and Bring-Your-Own-Key Fees",
+          "line": "The customer pays a fixed fee per user, or pays a platform fee when it supplies its own vendor API key (bring your own key, or BYOK)."
+        },
+        {
+          "name": "Minimums, Top-Ups and Expiring Prepaid Balances",
+          "line": "Vendors set spend floors, require unlock payments and let prepaid balances lapse."
+        },
+        {
+          "name": "Commits, Take-or-Pay and Negotiated Volume Discounts",
+          "line": "The customer promises to spend a set amount in return for a lower price, and the vendor still bills any unused commitment."
+        },
+        {
+          "name": "Marketplace Consumption Units",
+          "line": "The vendor prices usage in dollars, then converts it into the marketplace's own billing unit."
+        },
+        {
+          "name": "Data-for-Discount Tiers",
+          "line": "The vendor lowers the price in exchange for the right to use your data."
+        },
+        {
+          "name": "Billing-Event Rules",
+          "line": "These rules decide which events are billable, separate from the price itself."
+        },
+        {
+          "name": "Resale Markup and Reseller Chains",
+          "line": "A reseller prices on top of vendor cost, and resellers can sit under other resellers."
         }
       ]
     }
