@@ -54,41 +54,11 @@
     <!-- BRIEFINGS:GENERATED START (edit briefings/briefs.json, then run briefings/_build/build_index.py) -->
     <section class="featured" id="featured">
       <p class="kick">Featured Brief</p>
-      <h2 class="title"><a href="/briefings/28-ways-ai-gets-billed/">28 Ways AI Gets Billed</a></h2>
-      <p class="intro">I track 106 priced models from 18 vendors. Across them I count 28 distinct ways a vendor turns usage into a charge. Two are close to universal. Everything else is a twist on those two meters, and the twists are where budgets break. Here is the full list, most common first.</p>
-      <ol class="feat-list">
-        <li><strong>Per Input and Output Token.</strong> The vendor prices input and output tokens separately, per million.</li>
-        <li><strong>Cached Input Read Discount.</strong> When a request reuses a prompt prefix the vendor already holds in cache, those tokens bill at a cache-hit price below the normal input price.</li>
-        <li><strong>Per-Call Server Tool Fees.</strong> When the vendor runs a tool on its own servers, such as web search, it charges per call or per 1,000 calls.</li>
-        <li><strong>Separate Cache Write Charge.</strong> The vendor bills the cache write as its own line, separate from cached reads.</li>
-        <li><strong>Batch Discount.</strong> You submit work asynchronously and accept a delay, typically up to 24 hours. Batch cuts the price in half.</li>
-        <li><strong>Free Tiers and $0 Price Lines.</strong> The vendor prices a model, a unit or a usage band at zero, either permanently or for a limited time.</li>
-        <li><strong>Speed, Priority and &quot;Highspeed&quot; Tiers.</strong> You pay more for faster output or for priority admission. OpenAI Ultrafast reaches 6x standard.</li>
-        <li><strong>Container and Session Runtime Fees.</strong> The vendor charges by time for a sandbox or an agent session, separately from tokens.</li>
-        <li><strong>Data Residency and Regional Price Lists.</strong> The vendor adds a surcharge to keep processing inside a named geography, or publishes a separate price list for each region.</li>
-        <li><strong>Prompt-Size (Long Context) Bands.</strong> When the prompt crosses a threshold, the whole request reprices at a higher band.</li>
-        <li><strong>Cache Write Priced by Retention Time (TTL).</strong> The longer the vendor holds the cache, the more the write costs.</li>
-        <li><strong>Flex (Slow, Cheap Synchronous) Tier.</strong> The request stays synchronous but accepts slower or interruptible service in exchange for a batch-like discount.</li>
-        <li><strong>Hidden Token Overhead.</strong> These are tokens you pay for but did not write: tool system prompts, tool definitions, tokenizer changes and fixed blocks.</li>
-        <li><strong>Reasoning (Thinking) Tokens Billed as Output.</strong> Internal reasoning tokens bill at the output price, even when the vendor hides or encrypts them.</li>
-        <li><strong>Cache and File Storage by Time.</strong> The vendor charges to keep data available, priced per token-hour or per GB-day.</li>
-        <li><strong>Promotional Pricing and Dated Step-Ups.</strong> The vendor publishes a price with an announced end date, or schedules an increase in advance.</li>
-        <li><strong>Time-of-Day and Day-of-Week Bands.</strong> The same model costs different amounts depending on when the request runs.</li>
-        <li><strong>Legacy Model Names Billed as a Different Model.</strong> An old model name keeps working, but a different model serves the request and sets the bill.</li>
-        <li><strong>Per Image, Per Second, Per Minute, Per Character.</strong> The vendor prices media outside the token meter, or converts each asset into a fixed number of tokens.</li>
-        <li><strong>Fine-Tuning, Training and Fine-Tuned Inference.</strong> The vendor charges for training, then charges a higher inference price for the customized model.</li>
-        <li><strong>Subscription With Bundled, Rationed Usage.</strong> The customer pays a flat monthly fee that includes usage measured in opaque limits instead of tokens.</li>
-        <li><strong>Per-User License and Bring-Your-Own-Key Fees.</strong> The customer pays a fixed fee per user, or pays a platform fee when it supplies its own vendor API key (bring your own key, or BYOK).</li>
-        <li><strong>Minimums, Top-Ups and Expiring Prepaid Balances.</strong> Vendors set spend floors, require unlock payments and let prepaid balances lapse.</li>
-        <li><strong>Commits, Take-or-Pay and Negotiated Volume Discounts.</strong> The customer promises to spend a set amount in return for a lower price, and the vendor still bills any unused commitment.</li>
-        <li><strong>Marketplace Consumption Units.</strong> The vendor prices usage in dollars, then converts it into the marketplace&#x27;s own billing unit.</li>
-        <li><strong>Data-for-Discount Tiers.</strong> The vendor lowers the price in exchange for the right to use your data.</li>
-        <li><strong>Billing-Event Rules.</strong> These rules decide which events are billable, separate from the price itself.</li>
-        <li><strong>Resale Markup and Reseller Chains.</strong> A reseller prices on top of vendor cost, and resellers can sit under other resellers.</li>
-      </ol>
+      <h2 class="title"><a href="/briefings/the-35-ways-ai-models-charge/">The 35 Ways AI Models Charge</a></h2>
+      <p class="intro">Every way I can document that AI vendors turn usage into a charge, numbered 1 to 35 and ranked by how often each one shows up across my full tracked population, with what to watch, how to optimize and what to avoid for each one.</p>
       <div class="feat-actions">
-        <a class="cta" href="/briefings/28-ways-ai-gets-billed/">Read the full brief</a>
-        <a class="cta alt" href="/briefings/28-ways-ai-gets-billed/The-28-Ways-AI-Models-Charge.pdf">Download the PDF</a>
+        <a class="cta" href="/briefings/the-35-ways-ai-models-charge/">Read the full brief</a>
+        <a class="cta alt" href="/briefings/the-35-ways-ai-models-charge/The-35-Ways-AI-Models-Charge.pdf">Download the PDF</a>
       </div>
     </section>
     <ul class="post-list">
@@ -97,6 +67,13 @@
           <p class="date">October 26, 2026 · JerryWLambert.com AI Briefing</p>
           <p class="title">Daily Model Brief, October 26, 2026</p>
           <p class="sub">No vendor changed a token price on any model I track since Friday. Moonshot launched Kimi K3.1 Pro at one-third less than Kimi K3 and set an end-of-December retirement for its K2 models, a two-month window that rewards buyers who can switch vendors quickly.</p>
+        </a>
+      </li>
+      <li>
+        <a href="/briefings/28-ways-ai-gets-billed/">
+          <p class="date">October 24, 2026 · JerryWLambert.com AI Briefing</p>
+          <p class="title">28 Ways AI Gets Billed</p>
+          <p class="sub">Every pricing mechanism I can document across 106 models from 18 vendors, ranked from most common to most obscure, with what to watch, how to optimize and what to avoid for each one.</p>
         </a>
       </li>
       <li>
