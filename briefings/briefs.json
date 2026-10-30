@@ -2,6 +2,14 @@
   "featured": "the-35-ways-ai-models-charge",
   "entries": [
     {
+      "id": "2026-10-30",
+      "date": "2026-10-30",
+      "href": "/briefings/2026-10-30/",
+      "date_line": "October 30, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, October 30, 2026",
+      "summary": "Mistral cut the list price of Mistral Large 4 by about half on Thursday, the only token price change since Thursday's brief. Tomorrow, DeepSeek starts billing Search and Fetch and Moonshot closes K2 to new accounts. Moonshot's Batch API now covers K3 and K3.1 Pro."
+    },
+    {
       "id": "2026-10-29",
       "date": "2026-10-29",
       "href": "/briefings/2026-10-29/",
