@@ -2,6 +2,14 @@
   "featured": "the-35-ways-ai-models-charge",
   "entries": [
     {
+      "id": "2026-11-04",
+      "date": "2026-11-04",
+      "href": "/briefings/2026-11-04/",
+      "date_line": "November 4, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, November 4, 2026",
+      "summary": "No vendor changed a standard list price on a tracked model since Tuesday. Tencent listed its new Hy4 model at the preview price with a 50% discount through December 31, and Google will route requests for Gemini 2.5 Pro and 2.5 Flash to newer models from December 1."
+    },
+    {
       "id": "2026-11-03",
       "date": "2026-11-03",
       "href": "/briefings/2026-11-03/",
