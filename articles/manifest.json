@@ -7,7 +7,7 @@
   },
   {
     "file": "how-much-notice-ai-vendors-give.html",
-    "title": "Model Pricing Is Getting More Complex… Not Less",
+    "title": "Model Pricing Is Getting More Complex\u2026 Not Less",
     "date": "2026-10-24T15:30:00-05:00",
     "excerpt": "Short-notice price changes and new billing terms add a layer of complexity to every AI bill. At the same time, vendors are trimming their legacy tails: more retirements, shorter notice and forced moves.",
     "pdf": "2026-10-24-How-Much-Notice-AI-Vendors-Give.pdf"
@@ -53,5 +53,11 @@
     "title": "The Agent Control Plane",
     "date": "2026-07-15T15:16:00-05:00",
     "excerpt": "The signaling plane for enterprise AI. Treats dispersed specialized agents as a network, not a function call, and adapts telecom's control and data plane split (ASP, ALS, ABC, Agent Bearer, SigMod) to establish, route, negotiate, and govern agent sessions."
+  },
+  {
+    "file": "telecom-carriers-ai/index.html",
+    "title": "Repurposing Carrier SIP Infrastructure for the AI Agent Economy",
+    "date": "2026-06-14T15:18:41-05:00",
+    "excerpt": "Telecom carriers already own the control plane, rating and settlement systems that inter-organizational agent commerce lacks. The opportunity is to become the neutral clearinghouse for agent transactions, not to repurpose media hardware."
   }
 ]

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repurposing Carrier SIP Infrastructure for the AI Agent Economy · JerryWLambert.com</title>
+<meta name="description" content="Telecom carriers already own the control plane, rating and settlement systems that inter-organizational agent commerce lacks. The opportunity is to become the neutral clearinghouse for agent transactions, not to repurpose media hardware.">
+<link rel="canonical" href="https://jerrywlambert.com/articles/telecom-carriers-ai/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Repurposing Carrier SIP Infrastructure for the AI Agent Economy">
+<meta property="og:description" content="Telecom carriers already own the control plane, rating and settlement systems that inter-organizational agent commerce lacks. The opportunity is to become the neutral clearinghouse for agent transactions, not to repurpose media hardware.">
+<meta property="og:url" content="https://jerrywlambert.com/articles/telecom-carriers-ai/">
+<meta property="og:site_name" content="JerryWLambert.com">
+<meta property="og:image" content="https://jerrywlambert.com/img/headshot.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jerrywlambert.com/img/headshot.jpg">
+<meta name="twitter:title" content="Repurposing Carrier SIP Infrastructure for the AI Agent Economy">
+<meta name="twitter:description" content="Telecom carriers already own the control plane, rating and settlement systems that inter-organizational agent commerce lacks. The opportunity is to become the neutral clearinghouse for agent transactions, not to repurpose media hardware.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --navy:#0F2742; --ink:#1A1F26; --muted:#5C6480; --panel:#F1F4F7; --on-navy:#C5D4E6; --light:#EEF3F9; --border:#E2E8F0; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; color:var(--ink); background:#fff; }
+  .masthead { background:#0F2742; color:#FFFFFF; padding:1.35rem 1.5rem 1.2rem; }
+  .masthead .site { margin:0 0 0.45rem; font-size:0.82rem; letter-spacing:0.14em; text-transform:lowercase; color:#C5D4E6; }
+  .masthead .date { margin:0; font-size:1.1rem; font-weight:700; line-height:1.25; color:#FFFFFF; }
+
+  main { max-width: 46rem; margin: 0 auto; padding: 2rem 1.5rem 3.5rem; }
+  .back { display:inline-block; margin:0 0 1.25rem; color:var(--navy); font-weight:600; text-decoration:none; font-size:0.95rem; }
+  h1 { font-size: 1.55rem; line-height: 1.25; margin: 0 0 0.45rem; color: var(--navy); letter-spacing: -0.02em; }
+  .deck { font-size:1.05rem; font-weight:600; color:var(--navy); margin:0 0 0.35rem; line-height:1.4; }
+  .meta { color: var(--muted); font-size: 0.95rem; margin: 0 0 1.25rem; }
+  .pdf { display:inline-block; background:var(--navy); color:#fff; text-decoration:none; font-weight:600; padding:0.55rem 0.95rem; border-radius:8px; margin: 0 0 1.75rem; font-size:0.92rem; }
+  h2 { font-size: 1.05rem; color: var(--navy); margin: 1.6rem 0 0.55rem; padding-bottom:0.25rem; border-bottom:2px solid var(--navy); }
+  p { line-height: 1.6; margin: 0 0 0.9rem; }
+  .summary { background:var(--panel); border-left:4px solid var(--navy); padding:0.9rem 1.1rem; }
+  .summary p { margin:0 0 0.6rem; } .summary p:last-child { margin:0; font-weight:600; }
+  .unit { font-size:0.85rem; color:var(--muted); margin:0 0 0.35rem; }
+  ul { margin:0.3rem 0 0.9rem; padding-left:1.2rem; } li { line-height:1.55; margin:0 0 0.4rem; }
+  ul.notes { font-size:0.92rem; }
+  code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:0.85em; }
+  .scroll { overflow-x:auto; }
+  table.data { width:100%; border-collapse:collapse; font-size:0.85rem; margin:0.25rem 0 0.6rem; min-width:34rem; }
+  table.data th { background:var(--light); color:var(--navy); text-align:left; padding:0.45rem; font-weight:700; border-top:2px solid var(--navy); border-bottom:2px solid var(--navy); }
+  table.data td { border-bottom:1px solid var(--border); padding:0.45rem; vertical-align:top; }
+  table.data tr:nth-child(even) td { background:var(--panel); }
+  td.mono { word-break:break-word; } td.num { white-space:nowrap; }
+  .cap { font-size:0.92rem; color:var(--muted); line-height:1.5; margin:0 0 1rem; }
+  .note { font-size:0.85rem; color:var(--muted); border-top:1px solid var(--border); padding-top:0.8rem; margin-top:1.8rem; }
+  footer { margin-top: 2.5rem; font-size: 0.9rem; color: var(--muted); border-top: 1px solid #E2E8F0; padding-top: 1.25rem; }
+  footer a { color: var(--navy); font-weight: 600; }
+  .byline { color:var(--ink); font-size:0.95rem; margin:0 0 0.2rem; font-weight:600; }
+  ol { margin:0.3rem 0 0.9rem; padding-left:1.3rem; } ol li { line-height:1.55; margin:0 0 0.5rem; }
+</style>
+</head>
+<body>
+  <div class="masthead"><p class="site">jerrywlambert.com</p><p class="date">June 2026</p></div>
+  <main>
+    <a class="back" href="/articles/">&larr; All articles</a>
+    <h1>Repurposing Carrier SIP Infrastructure for the AI Agent Economy</h1>
+    <p class="deck">Telecom carriers already own the control plane, rating and settlement systems that inter-organizational agent commerce lacks. The opportunity is to become the neutral clearinghouse for agent transactions, not to repurpose media hardware.</p>
+    <p class="byline">Jerry W. Lambert, Sr., AI Transition Executive, Telecommunications</p>
+    <p class="meta">June 2026</p>
+
+<h2>Executive Summary</h2><div class="summary">
+<p>The AI agent economy is being built almost entirely at the retail edge: agent frameworks, model APIs and point-to-point protocols running over HTTP and JSON. Almost no one is building the wholesale tier, the neutral fabric that routes, secures, meters and settles agent transactions that cross organizational boundaries under enforceable service levels.</p>
+<p>That wholesale tier is what a telephone carrier already is for voice. Its hardest-to-replicate assets map directly onto what inter-organizational agent commerce will require: session control, routing, real-time rating, inter-party settlement, border security and carrier-grade operations.</p>
+<p>The opportunity is not to run AI on switching hardware. It is to reposition the carrier control plane and its operations and business support systems as the clearinghouse for agent commerce.</p>
+</div>
+<h2>The Market Gap: The Missing Wholesale Tier</h2>
+<p>Today's agent protocols, such as the Model Context Protocol and Agent2Agent, focus on discovery and coordination at the edge. They assume trust, and they handle neither settlement nor federation backed by service-level agreements. The moment agents transact across company lines, the market needs what voice needed a century ago. Three requirements stand out:</p>
+<ul>
+<li><b>Inter-domain interconnect and routing.</b> A standard way for agents to discover and reach one another across independent domains, using carrier-grade addressing and federation.</li>
+<li><b>Quality of service and SLA enforcement.</b> The ability to guarantee and monitor service quality for real-time agent interactions, moving beyond best-effort delivery.</li>
+<li><b>Financial settlement.</b> Real-time rating, billing and clearing between independent operators and model providers.</li>
+</ul>
+<p>Carriers should not try to compete with frontier model providers such as xAI (Grok), OpenAI, Anthropic and Google. They should act as the neutral clearinghouse and interconnect carrier beneath them, a role they have mastered for voice and SMS traffic.</p>
+<h2>What Converts and What Is Stranded</h2>
+<p>Honest scoping is the credibility test. The value lies in the durable signaling and business-systems layers. Legacy media-processing hardware remains largely obsolete.</p>
+<p class="unit">Convertible assets: the durable backbone.</p>
+<div class="scroll"><table class="data"><thead><tr><th>Carrier asset</th><th>Role in the agent economy</th><th>Strength</th></tr></thead><tbody>
+<tr><td><b>Mediation, online charging and settlement</b></td><td>Per-token and per-task metering, multi-tenant billing and settlement between operators.</td><td>Highest; least replicated anywhere in AI</td></tr>
+<tr><td><b>Session border controllers</b> (Oracle, Ribbon, AudioCodes)</td><td>Admission control, topology hiding, denial-of-service protection and NAT traversal at agent-domain edges.</td><td>Very high</td></tr>
+<tr><td><b>Least-cost routing engines</b></td><td>Routing agent requests to models or providers by cost, latency and quality.</td><td>Very high</td></tr>
+<tr><td><b>IMS core and softswitches</b></td><td>Agent location services, identity and session lifecycle management.</td><td>High</td></tr>
+<tr><td><b>Diameter, HSS and AAA</b></td><td>Agent identity, authorization and accounting across federated nodes.</td><td>High</td></tr>
+<tr><td><b>Interconnect and peering relationships</b></td><td>Wholesale agreements for cross-organizational agent commerce.</td><td>High</td></tr>
+</tbody></table></div>
+<p class="unit">Stranded assets: the estate that does not convert.</p>
+<div class="scroll"><table class="data"><thead><tr><th>Asset</th><th>Why it does not convert</th></tr></thead><tbody>
+<tr><td><b>Media servers and DSP transcoders</b></td><td>Built for audio and video codecs. They cannot perform inference or process tokens.</td></tr>
+<tr><td><b>TDM gateways</b></td><td>Obsolete for token-stream delivery and replaced by commodity QUIC relays.</td></tr>
+<tr><td><b>Conference bridge DSPs</b></td><td>Specialized for mixing PCM audio and incompatible with agent media.</td></tr>
+</tbody></table></div>
+<p>GPU compute is not a stranded telecom asset, because carriers never owned that layer. Inference hardware remains an external requirement that must be bought or partnered for alongside the repurposed control plane.</p>
+<p>The discipline is simple. The signaling, settlement and high-availability billions convert. The media-plane billions largely do not. Treating the agent mesh as a signaling and clearinghouse challenge, rather than a hardware play, is what separates a credible thesis from hype.</p>
+<h2>The Technical Wrapper: SIP and QUIC</h2>
+<p>The protocol choice is not aesthetic. It determines whether the existing estate participates or is bypassed. An HTTP-native mesh gives the telecom estate nothing to do. A SIP-fronted mesh puts session border controllers, softswitches, subscriber databases and mediation systems in the session path as they are, or with thin adapters, using open-source engines such as Kamailio and OpenSIPS.</p>
+<p><b>SIP for signaling.</b> SIP is a proven, payload-agnostic session manager. In this design it carries identity, presence and floor control through established standards:</p>
+<ul>
+<li><b>Address of record</b> (<code>sip:agent@domain</code>): a stable, platform-independent agent identity.</li>
+<li><b>REGISTER:</b> maps a logical agent to its current host and port through a location service.</li>
+<li><b>Back-to-back user agent:</b> the intermediary for policy enforcement, rate limiting and metering.</li>
+<li><b>RFC 4353 conference focus:</b> orchestrates multi-agent sessions with a central roster and policy.</li>
+<li><b>RFC 4575 conference event package:</b> a live roster of joins, departures and capability updates.</li>
+<li><b>Binary Floor Control Protocol:</b> standardizes turn-taking, which settles who holds the floor in a multi-agent session.</li>
+<li><b>RFC 3428 MESSAGE:</b> low-overhead, pager-mode control messages between agents.</li>
+</ul>
+<p><b>SDP and the media line.</b> The bridge between voice and AI is the Session Description Protocol. An agent mesh is not a special case. It is another media description, for example <code>m=application 50004 UDP/TLS/QUIC agent-token-stream</code>. The prompt is simply another media format negotiated between endpoints, and the signaling plane manages it without needing to understand the tokens.</p>
+<p><b>QUIC for content.</b> QUIC, and Media over QUIC in particular, carries the token and tool streams on commodity servers the carrier already operates. It offers independent multiplexed streams without head-of-line blocking, mandatory TLS 1.3, fast connection setup, connection migration and ordered delivery of token deltas across firewalled links.</p>
+<p>SIP over QUIC already exists as an IETF draft. The remaining seam, SDP negotiation of a QUIC content endpoint, is the piece an early mover can author itself. That is a defensible head start, not a blocker.</p>
+<h2>Strategic Positioning: The Agent Clearinghouse</h2>
+<p>The carrier should be positioned as the neutral, regulated-grade interconnect for inter-organizational agent commerce. The position is defensible for three reasons:</p>
+<ul>
+<li><b>Neutrality.</b> The carrier does not compete with model vendors, so every vendor can route through it.</li>
+<li><b>Regulated-grade controls.</b> Audit-grade logging, topology hiding and lawful-intercept capability are what enterprises and regulators will demand, and they are a barrier to AI-native entrants.</li>
+<li><b>Settlement anchoring.</b> Network effects accrue to the party that clears transactions and enforces service levels.</li>
+</ul>
+<p>The carrier becomes the clearinghouse, not the application, which is where the enduring margin has always sat in telecom.</p>
+<h2>Proof Points and Operational Readiness</h2>
+<ul>
+<li><b>The transfers already work in miniature.</b> Production multi-tenant model proxies already use the back-to-back user agent pattern. They repurpose least-cost routing as model and provider routing, and mediation as per-account usage metering and budget caps.</li>
+<li><b>The human capital fits.</b> The industry holds deep expertise in scaling softswitches and running global billing and settlement. The people who built carrier settlement are the people who can stand up agent settlement, and they bring the five-nines reliability culture that current AI infrastructure conspicuously lacks.</li>
+</ul>
+<h2>Risks and Market Timing</h2>
+<ul>
+<li><b>Ecosystem momentum.</b> If the AI ecosystem standardizes settlement and interconnect on HTTP and JSON first, the telecom-native path is commoditized before adoption. The window is open because no one owns agent settlement yet, and it will not stay open. The first mover can set the settlement standard.</li>
+<li><b>Demand timing.</b> Intra-company agent meshes do not need a carrier. The value proposition scales with cross-organizational, business-to-business agent commerce reaching real volume.</li>
+<li><b>Licensing friction.</b> Session border controller and softswitch licenses were written for concurrent voice calls, not agent traffic. Vendors facing declining voice revenue, including Oracle, Ribbon and AudioCodes, have reason to relicense for a growth market, which makes this a partnership opportunity as well as a cost.</li>
+</ul>
+<h2>Recommended Next Steps</h2>
+<ol>
+<li><b>Proof of concept, in weeks rather than quarters.</b> Register two agents as SIP user agents on an existing softswitch or session border controller, establish a QUIC content leg, route a model request, rate it through the existing charging system and produce a settlement record.</li>
+<li><b>Asset audit.</b> Map the estate against the convertible and stranded tables to quantify convertible book value and the adapter work required.</li>
+<li><b>Standards stake.</b> Publish an SDP-over-QUIC profile for agent media negotiation before the HTTP-native camp closes the layer.</li>
+<li><b>Vendor partnership.</b> Propose agent-traffic licensing to Oracle, Ribbon and AudioCodes, aligned with their interest in replacing voice revenue.</li>
+<li><b>Anchor customer.</b> Identify one enterprise or business network with a real cross-organizational use case to anchor the clearinghouse.</li>
+</ol>
+<h2>Bottom Line</h2>
+<p>The carrier's value in the AI economy lies in its control plane and settlement systems, not its media plane. With SIP and QUIC as the wrapper, the existing estate plugs in rather than being bypassed, and underutilized voice infrastructure gains a second life as the neutral wholesale fabric the agent economy lacks. The thesis does not monetize media hardware or avoid buying GPUs, and saying so plainly is what makes the rest credible. The opportunity is to own the settlement layer, where the enduring margin has always been.</p>
+
+    <footer>
+      <a href="/newsletter/">Get the Brief by email</a> ·
+      <a href="/articles/">All articles</a> ·
+      <a href="/">Home</a>
+      <p style="margin:0.6rem 0 0;">© 2026 jerrywlambert.com</p>
+    </footer>
+  </main>
+</body>
+</html>
