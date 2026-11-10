@@ -2,6 +2,14 @@
   "featured": "the-35-ways-ai-models-charge",
   "entries": [
     {
+      "id": "2026-11-10",
+      "date": "2026-11-10",
+      "href": "/briefings/2026-11-10/",
+      "date_line": "November 10, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, November 10, 2026",
+      "summary": "Anthropic released Claude Fable 5.2 at $8 input and $40 output per million tokens, 20% below Fable 5.1, and Meta added Muse Ember 1.0 at $0.10 input and $0.50 output. No vendor changed a list price on an existing tracked model since Monday."
+    },
+    {
       "id": "2026-11-09",
       "date": "2026-11-09",
       "href": "/briefings/2026-11-09/",
