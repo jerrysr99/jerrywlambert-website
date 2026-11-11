@@ -2,6 +2,14 @@
   "featured": "the-35-ways-ai-models-charge",
   "entries": [
     {
+      "id": "2026-11-11",
+      "date": "2026-11-11",
+      "href": "/briefings/2026-11-11/",
+      "date_line": "November 11, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, November 11, 2026",
+      "summary": "Google released Gemini 4 Carbon at an introductory $2 input and $10 output per million tokens through November 30, rising to $4 and $20 on December 1, the same prices as Gemini 4 Argon. No vendor changed a list price on an existing tracked model since Tuesday."
+    },
+    {
       "id": "2026-11-10",
       "date": "2026-11-10",
       "href": "/briefings/2026-11-10/",
