@@ -6,7 +6,33 @@
     <atom:link href="https://jerrywlambert.com/posts/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Executive field notes on AI transformation, from someone running production AI workloads — not commenting from the sidelines.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Oct 2026 20:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 19:46:54 +0000</lastBuildDate>
+    <item>
+      <title>Grok 4.8 Will Delete Its Way to Massive Improvement</title>
+      <link>https://jerrywlambert.com/posts/grok-4-8-will-delete-its-way-to-massive-improvement.html</link>
+      <guid isPermaLink="true">https://jerrywlambert.com/posts/grok-4-8-will-delete-its-way-to-massive-improvement.html</guid>
+      <pubDate>Wed, 11 Nov 2026 13:45:00 -0500</pubDate>
+      <description>My background is telecom, and one lesson stuck with me: when a general-purpose chip isn't good enough, you build for the job. That's why signal processing moved off CPUs and onto DSPs. GPUs made the same trade for parallel math.</description>
+      <content:encoded><![CDATA[        <p>My background is telecom, and one lesson stuck with me: when a general-purpose chip isn't good enough, you build for the job. That's why signal processing moved off CPUs and onto DSPs. GPUs made the same trade for parallel math.</p>
+
+        <p>Elon Musk keeps running that play.</p>
+
+        <p>At Tesla, the industry's supply chain was built around 12 volts. Tesla wanted 48 volts for Cybertruck. Instead of waiting for suppliers to catch up, Tesla designed and commissioned the parts it needed.</p>
+
+        <p>Now it's Grok. Musk says xAI has &quot;dumped JAX/SGLang and rewritten the entire RL and inference stack from scratch in C/C++.&quot; JAX and SGLang are built to run many models on many kinds of chips. xAI's new stack is built for one job: Grok, on the exact Nvidia hardware it runs on.</p>
+
+        <p>The trade is flexibility for speed. Same trade a DSP makes.</p>
+
+        <p>My read: Musk won't let third-party vendors make him wait until everyone else agrees with what he wants. When off-the-shelf doesn't fit, he builds the piece himself.</p>
+
+        <p>Why it matters: faster inference means more training practice per hour and lower compute cost per answer. I track AI model pricing every day, and cost per answer is the number I watch.</p>
+
+        <p>Musk says Grok 4.8 is &quot;not yet incredible,&quot; but &quot;this time the foundations are built right.&quot;</p>
+
+        <p>I'd bet on the foundations.</p>
+
+        <p>More in my daily AI model pricing brief: <a href="https://jerrywlambert.com/briefings/">https://jerrywlambert.com/briefings/</a></p>]]></content:encoded>
+    </item>
     <item>
       <title>Model Pricing Is Getting More Complex… Not Less</title>
       <link>https://jerrywlambert.com/articles/how-much-notice-ai-vendors-give.html</link>
