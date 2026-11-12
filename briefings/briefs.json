@@ -2,6 +2,14 @@
   "featured": "the-35-ways-ai-models-charge",
   "entries": [
     {
+      "id": "2026-11-12",
+      "date": "2026-11-12",
+      "href": "/briefings/2026-11-12/",
+      "date_line": "November 12, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, November 12, 2026",
+      "summary": "Google released Gemini Decision, a model for yes or no, category and rubric judgments that bills only input, at $0.10 per million tokens, and produces zero output tokens. No vendor changed a list price on an existing tracked model since Wednesday."
+    },
+    {
       "id": "2026-11-11",
       "date": "2026-11-11",
       "href": "/briefings/2026-11-11/",
