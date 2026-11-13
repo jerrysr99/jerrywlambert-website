@@ -2,6 +2,14 @@
   "featured": "the-35-ways-ai-models-charge",
   "entries": [
     {
+      "id": "2026-11-13",
+      "date": "2026-11-13",
+      "href": "/briefings/2026-11-13/",
+      "date_line": "November 13, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, November 13, 2026",
+      "summary": "Google made Gemini 4 Hydrogen generally available at $1.50 input and $7.50 output per million tokens, and DeepSeek opened web search, file input, URL reading and speech APIs to developers. No vendor changed a list price on an existing tracked model since Thursday."
+    },
+    {
       "id": "2026-11-12",
       "date": "2026-11-12",
       "href": "/briefings/2026-11-12/",
