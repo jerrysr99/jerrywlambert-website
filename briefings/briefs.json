@@ -2,6 +2,14 @@
   "featured": "the-35-ways-ai-models-charge",
   "entries": [
     {
+      "id": "2026-11-16",
+      "date": "2026-11-16",
+      "href": "/briefings/2026-11-16/",
+      "date_line": "November 16, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, November 16, 2026",
+      "summary": "Alibaba priced its new Qwen4-Max flagship at $1.50 input and $4.50 output per million tokens, 25% below Qwen3.8-Max, and Google pushed several preview speech model shutdowns back to December 18. No vendor changed a list price on an existing tracked model since Friday."
+    },
+    {
       "id": "2026-11-13",
       "date": "2026-11-13",
       "href": "/briefings/2026-11-13/",
