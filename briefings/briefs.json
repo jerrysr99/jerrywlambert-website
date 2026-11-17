@@ -2,6 +2,14 @@
   "featured": "the-35-ways-ai-models-charge",
   "entries": [
     {
+      "id": "2026-11-17",
+      "date": "2026-11-17",
+      "href": "/briefings/2026-11-17/",
+      "date_line": "November 17, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, November 17, 2026",
+      "summary": "Alibaba added batch prices for its new Qwen4-Max in its China (Beijing) region at half the regional list price, and Perplexity published per-run prices for its new Monitor API. No vendor changed a list price on an existing tracked model since Monday."
+    },
+    {
       "id": "2026-11-16",
       "date": "2026-11-16",
       "href": "/briefings/2026-11-16/",
