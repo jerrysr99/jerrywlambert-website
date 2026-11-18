@@ -2,6 +2,14 @@
   "featured": "the-35-ways-ai-models-charge",
   "entries": [
     {
+      "id": "2026-11-18",
+      "date": "2026-11-18",
+      "href": "/briefings/2026-11-18/",
+      "date_line": "November 18, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, November 18, 2026",
+      "summary": "OpenAI launched GPT-6.2 Astra at $8.00 input and $40.00 output per million tokens, 20% below GPT-6 Astra, and GPT-6.2 Sol at the same price as GPT-6.1 Sol. DeepSeek stopped billing searches and page fetches that its models run through server-side tools."
+    },
+    {
       "id": "2026-11-17",
       "date": "2026-11-17",
       "href": "/briefings/2026-11-17/",
