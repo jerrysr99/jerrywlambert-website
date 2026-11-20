@@ -2,6 +2,14 @@
   "featured": "the-35-ways-ai-models-charge",
   "entries": [
     {
+      "id": "2026-11-20",
+      "date": "2026-11-20",
+      "href": "/briefings/2026-11-20/",
+      "date_line": "November 20, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, November 20, 2026",
+      "summary": "Google released Genie 4, a real-time world generation model, at $1.50 per million input tokens and $17.50 per million video output tokens, about $0.10 per second of video. OpenAI released GPT-Live-1.1 for voice at the same $0.05 per minute and added a $0.02 per minute standby rate, and says it is winding down Flex processing."
+    },
+    {
       "id": "2026-11-19",
       "date": "2026-11-19",
       "href": "/briefings/2026-11-19/",
