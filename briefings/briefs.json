@@ -2,6 +2,14 @@
   "featured": "the-35-ways-ai-models-charge",
   "entries": [
     {
+      "id": "2026-11-23",
+      "date": "2026-11-23",
+      "href": "/briefings/2026-11-23/",
+      "date_line": "November 23, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, November 23, 2026",
+      "summary": "xAI says grok-build-0.1 reached end of life on Thursday, November 19 and is no longer served on its API. StepFun began billing its StepAudio 3 voice models overnight, and Alibaba added a live voice model billed by the second and listed Qwen4-Max in its United States (Virginia) region. No list token price changed on an existing text model since Friday."
+    },
+    {
       "id": "2026-11-20",
       "date": "2026-11-20",
       "href": "/briefings/2026-11-20/",
