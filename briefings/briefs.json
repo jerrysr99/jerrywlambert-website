@@ -2,6 +2,14 @@
   "featured": "the-35-ways-ai-models-charge",
   "entries": [
     {
+      "id": "2026-11-24",
+      "date": "2026-11-24",
+      "href": "/briefings/2026-11-24/",
+      "date_line": "November 24, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, November 24, 2026",
+      "summary": "Microsoft moved the Azure Foundry retirement of Llama 4 Maverick, Llama 4 Scout and Llama 3.3 70B to Wednesday, February 3, 2027, and Perplexity added Gemini 4 Neon to its Agent API at Google's list price. xAI's price list no longer shows the retired grok-build-0.1. No list token price changed on an existing text model since Monday."
+    },
+    {
       "id": "2026-11-23",
       "date": "2026-11-23",
       "href": "/briefings/2026-11-23/",
