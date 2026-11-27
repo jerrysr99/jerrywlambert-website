@@ -2,6 +2,14 @@
   "featured": "the-35-ways-ai-models-charge",
   "entries": [
     {
+      "id": "2026-11-27",
+      "date": "2026-11-27",
+      "href": "/briefings/2026-11-27/",
+      "date_line": "November 27, 2026 · JerryWLambert.com AI Briefing",
+      "title": "Daily Model Brief, November 27, 2026",
+      "summary": "Alibaba listed its decision-model in four more regions at $0.042 per million input tokens and ended the free quota on qwen3.7-max. Mistral added an open-weight multimodal embedding model and set Friday, April 30, 2027 retirements for three older Voxtral models. No list token price changed on an existing text model since Thursday."
+    },
+    {
       "id": "2026-11-26",
       "date": "2026-11-26",
       "href": "/briefings/2026-11-26/",
